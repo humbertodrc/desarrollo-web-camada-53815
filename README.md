@@ -2,6 +2,47 @@
 
 En este repositorio se encuentran los ejercicios y proyectos realizados en el curso de Desarrollo Web de Coderhouse.
 
+## Recursos
+
+HTML: https://developer.mozilla.org/es/docs/Web/HTML
+
+HTML Reference: https://htmlreference.io/
+
+Devdocs: https://devdocs.io/html/
+
+
+### Herramientas
+
+
+
+### Extensiones
+
+Live Server: Permite visualizar los cambios en tiempo real en el navegador.
+https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+
+Open in Browser: Permite abrir el archivo HTML en el navegador.
+https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser
+
+Live Preview: Permite visualizar los cambios en tiempo real en el navegador.
+https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server
+
+Auto Rename Tag: Permite renombrar las etiquetas de apertura y cierre de manera automática.
+https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag
+
+Auto Close Tag: Permite cerrar las etiquetas de manera automática.
+https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag
+
+Prettier: Formatea el código de manera automática.
+https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+
+CSS Peek: Permite visualizar el código CSS de manera rápida.
+https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek
+
+
+
+
+
+
 ## Clase 1 Prototipado y conceptos básicos de HTML
 
 ### SKETCH
@@ -200,15 +241,36 @@ Las etiquetas semánticas son aquellas que tienen un significado.
     <title>Titulo de la página</title>
   </head>
   <body>
+
+    <!-- Encabezados -->
     <h1>Encabezado de nivel 1</h1>
     <h2>Encabezado de nivel 2</h2>
     <h3>Encabezado de nivel 3</h3>
     <h4>Encabezado de nivel 4</h4>
     <h5>Encabezado de nivel 5</h5>
     <h6>Encabezado de nivel 6</h6>
+
     <p>Esto es un párrafo</p>
+    <strong>Texto en negrita</strong>
+    <em>Texto en cursiva</em>
+
+     <!-- Etiquetas contenedores por ejemplo -->
+    <div>Contenedor de Bloque</div>
+    <span>Contenedor de Linea</span>
+
+    <!-- Etiquetas Semanticas -->
+    <header>Encabezado</header>
+    <nav>Menu de Navegacion</nav>
+    <main>Contenido Principal</main>
+    <article>Articulo</article>
+    <section>Seccion</section>
+    <aside>Contenido Secundario</aside>
+    <footer>Pie de Pagina</footer>
+
     <a href="#">Esto es un enlace</a>
+
     <img src="imagen.jpg" alt="Texto alternativo">
+
     <ul>
       <li>Elemento de lista</li>
       <li>Elemento de lista</li>
@@ -233,5 +295,20 @@ Las etiquetas semánticas son aquellas que tienen un significado.
         <td>Dato de tabla</td>
       </tr>
     </table>
+
+    <!-- Etiquetas Abiertas -->
+    <br>: para insertar un salto de línea.
+    <hr>: para insertar una línea horizontal.
+    <img>: para insertar una imagen.
+    <input>: para crear un campo de entrada de datos, como un cuadro de texto o un botón.
+    <meta>: para agregar información meta a la página, como descripción y palabras clave.
+    <link>: para vincular la página a una hoja de estilo CSS o a otro recurso externo.
+    <area>: para definir una región de un mapa de imagen.
+    <base>: para establecer la URL base para todas las URL relativas dentro de una página.
+    <col>: para definir las propiedades de estilo para una columna de una tabla.
+    <embed>: para incrustar contenido multimedia, como audio o video.
+    <param>: para establecer parámetros para un objeto multimedia en la página.
+    <source>: para especificar la fuente de un elemento multimedia.
+    
   </body>
 </html>
