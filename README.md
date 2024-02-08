@@ -10,6 +10,12 @@ HTML Reference: https://htmlreference.io/
 
 Devdocs: https://devdocs.io/html/
 
+colorhunt: https://colorhunt.co/
+
+colormagick: https://colormagic.app/
+
+colors: https://coolors.co/
+
 
 ### Herramientas
 
@@ -38,7 +44,8 @@ https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 CSS Peek: Permite visualizar el código CSS de manera rápida.
 https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek
 
-
+indent-rainbow: Permite visualizar los espacios en blanco de manera más clara.
+https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow
 
 
 
