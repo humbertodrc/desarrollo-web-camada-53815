@@ -319,3 +319,10 @@ Las etiquetas semánticas son aquellas que tienen un significado.
     
   </body>
 </html>
+```
+
+## Clase 2 Primeros paso con HTML
+
+Repaso:
+![repaso-clase-02](https://github.com/humbertodrc/desarrollo-web-camada-53815/assets/63797901/e6163876-c158-4b23-adaf-c6ae500ff089)
+
