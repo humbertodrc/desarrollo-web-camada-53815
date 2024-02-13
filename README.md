@@ -589,6 +589,108 @@ La etiqueta dl se utiliza para crear listas de definición, es decir, listas en 
 
 Los formularios son una parte fundamental de la web moderna. Se utilizan para recopilar datos del usuario, como nombres, contraseñas, direcciones de correo electrónico, comentarios, etc. En HTML, puedes crear formularios utilizando la etiqueta form y varios tipos de controles de formulario, como input, textarea, select, button, y otros. Aquí tienes una descripción de algunos de los controles de formulario más comunes:
 
+### Atributos de Formulario
+
+La etiqueta form puede tener varios atributos opcionales que controlan el aspecto y el comportamiento del formulario. Aquí tienes una descripción de algunos de los atributos más comunes:
+
+1- action: Es un atributo obligatorio que especifica la URL del script que procesará los datos del formulario.
+
+Ejemplo:
+
+```html
+<form action="/procesar.php">
+  ...
+</form>
+```
+
+2- method: Es un atributo opcional que especifica el método HTTP que se utilizará para enviar los datos del formulario. Los valores posibles son get y post.
+
+Ejemplo:
+
+```html
+<form action="/procesar.php" method="post">
+  ...
+</form>
+```
+
+3- target: Es un atributo opcional que especifica dónde se debe mostrar el resultado del procesamiento del formulario. Los valores posibles son _blank, _self, _parent, _top, o un nombre de ventana o marco.
+
+Ejemplo:
+
+```html
+<form action="/procesar.php" method="post" target="_blank">
+  ...
+</form>
+
+4- autocomplete: Es un atributo opcional que especifica si el navegador debe completar automáticamente los campos del formulario.
+
+Ejemplo:
+
+```html
+<form action="/procesar.php" method="post" autocomplete="on">
+  ...
+</form>
+
+5- novalidate: Es un atributo opcional que especifica que el formulario no debe ser validado antes de enviar los datos.
+
+Ejemplo:
+
+```html
+<form action="/procesar.php" method="post" novalidate>
+  ...
+</form>
+```
+
+6- enctype: Es un atributo opcional que especifica cómo se deben codificar los datos del formulario antes de enviarlos al servidor. Los valores posibles son application/x-www-form-urlencoded, multipart/form-data, y text/plain.
+
+Ejemplo:
+
+```html
+<form action="/procesar.php" method="post" enctype="multipart/form-data">
+  ...
+</form>
+```
+
+7- accept-charset: Es un atributo opcional que especifica el conjunto de caracteres que se utilizará para codificar los datos del formulario.
+
+Ejemplo:
+
+```html
+<form action="/procesar.php" method="post" accept-charset="UTF-8">
+  ...
+</form>
+```
+
+El atributo enctype (encodificación de tipo de contenido) se utiliza en la etiqueta form para especificar cómo se debe codificar el contenido de los datos del formulario antes de enviarlo al servidor. Aquí están los valores que puede tomar el atributo enctype y sus significados:
+
+application/x-www-form-urlencoded:
+
+Este es el valor predeterminado si no se especifica ningún otro. En este tipo de codificación, los caracteres especiales se convierten en secuencias de escape %XX, donde XX representa el valor hexadecimal del carácter.
+Es adecuado para enviar datos de formularios simples que no incluyen archivos binarios.
+multipart/form-data:
+
+Este tipo de codificación se utiliza para enviar datos de formularios que incluyen archivos binarios, como imágenes o archivos de audio.
+Los datos se dividen en varias partes, cada una de las cuales contiene un campo del formulario y su valor, junto con los datos binarios del archivo.
+Es necesario cuando se envían archivos, ya que no se pueden codificar correctamente usando application/x-www-form-urlencoded.
+text/plain:
+
+En este tipo de codificación, los datos del formulario se envían en texto plano sin ningún tipo de codificación especial.
+Los caracteres especiales no se convierten en secuencias de escape %XX, lo que significa que se envían directamente como están.
+Este tipo de codificación es menos común y generalmente se usa solo en casos especiales donde es necesario un formato de datos simple y legible.
+Es importante elegir el valor adecuado para el atributo enctype según el tipo de datos que se estén enviando desde el formulario. Por lo general, para formularios estándar sin archivos adjuntos, se utiliza application/x-www-form-urlencoded, mientras que para formularios que incluyen archivos se utiliza multipart/form-data.
+
+8- name: Es un atributo opcional que especifica el nombre del formulario. Este nombre se utiliza para identificar el formulario en el script que procesará los datos del formulario.
+
+Ejemplo:
+
+```html
+<form action="/procesar.php" method="post" name="formulario">
+  ...
+</form>
+```
+
+
+
 #### Formulario Básico
 
 La etiqueta form se utiliza para crear un formulario en un documento HTML. El atributo action especifica la URL del script que procesará los datos del formulario, y el atributo method especifica el método HTTP que se utilizará para enviar los datos del formulario. Aquí tienes un ejemplo de cómo crear un formulario básico:
