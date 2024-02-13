@@ -326,3 +326,618 @@ Las etiquetas semánticas son aquellas que tienen un significado.
 Repaso:
 ![repaso-clase-02](https://github.com/humbertodrc/desarrollo-web-camada-53815/assets/63797901/e6163876-c158-4b23-adaf-c6ae500ff089)
 
+### Enlaces:
+
+La etiqueta de enlace en HTML se utiliza para crear hipervínculos a otros recursos, como páginas web, imágenes, archivos de audio, videos, etc. La etiqueta <a> se utiliza junto con el atributo href, que especifica la URL del recurso al que se debe enlazar. Además del atributo href, la etiqueta <a> puede tener otros atributos opcionales, como target, title, rel, download, entre otros. Aquí tienes una descripción de algunos de los atributos más comunes:
+
+1- href: Es el atributo obligatorio que especifica la dirección URL del recurso al que se enlazará. Puede ser una URL relativa o absoluta.
+
+Ejemplo:
+
+```html 
+<a href="https://www.google.com">Visitar Google</a>
+```
+
+2- target: Es un atributo opcional que especifica dónde abrir el recurso enlazado. Los valores posibles son _blank, _self, _parent, _top, o un nombre de ventana o marco.
+
+Ejemplo:
+
+```html
+<a href="https://www.google.com" target="_blank">Visitar Google</a>
+```
+
+3- title: Es un atributo opcional que proporciona información adicional sobre el recurso al que se enlaza. Este texto se muestra como una información sobre herramientas cuando el usuario coloca el cursor sobre el enlace.
+
+Ejemplo:
+
+```html
+<a href="https://www.google.com" title="Visitar Google">Visitar Google</a>
+```
+
+4- rel: Es un atributo opcional que especifica la relación entre el documento actual y el recurso enlazado. Los valores posibles son noreferrer, nofollow, noopener, y otros. Por ejemplo, nofollow indica que los motores de búsqueda no deben seguir el enlace:
+
+Ejemplo:
+
+```html
+<a href="https://www.google.com" rel="nofollow">Visitar Google</a>
+```
+
+5- download: Es un atributo opcional que indica que el recurso enlazado debe descargarse en lugar de mostrarse en el navegador. El valor del atributo es el nombre de archivo sugerido para la descarga.
+
+Ejemplo:
+
+```html
+<a href="documento.pdf" download>Descargar PDF</a>
+```
+
+#### Enlace Absoluto
+
+Un enlace absoluto especifica la dirección completa del recurso al que se enlaza, incluyendo el protocolo (como "http://" o "https://"), el nombre de dominio y la ruta del recurso dentro del dominio.
+
+```html
+<a href="https://www.google.com">Visitar Google</a>
+```
+
+En este ejemplo, el enlace absoluto apunta a la página de inicio de Google.
+
+#### Enlace Relativo
+
+Un enlace relativo especifica la dirección del recurso en relación con la ubicación del documento HTML actual. Esto significa que el enlace se forma utilizando una ruta relativa al documento actual en lugar de especificar la URL completa.
+
+```html
+<a href="pagina.html">Enlace Relativo</a>
+<a href="../otrapagina.html">Enlace Relativo</a>
+```
+
+En este caso, el enlace apunta a la página "otrapagina.html" que se encuentra en el directorio padre del documento HTML actual. El uso de .. indica que estamos retrocediendo un nivel en la jerarquía de directorios antes de buscar la página.
+
+### Explicacion de las como moverse entre directorios:
+
+- ./: Este se refiere al directorio actual en el que te encuentras. Por ejemplo, si estás en el directorio /home/usuario/proyecto y quieres hacer referencia a un archivo en ese mismo directorio, puedes usar ./nombre_archivo.
+- ../: Este se refiere al directorio padre del directorio actual. Por ejemplo, si estás en /home/usuario/proyecto y quieres hacer referencia a un archivo en el directorio padre (por ejemplo, en /home/usuario), puedes usar ../nombre_archivo.
+Estos caracteres son útiles cuando estás navegando por tu sistema de archivos en la línea de comandos o cuando estás escribiendo rutas en tu código para acceder a archivos o directorios relativos.
+
+### Enlaces a secciones de la misma página o internos:
+
+Para crear un enlace a una sección específica de la misma página, puedes utilizar el atributo href con el valor del ID de la sección a la que quieres enlazar. Por ejemplo, si tienes una sección con el ID "seccion1" y quieres enlazar a ella, puedes hacer lo siguiente:
+
+```html
+<a href="#seccion1">Enlace a Sección 1</a>
+```
+
+En caso de que quieras moverte a una seccion especifica de otra pagina, puedes hacerlo de la siguiente manera:
+
+```html
+<a href="pagina.html#seccion1">Enlace a Sección 1</a>
+```
+
+### Multimedia en HTML
+
+#### Imágenes
+
+La etiqueta <img> se utiliza para insertar imágenes en un documento HTML. La etiqueta <img> es un elemento vacío, lo que significa que no tiene contenido y no tiene una etiqueta de cierre. En su lugar, la etiqueta <img> tiene un atributo src que especifica la URL de la imagen que se debe mostrar. Además del atributo src, la etiqueta <img> puede tener otros atributos opcionales, como alt, width, height, loading, y otros. Aquí tienes una descripción de algunos de los atributos más comunes:
+
+1- src: Es el atributo obligatorio que especifica la URL de la imagen que se debe mostrar. Puede ser una URL relativa o absoluta.
+
+Ejemplo:
+
+```html
+<img src="imagen.jpg" alt="Texto alternativo">
+```
+
+2- alt: Es un atributo opcional que proporciona un texto alternativo para la imagen. Este texto se muestra si la imagen no se puede cargar o si el usuario navega con un lector de pantalla.
+
+Ejemplo:
+
+```html
+<img src="imagen.jpg" alt="Texto alternativo">
+```
+
+3- width: Es un atributo opcional que especifica el ancho de la imagen en píxeles.
+
+Ejemplo:
+
+```html
+<img src="imagen.jpg" alt="Texto alternativo" width="300">
+```
+
+4- height: Es un atributo opcional que especifica la altura de la imagen en píxeles.
+
+Ejemplo:
+
+```html
+<img src="imagen.jpg" alt="Texto alternativo" height="200">
+```
+
+5- loading: Es un atributo opcional que especifica cómo se debe cargar la imagen. Los valores posibles son auto, eager, lazy, y otros.
+
+Ejemplo:
+
+```html
+<img src="imagen.jpg" alt="Texto alternativo" loading="lazy">
+```
+
+#### Favicon
+
+El favicon es un icono que se muestra en la pestaña del navegador y en la lista de marcadores. Para agregar un favicon a tu sitio web, puedes utilizar la etiqueta <link> en el elemento <head> del documento HTML. El atributo rel especifica la relación entre el documento actual y el recurso enlazado, y el atributo href especifica la URL del icono. Aquí tienes un ejemplo de cómo agregar un favicon a tu sitio web:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Titulo de la página</title>
+  </head>
+  <body>
+    ...
+  </body>
+</html>
+```
+
+### Iframes
+
+La etiqueta iframe se utiliza para insertar un marco en un documento HTML. Un marco es un área rectangular en la página que muestra otro documento HTML incrustado. La etiqueta iframe tiene un atributo src que especifica la URL del documento que se debe mostrar en el marco. Además del atributo src, la etiqueta iframe puede tener otros atributos opcionales, como width, height, title, loading, y otros. Aquí tienes una descripción de algunos de los atributos más comunes:
+
+1- src: Es el atributo obligatorio que especifica la URL del documento que se debe mostrar en el marco. Puede ser una URL relativa o absoluta.
+
+Ejemplo:
+
+```html
+<iframe src="pagina.html" width="300" height="200" title="Título del marco"></iframe>
+```
+
+2- width: Es un atributo opcional que especifica el ancho del marco en píxeles.
+
+Ejemplo:
+
+```html
+<iframe src="pagina.html" width="300" height="200" title="Título del marco"></iframe>
+```
+
+3- height: Es un atributo opcional que especifica la altura del marco en píxeles.
+
+Ejemplo:
+
+```html
+<iframe src="pagina.html" width="300" height="200" title="Título del marco"></iframe>
+```
+
+4- title: Es un atributo opcional que proporciona un título para el marco. Este texto se muestra como una información sobre herramientas cuando el usuario coloca el cursor sobre el marco.
+
+Ejemplo:
+
+```html
+<iframe src="pagina.html" width="300" height="200" title="Título del marco"></iframe>
+```
+
+5- loading: Es un atributo opcional que especifica cómo se debe cargar el marco. Los valores posibles son auto, eager, lazy, y otros.
+
+Ejemplo:
+
+```html
+<iframe src="pagina.html" width="300" height="200" title="Título del marco" loading="lazy"></iframe>
+```
+
+6- frameborder: Es un atributo opcional que especifica si el marco debe tener un borde. Los valores posibles son 0 y 1.
+
+Ejemplo:
+
+```html
+<iframe src="pagina.html" width="300" height="200" title="Título del marco" frameborder="0"></iframe>
+```
+
+5- allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share":  Este atributo controla qué acciones están permitidas dentro del iframe. En este caso, se permiten varias acciones relacionadas con el control de reproducción de video, la escritura en el portapapeles y el uso de sensores del dispositivo, entre otras.
+
+Ejemplo:
+
+```html
+<iframe src="pagina.html" width="300" height="200" title="Título del marco" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+```
+
+6- allowfullscreen: Es un atributo opcional que especifica si el marco debe permitir la visualización en pantalla completa.
+
+Ejemplo:
+
+```html
+<iframe src="pagina.html" width="300" height="200" title="Título del marco" allowfullscreen></iframe>
+```
+
+### Listas
+
+Las listas son un tipo de estructura de datos que se utiliza para almacenar una colección de elementos. En HTML, puedes crear listas ordenadas, listas desordenadas y listas de definición utilizando las etiquetas ol, ul y dl, respectivamente. Aquí tienes una descripción de cada tipo de lista:
+
+#### Listas Ordenadas
+
+La etiqueta ol se utiliza para crear listas ordenadas, es decir, listas en las que los elementos se enumeran con números o letras. Cada elemento de la lista se crea con la etiqueta li. Aquí tienes un ejemplo de cómo crear una lista ordenada:
+
+```html
+<ol>
+  <li>Elemento 1</li>
+  <li>Elemento 2</li>
+  <li>Elemento 3</li>
+</ol>
+```
+
+#### Listas Desordenadas
+
+La etiqueta ul se utiliza para crear listas desordenadas, es decir, listas en las que los elementos se enumeran con viñetas o puntos. Cada elemento de la lista se crea con la etiqueta li. Aquí tienes un ejemplo de cómo crear una lista desordenada:
+
+```html
+<ul>
+  <li>Elemento 1</li>
+  <li>Elemento 2</li>
+  <li>Elemento 3</li>
+</ul>
+```
+
+#### Listas de Definición
+
+La etiqueta dl se utiliza para crear listas de definición, es decir, listas en las que cada elemento consta de un término seguido de una descripción. Cada término se crea con la etiqueta dt y cada descripción se crea con la etiqueta dd. Aquí tienes un ejemplo de cómo crear una lista de definición:
+
+```html
+<dl>
+  <dt>Término 1</dt>
+  <dd>Descripción 1</dd>
+  <dt>Término 2</dt>
+  <dd>Descripción 2</dd>
+  <dt>Término 3</dt>
+  <dd>Descripción 3</dd>
+</dl>
+```
+
+### Formularios
+
+Los formularios son una parte fundamental de la web moderna. Se utilizan para recopilar datos del usuario, como nombres, contraseñas, direcciones de correo electrónico, comentarios, etc. En HTML, puedes crear formularios utilizando la etiqueta form y varios tipos de controles de formulario, como input, textarea, select, button, y otros. Aquí tienes una descripción de algunos de los controles de formulario más comunes:
+
+#### Formulario Básico
+
+La etiqueta form se utiliza para crear un formulario en un documento HTML. El atributo action especifica la URL del script que procesará los datos del formulario, y el atributo method especifica el método HTTP que se utilizará para enviar los datos del formulario. Aquí tienes un ejemplo de cómo crear un formulario básico:
+
+```html
+<form action="/procesar.php" method="post">
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" name="nombre">
+  <label for="email">Correo Electrónico:</label>
+  <input type="email" id="email" name="email">
+  <label for="comentario">Comentario:</label>
+  <textarea id="comentario" name="comentario"></textarea>
+  <button type="submit">Enviar</button>
+</form>
+```
+
+#### Etiquetas de ingreso de datos en formularios
+
+La etiqueta input se utiliza para crear controles de entrada en un formulario. El atributo type especifica el tipo de control de entrada que se debe crear, y el atributo name especifica el nombre del control de entrada. Aquí tienes una descripción de algunos de los tipos de control de entrada más comunes:
+
+1- text: Crea un campo de texto de una sola línea.
+
+Ejemplo:
+
+```html
+<input type="text" name="nombre">
+```
+
+2- email: Crea un campo de texto para introducir una dirección de correo electrónico.
+
+Ejemplo:
+
+```html
+<input type="email" name="email">
+```
+
+3- password: Crea un campo de texto para introducir una contraseña.
+
+Ejemplo:
+
+```html
+<input type="password" name="contrasena">
+```
+
+4- checkbox: Crea una casilla de verificación que el usuario puede marcar o desmarcar.
+
+Ejemplo:
+
+```html
+<input type="checkbox" name="suscribirse" value="1">
+```
+
+5- radio: Crea un botón de opción que el usuario puede seleccionar.
+
+Ejemplo:
+
+```html
+<input type="radio" name="genero" value="masculino">
+<input type="radio" name="genero" value="femenino">
+```
+
+6- file: Crea un control de entrada para seleccionar un archivo para cargar.
+
+Ejemplo:
+
+```html
+<input type="file" name="archivo">
+```
+
+7- submit: Crea un botón para enviar el formulario.
+
+Ejemplo:
+
+```html
+<input type="submit" value="Enviar">
+```
+
+8- reset: Crea un botón para restablecer el formulario a su estado inicial.
+
+Ejemplo:
+
+```html
+<input type="reset" value="Restablecer">
+```
+
+9- hidden: Crea un campo de entrada oculto que no se muestra en el formulario.
+
+Ejemplo:
+
+```html
+<input type="hidden" name="id" value="123">
+```
+
+#### Atributos de entrada de datos
+
+La etiqueta input puede tener varios atributos opcionales que controlan el aspecto y el comportamiento del control de entrada. Aquí tienes una descripción de algunos de los atributos más comunes:
+
+1- placeholder: Es un atributo opcional que proporciona un texto de marcador de posición para el control de entrada. Este texto se muestra en el control de entrada cuando está vacío.
+
+Ejemplo:
+
+```html
+<input type="text" name="nombre" placeholder="Nombre">
+```
+
+2- required: Es un atributo opcional que especifica que el control de entrada es obligatorio. Si el usuario intenta enviar el formulario sin completar el control de entrada, se mostrará un mensaje de error.
+
+Ejemplo:
+
+```html
+<input type="email" name="email" required>
+```
+
+3- disabled: Es un atributo opcional que especifica que el control de entrada está deshabilitado. Esto significa que el usuario no puede interactuar con el control de entrada.
+
+Ejemplo:
+
+```html
+<input type="text" name="nombre" disabled>
+```
+
+4- readonly: Es un atributo opcional que especifica que el control de entrada es de solo lectura. Esto significa que el usuario puede ver el valor del control de entrada, pero no puede cambiarlo.
+
+Ejemplo:
+
+```html
+<input type="text" name="nombre" value="Humberto" readonly>
+```
+
+5- autofocus: Es un atributo opcional que especifica que el control de entrada debe recibir el enfoque automáticamente cuando se carga la página.
+
+Ejemplo:
+
+```html
+<input type="text" name="nombre" autofocus>
+```
+
+6- autocomplete: Es un atributo opcional que especifica si el control de entrada debe permitir que el navegador complete automáticamente el valor del control de entrada.
+
+Ejemplo:
+
+```html
+<input type="text" name="nombre" autocomplete="on">
+```
+
+7- pattern: Es un atributo opcional que especifica un patrón que debe coincidir con el valor del control de entrada. Si el valor del control de entrada no coincide con el patrón, se mostrará un mensaje de error.
+
+Ejemplo:
+
+```html
+<input type="text" name="codigo" pattern="[A-Za-z]{3}\d{3}">
+```
+
+8- min: Es un atributo opcional que especifica el valor mínimo que se puede introducir en el control de entrada.
+
+Ejemplo:
+
+```html
+<input type="number" name="edad" min="18">
+```
+
+9- max: Es un atributo opcional que especifica el valor máximo que se puede introducir en el control de entrada.
+
+Ejemplo:
+
+```html
+<input type="number" name="edad" max="100">
+```
+
+10- step: Es un atributo opcional que especifica el tamaño de los pasos que se pueden introducir en el control de entrada.
+
+Ejemplo:
+
+```html
+<input type="number" name="edad" step="5">
+```
+
+11- list: Es un atributo opcional que especifica el ID de un elemento datalist que proporciona una lista de opciones para el control de entrada.
+
+Ejemplo:
+
+```html
+<input type="text" name="nombre" list="nombres">
+<datalist id="nombres">
+  <option value="Humberto">
+  <option value="Juan">
+  <option value="María">
+</datalist>
+
+12- multiple: Es un atributo opcional que especifica que el control de entrada puede aceptar múltiples valores.
+
+Ejemplo:
+
+```html
+<input type="file" name="archivos" multiple>
+```
+
+13- accept: Es un atributo opcional que especifica los tipos de archivos que se pueden seleccionar en el control de entrada.
+
+Ejemplo:
+
+```html
+<input type="file" name="archivos" accept="image/*">
+```
+
+14- value: Es un atributo opcional que especifica el valor inicial del control de entrada.
+
+Ejemplo:
+
+```html
+<input type="text" name="nombre" value="Humberto">
+```
+
+
+#### Etiqueta de Textarea
+
+La etiqueta textarea se utiliza para crear un control de entrada de texto de varias líneas en un formulario. El contenido del control de entrada se especifica entre las etiquetas de apertura y cierre de textarea. Aquí tienes un ejemplo de cómo crear un control de entrada de texto de varias líneas:
+
+```html
+<textarea name="comentario"></textarea>
+```
+
+
+#### Etiqueta Label
+
+La etiqueta label se utiliza para asociar un texto descriptivo con un control de entrada en un formulario. El atributo for especifica el ID del control de entrada al que se debe asociar el texto descriptivo. Aquí tienes un ejemplo de cómo asociar un texto descriptivo con un control de entrada:
+
+```html
+<label for="nombre">Nombre:</label>
+<input type="text" id="nombre" name="nombre">
+```
+
+#### Etiqueta Select
+
+La etiqueta select se utiliza para crear un control de selección en un formulario. La etiqueta select contiene una o más etiquetas option, que representan las opciones que el usuario puede seleccionar. Aquí tienes un ejemplo de cómo crear un control de selección:
+
+```html
+<select name="pais">
+  <option value="ar">Argentina</option>
+  <option value="br">Brasil</option>
+  <option value="cl">Chile</option>
+  <option value="co">Colombia</option>
+  <option value="mx">México</option>
+  <option value="pe">Perú</option>
+</select>
+```
+
+#### Conjunto de Campos
+
+Las etiquetas fieldset y legend se utilizan para agrupar un conjunto de campos relacionados en un formulario. La etiqueta fieldset contiene uno o más campos de formulario, y la etiqueta legend proporciona un título descriptivo para el conjunto de campos. Aquí tienes un ejemplo de cómo agrupar un conjunto de campos:
+
+```html
+<fieldset>
+  <legend>Datos Personales</legend>
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" name="nombre">
+  <label for="email">Correo Electrónico:</label>
+  <input type="email" id="email" name="email">
+  <label for="telefono">Teléfono:</label>
+  <input type="tel" id="telefono" name="telefono">
+</fieldset>
+```
+
+### Tablas
+
+Las tablas se utilizan para mostrar datos en filas y columnas. En HTML, puedes crear tablas utilizando las etiquetas table, tr, th y td. Aquí tienes una descripción de cada una de estas etiquetas:
+
+#### Tabla Básica
+
+La etiqueta table se utiliza para crear una tabla en un documento HTML. La etiqueta tr se utiliza para crear una fila en la tabla, y la etiqueta th se utiliza para crear una celda de encabezado. La etiqueta td se utiliza para crear una celda de datos. Aquí tienes un ejemplo de cómo crear una tabla básica:
+
+```html
+<table>
+  <tr>
+    <th>Encabezado 1</th>
+    <th>Encabezado 2</th>
+    <th>Encabezado 3</th>
+  </tr>
+  <tr>
+    <td>Dato 1</td>
+    <td>Dato 2</td>
+    <td>Dato 3</td>
+  </tr>
+  <tr>
+    <td>Dato 4</td>
+    <td>Dato 5</td>
+    <td>Dato 6</td>
+  </tr>
+</table>
+```
+
+#### Atributos de Tabla
+
+La etiqueta table puede tener varios atributos opcionales que controlan el aspecto y el comportamiento de la tabla. Aquí tienes una descripción de algunos de los atributos más comunes:
+
+1- border: Es un atributo opcional que especifica el ancho del borde de la tabla. El valor del atributo es un número entero que representa el ancho del borde en píxeles.
+
+Ejemplo:
+
+```html
+<table border="1">
+  ...
+</table>
+
+2- cellpadding: Es un atributo opcional que especifica el espacio entre el borde de la celda y su contenido. El valor del atributo es un número entero que representa el espacio en píxeles.
+
+Ejemplo:
+
+```html
+<table cellpadding="10">
+  ...
+</table>
+```
+
+3- cellspacing: Es un atributo opcional que especifica el espacio entre las celdas de la tabla. El valor del atributo es un número entero que representa el espacio en píxeles.
+
+Ejemplo:
+
+```html
+<table cellspacing="5">
+  ...
+</table>
+
+4- width: Es un atributo opcional que especifica el ancho de la tabla. El valor del atributo es un número entero que representa el ancho en píxeles.
+
+Ejemplo:
+
+```html
+<table width="300">
+  ...
+</table>
+```
+
+5- align: Es un atributo opcional que especifica la alineación horizontal de la tabla. Los valores posibles son left, center, y right.
+
+Ejemplo:
+
+```html
+<table align="center">
+  ...
+</table>
+
+6- bgcolor: Es un atributo opcional que especifica el color de fondo de la tabla. El valor del atributo es un nombre de color o un código hexadecimal.
+
+Ejemplo:
+
+```html
+<table bgcolor="#f0f0f0">
+  ...
+</table>
+```
+
