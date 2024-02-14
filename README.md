@@ -4,51 +4,45 @@ En este repositorio se encuentran los ejercicios y proyectos realizados en el cu
 
 ## Recursos
 
-HTML: https://developer.mozilla.org/es/docs/Web/HTML
+HTML: <https://developer.mozilla.org/es/docs/Web/HTML>
 
-HTML Reference: https://htmlreference.io/
+HTML Reference: <https://htmlreference.io/>
 
-Devdocs: https://devdocs.io/html/
+Devdocs: <https://devdocs.io/html/>
 
-colorhunt: https://colorhunt.co/
+colorhunt: <https://colorhunt.co/>
 
-colormagick: https://colormagic.app/
+colormagick: <https://colormagic.app/>
 
-colors: https://coolors.co/
-
+colors: <https://coolors.co/>
 
 ### Herramientas
-
-
 
 ### Extensiones
 
 Live Server: Permite visualizar los cambios en tiempo real en el navegador.
-https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+<https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer>
 
 Open in Browser: Permite abrir el archivo HTML en el navegador.
-https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser
+<https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser>
 
 Live Preview: Permite visualizar los cambios en tiempo real en el navegador.
-https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server
+<https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server>
 
 Auto Rename Tag: Permite renombrar las etiquetas de apertura y cierre de manera automática.
-https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag
+<https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag>
 
 Auto Close Tag: Permite cerrar las etiquetas de manera automática.
-https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag
+<https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag>
 
 Prettier: Formatea el código de manera automática.
-https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+<https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode>
 
 CSS Peek: Permite visualizar el código CSS de manera rápida.
-https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek
+<https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek>
 
 indent-rainbow: Permite visualizar los espacios en blanco de manera más clara.
-https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow
-
-
-
+<https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow>
 
 ## Clase 1 Prototipado y conceptos básicos de HTML
 
@@ -102,7 +96,7 @@ Las etiquetas cerradas son aquellas que tienen un contenido que se encuentra ent
 
 Las etiquetas auto-cerradas son aquellas que no tienen contenido y se cierran en la misma etiqueta de apertura.
 
-```html 
+```html
 <hr> <!-- Línea horizontal -->
 ```
 
@@ -128,7 +122,7 @@ Anidar etiquetas significa que una etiqueta se encuentra dentro de otra.
 
 Es importante mantener el orden dentro del codigo y tabular el contenido para una mejor comprensión.
 
-```html 
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -181,7 +175,7 @@ La estructura básica de un documento HTML se compone de la siguiente manera:
 </body>
 ```
 
-### Tipos de elementos HTML (bloque e inline):
+### Tipos de elementos HTML (bloque e inline)
 
 Bloque: Los elementos de bloque siempre comienzan en una nueva línea y ocupan todo el ancho disponible.
 
@@ -204,7 +198,6 @@ Los contenedores son elementos que agrupan otros elementos.
   <p>Esto es un párrafo</p>
 </div>
 ```
-
 
 ```html
 <p>Esto es un <span>texto</span></p>
@@ -326,7 +319,7 @@ Las etiquetas semánticas son aquellas que tienen un significado.
 Repaso:
 ![repaso-clase-02](https://github.com/humbertodrc/desarrollo-web-camada-53815/assets/63797901/e6163876-c158-4b23-adaf-c6ae500ff089)
 
-### Enlaces:
+### Enlaces
 
 La etiqueta de enlace en HTML se utiliza para crear hipervínculos a otros recursos, como páginas web, imágenes, archivos de audio, videos, etc. La etiqueta <a> se utiliza junto con el atributo href, que especifica la URL del recurso al que se debe enlazar. Además del atributo href, la etiqueta <a> puede tener otros atributos opcionales, como target, title, rel, download, entre otros. Aquí tienes una descripción de algunos de los atributos más comunes:
 
@@ -334,11 +327,11 @@ La etiqueta de enlace en HTML se utiliza para crear hipervínculos a otros recur
 
 Ejemplo:
 
-```html 
+```html
 <a href="https://www.google.com">Visitar Google</a>
 ```
 
-2- target: Es un atributo opcional que especifica dónde abrir el recurso enlazado. Los valores posibles son _blank, _self, _parent, _top, o un nombre de ventana o marco.
+2- target: Es un atributo opcional que especifica dónde abrir el recurso enlazado. Los valores posibles son _blank,_self, _parent,_top, o un nombre de ventana o marco.
 
 Ejemplo:
 
@@ -391,13 +384,13 @@ Un enlace relativo especifica la dirección del recurso en relación con la ubic
 
 En este caso, el enlace apunta a la página "otrapagina.html" que se encuentra en el directorio padre del documento HTML actual. El uso de .. indica que estamos retrocediendo un nivel en la jerarquía de directorios antes de buscar la página.
 
-### Explicacion de las como moverse entre directorios:
+### Explicacion de las como moverse entre directorios
 
 - ./: Este se refiere al directorio actual en el que te encuentras. Por ejemplo, si estás en el directorio /home/usuario/proyecto y quieres hacer referencia a un archivo en ese mismo directorio, puedes usar ./nombre_archivo.
 - ../: Este se refiere al directorio padre del directorio actual. Por ejemplo, si estás en /home/usuario/proyecto y quieres hacer referencia a un archivo en el directorio padre (por ejemplo, en /home/usuario), puedes usar ../nombre_archivo.
 Estos caracteres son útiles cuando estás navegando por tu sistema de archivos en la línea de comandos o cuando estás escribiendo rutas en tu código para acceder a archivos o directorios relativos.
 
-### Enlaces a secciones de la misma página o internos:
+### Enlaces a secciones de la misma página o internos
 
 Para crear un enlace a una sección específica de la misma página, puedes utilizar el atributo href con el valor del ID de la sección a la que quieres enlazar. Por ejemplo, si tienes una sección con el ID "seccion1" y quieres enlazar a ella, puedes hacer lo siguiente:
 
@@ -613,7 +606,7 @@ Ejemplo:
 </form>
 ```
 
-3- target: Es un atributo opcional que especifica dónde se debe mostrar el resultado del procesamiento del formulario. Los valores posibles son _blank, _self, _parent, _top, o un nombre de ventana o marco.
+3- target: Es un atributo opcional que especifica dónde se debe mostrar el resultado del procesamiento del formulario. Los valores posibles son _blank,_self, _parent,_top, o un nombre de ventana o marco.
 
 Ejemplo:
 
@@ -688,8 +681,6 @@ Ejemplo:
   ...
 </form>
 ```
-
-
 
 #### Formulario Básico
 
@@ -904,7 +895,6 @@ Ejemplo:
 <input type="text" name="nombre" value="Humberto">
 ```
 
-
 #### Etiqueta de Textarea
 
 La etiqueta textarea se utiliza para crear un control de entrada de texto de varias líneas en un formulario. El contenido del control de entrada se especifica entre las etiquetas de apertura y cierre de textarea. Aquí tienes un ejemplo de cómo crear un control de entrada de texto de varias líneas:
@@ -912,7 +902,6 @@ La etiqueta textarea se utiliza para crear un control de entrada de texto de var
 ```html
 <textarea name="comentario"></textarea>
 ```
-
 
 #### Etiqueta Label
 
@@ -1042,4 +1031,3 @@ Ejemplo:
   ...
 </table>
 ```
-
