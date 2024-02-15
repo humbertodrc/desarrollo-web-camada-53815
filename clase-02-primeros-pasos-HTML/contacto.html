@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+</head>
+<body>
+  <h1>Contacto</h1>
+  <form action="enviar.php" method="post" enctype="text/plain">
+    <!-- Nombre -->
+    <label for="name">Nombre</label>
+    <input type="text" id="name">
+    <!-- Correo -->
+    <label for="email">Correo</label>
+    <input type="email" id="email">
+    <!-- Contraseña -->
+    <label for="password">Contaseña</label>
+    <input type="password" id="password">
+    <!-- Sexo -->
+    <input type="radio" id="femenino" name="genero" value="femenino">
+    <label for="femenino">Femenino</label>
+
+    <input type="radio" id="masculino" name="genero" value="masculino">
+    <label for="masculino">Masculino</label>
+    
+    <!-- Tallas -->
+    <select name="talles" id="taller">
+      <option value="">Seleccione una Talla</option>
+      <option value="s">S</option>
+      <option value="m">M</option>
+      <option value="l">L</option>
+      <option value="xl">XL</option>
+    </select>
+
+    <!-- Colores -->
+    <fieldset>
+      <legend>Colores</legend>
+      <input type="checkbox" id="rojo" name="color" value="rojo">
+      <label for="rojo">Rojo</label>
+      <input type="checkbox" id="azul" name="color" value="azul">
+      <label for="azul">Azul</label>
+      <input type="checkbox" id="verde" name="color" value="verde">
+      <label for="verde">Verde</label>
+    </fieldset>
+
+    <input type="reset" value="Reset">
+    <input type="submit" value="Enviar">
+    <input type="button" value="EnviarJS">
+  </form>
+</body>
+</html>
