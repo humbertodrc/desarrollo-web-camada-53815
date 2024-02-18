@@ -54,7 +54,7 @@ Es un dibujo rápido o bosquejo guía, que reproduce de manera muy sencilla un c
 
 Es la representación estática, en baja calidad, de un diseño. Se definen, para una mejor comprensión, los siguientes aspectos:
 
- ¿Qué? Los principales grupos de contenido.
+¿Qué? Los principales grupos de contenido.
 
 ¿Dónde? La estructura de la información.
 
@@ -77,9 +77,7 @@ Para nombrar los archivos HTML se utiliza la extensión .html, tiene que estar e
 Sintaixs básica de HTML:
 
 ```html
-<etiqueta>
-  Contenido
-</etiqueta>
+<etiqueta> Contenido </etiqueta>
 ```
 
 Casi todas las etiquetas tienen una apertura y un cierre, con excepción de algunas como `<img>` o `<br>`
@@ -97,7 +95,8 @@ Las etiquetas cerradas son aquellas que tienen un contenido que se encuentra ent
 Las etiquetas auto-cerradas son aquellas que no tienen contenido y se cierran en la misma etiqueta de apertura.
 
 ```html
-<hr> <!-- Línea horizontal -->
+<hr />
+<!-- Línea horizontal -->
 ```
 
 ### Atributos de las etiquetas
@@ -105,9 +104,7 @@ Las etiquetas auto-cerradas son aquellas que no tienen contenido y se cierran en
 Todos los elementos de HTML pueden tener atributos. Los atributos proporcionan información adicional sobre los elementos HTML.
 
 ```html
-<etiqueta atributo="valor">
-  Contenido
-</etiqueta>
+<etiqueta atributo="valor"> Contenido </etiqueta>
 ```
 
 ### Anidar etiquetas
@@ -125,13 +122,13 @@ Es importante mantener el orden dentro del codigo y tabular el contenido para un
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Titulo de la página</title>
-  </head>
-  <body>
-    <h1>Encabezado de nivel 1</h1>
-    <p>Esto es un párrafo</p>
-  </body>
+ <head>
+  <title>Titulo de la página</title>
+ </head>
+ <body>
+  <h1>Encabezado de nivel 1</h1>
+  <p>Esto es un párrafo</p>
+ </body>
 </html>
 ```
 
@@ -149,7 +146,7 @@ La estructura básica de un documento HTML se compone de la siguiente manera:
 
 ```html
 <html>
-  ...
+ ...
 </html>
 ```
 
@@ -157,7 +154,7 @@ La estructura básica de un documento HTML se compone de la siguiente manera:
 
 ```html
 <head>
-  ...
+ ...
 </head>
 ```
 
@@ -171,7 +168,7 @@ La estructura básica de un documento HTML se compone de la siguiente manera:
 
 ```html
 <body>
-  ...
+ ...
 </body>
 ```
 
@@ -195,7 +192,7 @@ Los contenedores son elementos que agrupan otros elementos.
 
 ```html
 <div>
-  <p>Esto es un párrafo</p>
+ <p>Esto es un párrafo</p>
 </div>
 ```
 
@@ -209,26 +206,26 @@ Las etiquetas semánticas son aquellas que tienen un significado.
 
 ```html
 <header>
-  <nav>
-    <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Nosotros</a></li>
-      <li><a href="#">Contacto</a></li>
-    </ul>
-  </nav>
+ <nav>
+  <ul>
+   <li><a href="#">Inicio</a></li>
+   <li><a href="#">Nosotros</a></li>
+   <li><a href="#">Contacto</a></li>
+  </ul>
+ </nav>
 </header>
 <main>
-  <article>
-    <h1>Titulo del artículo</h1>
-    <p>Contenido del artículo</p>
-  </article>
-  <aside>
-    <h2>Publicidad</h2>
-    <p>Contenido del aside</p>
-  </aside>
+ <article>
+  <h1>Titulo del artículo</h1>
+  <p>Contenido del artículo</p>
+ </article>
+ <aside>
+  <h2>Publicidad</h2>
+  <p>Contenido del aside</p>
+ </aside>
 </main>
 <footer>
-  <p>Derechos reservados</p>
+ <p>Derechos reservados</p>
 </footer>
 ```
 
@@ -237,80 +234,82 @@ Las etiquetas semánticas son aquellas que tienen un significado.
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Titulo de la página</title>
-  </head>
-  <body>
+ <head>
+  <title>Titulo de la página</title>
+ </head>
+ <body>
+  <!-- Encabezados -->
+  <h1>Encabezado de nivel 1</h1>
+  <h2>Encabezado de nivel 2</h2>
+  <h3>Encabezado de nivel 3</h3>
+  <h4>Encabezado de nivel 4</h4>
+  <h5>Encabezado de nivel 5</h5>
+  <h6>Encabezado de nivel 6</h6>
 
-    <!-- Encabezados -->
-    <h1>Encabezado de nivel 1</h1>
-    <h2>Encabezado de nivel 2</h2>
-    <h3>Encabezado de nivel 3</h3>
-    <h4>Encabezado de nivel 4</h4>
-    <h5>Encabezado de nivel 5</h5>
-    <h6>Encabezado de nivel 6</h6>
+  <p>Esto es un párrafo</p>
+  <strong>Texto en negrita</strong>
+  <em>Texto en cursiva</em>
 
-    <p>Esto es un párrafo</p>
-    <strong>Texto en negrita</strong>
-    <em>Texto en cursiva</em>
+  <!-- Etiquetas contenedores por ejemplo -->
+  <div>Contenedor de Bloque</div>
+  <span>Contenedor de Linea</span>
 
-     <!-- Etiquetas contenedores por ejemplo -->
-    <div>Contenedor de Bloque</div>
-    <span>Contenedor de Linea</span>
+  <!-- Etiquetas Semanticas -->
+  <header>Encabezado</header>
+  <nav>Menu de Navegacion</nav>
+  <main>Contenido Principal</main>
+  <article>Articulo</article>
+  <section>Seccion</section>
+  <aside>Contenido Secundario</aside>
+  <footer>Pie de Pagina</footer>
 
-    <!-- Etiquetas Semanticas -->
-    <header>Encabezado</header>
-    <nav>Menu de Navegacion</nav>
-    <main>Contenido Principal</main>
-    <article>Articulo</article>
-    <section>Seccion</section>
-    <aside>Contenido Secundario</aside>
-    <footer>Pie de Pagina</footer>
+  <a href="#">Esto es un enlace</a>
 
-    <a href="#">Esto es un enlace</a>
+  <img src="imagen.jpg" alt="Texto alternativo" />
 
-    <img src="imagen.jpg" alt="Texto alternativo">
+  <ul>
+   <li>Elemento de lista</li>
+   <li>Elemento de lista</li>
+   <li>Elemento de lista</li>
+  </ul>
+  <ol>
+   <li>Elemento de lista ordenada</li>
+   <li>Elemento de lista ordenada</li>
+   <li>Elemento de lista ordenada</li>
+  </ol>
+  <table>
+   <tr>
+    <th>Encabezado de tabla</th>
+    <th>Encabezado de tabla</th>
+   </tr>
+   <tr>
+    <td>Dato de tabla</td>
+    <td>Dato de tabla</td>
+   </tr>
+   <tr>
+    <td>Dato de tabla</td>
+    <td>Dato de tabla</td>
+   </tr>
+  </table>
 
-    <ul>
-      <li>Elemento de lista</li>
-      <li>Elemento de lista</li>
-      <li>Elemento de lista</li>
-    </ul>
-    <ol>
-      <li>Elemento de lista ordenada</li>
-      <li>Elemento de lista ordenada</li>
-      <li>Elemento de lista ordenada</li>
-    </ol>
-    <table>
-      <tr>
-        <th>Encabezado de tabla</th>
-        <th>Encabezado de tabla</th>
-      </tr>
-      <tr>
-        <td>Dato de tabla</td>
-        <td>Dato de tabla</td>
-      </tr>
-      <tr>
-        <td>Dato de tabla</td>
-        <td>Dato de tabla</td>
-      </tr>
-    </table>
-
-    <!-- Etiquetas Abiertas -->
-    <br>: para insertar un salto de línea.
-    <hr>: para insertar una línea horizontal.
-    <img>: para insertar una imagen.
-    <input>: para crear un campo de entrada de datos, como un cuadro de texto o un botón.
-    <meta>: para agregar información meta a la página, como descripción y palabras clave.
-    <link>: para vincular la página a una hoja de estilo CSS o a otro recurso externo.
-    <area>: para definir una región de un mapa de imagen.
-    <base>: para establecer la URL base para todas las URL relativas dentro de una página.
-    <col>: para definir las propiedades de estilo para una columna de una tabla.
-    <embed>: para incrustar contenido multimedia, como audio o video.
-    <param>: para establecer parámetros para un objeto multimedia en la página.
-    <source>: para especificar la fuente de un elemento multimedia.
-    
-  </body>
+  <!-- Etiquetas Abiertas -->
+  <br />: para insertar un salto de línea.
+  <hr />
+  : para insertar una línea horizontal. <img />: para insertar una imagen.
+  <input />: para crear un campo de entrada de datos, como un cuadro de texto
+  o un botón. <meta />: para agregar información meta a la página, como
+  descripción y palabras clave. <link />: para vincular la página a una hoja
+  de estilo CSS o a otro recurso externo. <area />: para definir una región de
+  un mapa de imagen. <base />: para establecer la URL base para todas las URL
+  relativas dentro de una página.
+  <col />
+  : para definir las propiedades de estilo para una columna de una tabla.
+  <embed />: para incrustar contenido multimedia, como audio o video.
+  <param />
+  : para establecer parámetros para un objeto multimedia en la página.
+  <source />
+  : para especificar la fuente de un elemento multimedia.
+ </body>
 </html>
 ```
 
@@ -331,7 +330,7 @@ Ejemplo:
 <a href="https://www.google.com">Visitar Google</a>
 ```
 
-2- target: Es un atributo opcional que especifica dónde abrir el recurso enlazado. Los valores posibles son _blank,_self, _parent,_top, o un nombre de ventana o marco.
+2- target: Es un atributo opcional que especifica dónde abrir el recurso enlazado. Los valores posibles son \_blank,\_self, \_parent,\_top, o un nombre de ventana o marco.
 
 Ejemplo:
 
@@ -388,7 +387,7 @@ En este caso, el enlace apunta a la página "otrapagina.html" que se encuentra e
 
 - ./: Este se refiere al directorio actual en el que te encuentras. Por ejemplo, si estás en el directorio /home/usuario/proyecto y quieres hacer referencia a un archivo en ese mismo directorio, puedes usar ./nombre_archivo.
 - ../: Este se refiere al directorio padre del directorio actual. Por ejemplo, si estás en /home/usuario/proyecto y quieres hacer referencia a un archivo en el directorio padre (por ejemplo, en /home/usuario), puedes usar ../nombre_archivo.
-Estos caracteres son útiles cuando estás navegando por tu sistema de archivos en la línea de comandos o cuando estás escribiendo rutas en tu código para acceder a archivos o directorios relativos.
+  Estos caracteres son útiles cuando estás navegando por tu sistema de archivos en la línea de comandos o cuando estás escribiendo rutas en tu código para acceder a archivos o directorios relativos.
 
 ### Enlaces a secciones de la misma página o internos
 
@@ -415,7 +414,7 @@ La etiqueta <img> se utiliza para insertar imágenes en un documento HTML. La et
 Ejemplo:
 
 ```html
-<img src="imagen.jpg" alt="Texto alternativo">
+<img src="imagen.jpg" alt="Texto alternativo" />
 ```
 
 2- alt: Es un atributo opcional que proporciona un texto alternativo para la imagen. Este texto se muestra si la imagen no se puede cargar o si el usuario navega con un lector de pantalla.
@@ -423,7 +422,7 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<img src="imagen.jpg" alt="Texto alternativo">
+<img src="imagen.jpg" alt="Texto alternativo" />
 ```
 
 3- width: Es un atributo opcional que especifica el ancho de la imagen en píxeles.
@@ -431,7 +430,7 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<img src="imagen.jpg" alt="Texto alternativo" width="300">
+<img src="imagen.jpg" alt="Texto alternativo" width="300" />
 ```
 
 4- height: Es un atributo opcional que especifica la altura de la imagen en píxeles.
@@ -439,7 +438,7 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<img src="imagen.jpg" alt="Texto alternativo" height="200">
+<img src="imagen.jpg" alt="Texto alternativo" height="200" />
 ```
 
 5- loading: Es un atributo opcional que especifica cómo se debe cargar la imagen. Los valores posibles son auto, eager, lazy, y otros.
@@ -447,7 +446,7 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<img src="imagen.jpg" alt="Texto alternativo" loading="lazy">
+<img src="imagen.jpg" alt="Texto alternativo" loading="lazy" />
 ```
 
 #### Favicon
@@ -457,13 +456,13 @@ El favicon es un icono que se muestra en la pestaña del navegador y en la lista
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>Titulo de la página</title>
-  </head>
-  <body>
-    ...
-  </body>
+ <head>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <title>Titulo de la página</title>
+ </head>
+ <body>
+  ...
+ </body>
 </html>
 ```
 
@@ -476,7 +475,12 @@ La etiqueta iframe se utiliza para insertar un marco en un documento HTML. Un ma
 Ejemplo:
 
 ```html
-<iframe src="pagina.html" width="300" height="200" title="Título del marco"></iframe>
+<iframe
+ src="pagina.html"
+ width="300"
+ height="200"
+ title="Título del marco"
+></iframe>
 ```
 
 2- width: Es un atributo opcional que especifica el ancho del marco en píxeles.
@@ -484,7 +488,12 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<iframe src="pagina.html" width="300" height="200" title="Título del marco"></iframe>
+<iframe
+ src="pagina.html"
+ width="300"
+ height="200"
+ title="Título del marco"
+></iframe>
 ```
 
 3- height: Es un atributo opcional que especifica la altura del marco en píxeles.
@@ -492,7 +501,12 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<iframe src="pagina.html" width="300" height="200" title="Título del marco"></iframe>
+<iframe
+ src="pagina.html"
+ width="300"
+ height="200"
+ title="Título del marco"
+></iframe>
 ```
 
 4- title: Es un atributo opcional que proporciona un título para el marco. Este texto se muestra como una información sobre herramientas cuando el usuario coloca el cursor sobre el marco.
@@ -500,7 +514,12 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<iframe src="pagina.html" width="300" height="200" title="Título del marco"></iframe>
+<iframe
+ src="pagina.html"
+ width="300"
+ height="200"
+ title="Título del marco"
+></iframe>
 ```
 
 5- loading: Es un atributo opcional que especifica cómo se debe cargar el marco. Los valores posibles son auto, eager, lazy, y otros.
@@ -508,7 +527,13 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<iframe src="pagina.html" width="300" height="200" title="Título del marco" loading="lazy"></iframe>
+<iframe
+ src="pagina.html"
+ width="300"
+ height="200"
+ title="Título del marco"
+ loading="lazy"
+></iframe>
 ```
 
 6- frameborder: Es un atributo opcional que especifica si el marco debe tener un borde. Los valores posibles son 0 y 1.
@@ -516,15 +541,27 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<iframe src="pagina.html" width="300" height="200" title="Título del marco" frameborder="0"></iframe>
+<iframe
+ src="pagina.html"
+ width="300"
+ height="200"
+ title="Título del marco"
+ frameborder="0"
+></iframe>
 ```
 
-5- allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share":  Este atributo controla qué acciones están permitidas dentro del iframe. En este caso, se permiten varias acciones relacionadas con el control de reproducción de video, la escritura en el portapapeles y el uso de sensores del dispositivo, entre otras.
+5- allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share": Este atributo controla qué acciones están permitidas dentro del iframe. En este caso, se permiten varias acciones relacionadas con el control de reproducción de video, la escritura en el portapapeles y el uso de sensores del dispositivo, entre otras.
 
 Ejemplo:
 
 ```html
-<iframe src="pagina.html" width="300" height="200" title="Título del marco" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+<iframe
+ src="pagina.html"
+ width="300"
+ height="200"
+ title="Título del marco"
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+></iframe>
 ```
 
 6- allowfullscreen: Es un atributo opcional que especifica si el marco debe permitir la visualización en pantalla completa.
@@ -532,7 +569,13 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<iframe src="pagina.html" width="300" height="200" title="Título del marco" allowfullscreen></iframe>
+<iframe
+ src="pagina.html"
+ width="300"
+ height="200"
+ title="Título del marco"
+ allowfullscreen
+></iframe>
 ```
 
 ### Listas
@@ -545,9 +588,9 @@ La etiqueta ol se utiliza para crear listas ordenadas, es decir, listas en las q
 
 ```html
 <ol>
-  <li>Elemento 1</li>
-  <li>Elemento 2</li>
-  <li>Elemento 3</li>
+ <li>Elemento 1</li>
+ <li>Elemento 2</li>
+ <li>Elemento 3</li>
 </ol>
 ```
 
@@ -557,9 +600,9 @@ La etiqueta ul se utiliza para crear listas desordenadas, es decir, listas en la
 
 ```html
 <ul>
-  <li>Elemento 1</li>
-  <li>Elemento 2</li>
-  <li>Elemento 3</li>
+ <li>Elemento 1</li>
+ <li>Elemento 2</li>
+ <li>Elemento 3</li>
 </ul>
 ```
 
@@ -569,12 +612,12 @@ La etiqueta dl se utiliza para crear listas de definición, es decir, listas en 
 
 ```html
 <dl>
-  <dt>Término 1</dt>
-  <dd>Descripción 1</dd>
-  <dt>Término 2</dt>
-  <dd>Descripción 2</dd>
-  <dt>Término 3</dt>
-  <dd>Descripción 3</dd>
+ <dt>Término 1</dt>
+ <dd>Descripción 1</dd>
+ <dt>Término 2</dt>
+ <dd>Descripción 2</dd>
+ <dt>Término 3</dt>
+ <dd>Descripción 3</dd>
 </dl>
 ```
 
@@ -591,9 +634,7 @@ La etiqueta form puede tener varios atributos opcionales que controlan el aspect
 Ejemplo:
 
 ```html
-<form action="/procesar.php">
-  ...
-</form>
+<form action="/procesar.php">...</form>
 ```
 
 2- method: Es un atributo opcional que especifica el método HTTP que se utilizará para enviar los datos del formulario. Los valores posibles son get y post.
@@ -601,38 +642,24 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<form action="/procesar.php" method="post">
-  ...
-</form>
+<form action="/procesar.php" method="post">...</form>
 ```
 
-3- target: Es un atributo opcional que especifica dónde se debe mostrar el resultado del procesamiento del formulario. Los valores posibles son _blank,_self, _parent,_top, o un nombre de ventana o marco.
+3- target: Es un atributo opcional que especifica dónde se debe mostrar el resultado del procesamiento del formulario. Los valores posibles son \_blank,\_self, \_parent,\_top, o un nombre de ventana o marco.
 
 Ejemplo:
 
-```html
-<form action="/procesar.php" method="post" target="_blank">
-  ...
-</form>
+````html
+<form action="/procesar.php" method="post" target="_blank">...</form>
 
-4- autocomplete: Es un atributo opcional que especifica si el navegador debe completar automáticamente los campos del formulario.
+4- autocomplete: Es un atributo opcional que especifica si el navegador debe
+completar automáticamente los campos del formulario. Ejemplo: ```html
+<form action="/procesar.php" method="post" autocomplete="on">...</form>
 
-Ejemplo:
-
-```html
-<form action="/procesar.php" method="post" autocomplete="on">
-  ...
-</form>
-
-5- novalidate: Es un atributo opcional que especifica que el formulario no debe ser validado antes de enviar los datos.
-
-Ejemplo:
-
-```html
-<form action="/procesar.php" method="post" novalidate>
-  ...
-</form>
-```
+5- novalidate: Es un atributo opcional que especifica que el formulario no debe
+ser validado antes de enviar los datos. Ejemplo: ```html
+<form action="/procesar.php" method="post" novalidate>...</form>
+````
 
 6- enctype: Es un atributo opcional que especifica cómo se deben codificar los datos del formulario antes de enviarlos al servidor. Los valores posibles son application/x-www-form-urlencoded, multipart/form-data, y text/plain.
 
@@ -640,7 +667,7 @@ Ejemplo:
 
 ```html
 <form action="/procesar.php" method="post" enctype="multipart/form-data">
-  ...
+ ...
 </form>
 ```
 
@@ -649,9 +676,7 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<form action="/procesar.php" method="post" accept-charset="UTF-8">
-  ...
-</form>
+<form action="/procesar.php" method="post" accept-charset="UTF-8">...</form>
 ```
 
 El atributo enctype (encodificación de tipo de contenido) se utiliza en la etiqueta form para especificar cómo se debe codificar el contenido de los datos del formulario antes de enviarlo al servidor. Aquí están los valores que puede tomar el atributo enctype y sus significados:
@@ -677,9 +702,7 @@ Es importante elegir el valor adecuado para el atributo enctype según el tipo d
 Ejemplo:
 
 ```html
-<form action="/procesar.php" method="post" name="formulario">
-  ...
-</form>
+<form action="/procesar.php" method="post" name="formulario">...</form>
 ```
 
 #### Formulario Básico
@@ -688,13 +711,13 @@ La etiqueta form se utiliza para crear un formulario en un documento HTML. El at
 
 ```html
 <form action="/procesar.php" method="post">
-  <label for="nombre">Nombre:</label>
-  <input type="text" id="nombre" name="nombre">
-  <label for="email">Correo Electrónico:</label>
-  <input type="email" id="email" name="email">
-  <label for="comentario">Comentario:</label>
-  <textarea id="comentario" name="comentario"></textarea>
-  <button type="submit">Enviar</button>
+ <label for="nombre">Nombre:</label>
+ <input type="text" id="nombre" name="nombre" />
+ <label for="email">Correo Electrónico:</label>
+ <input type="email" id="email" name="email" />
+ <label for="comentario">Comentario:</label>
+ <textarea id="comentario" name="comentario"></textarea>
+ <button type="submit">Enviar</button>
 </form>
 ```
 
@@ -707,7 +730,7 @@ La etiqueta input se utiliza para crear controles de entrada en un formulario. E
 Ejemplo:
 
 ```html
-<input type="text" name="nombre">
+<input type="text" name="nombre" />
 ```
 
 2- email: Crea un campo de texto para introducir una dirección de correo electrónico.
@@ -715,7 +738,7 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<input type="email" name="email">
+<input type="email" name="email" />
 ```
 
 3- password: Crea un campo de texto para introducir una contraseña.
@@ -723,7 +746,7 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<input type="password" name="contrasena">
+<input type="password" name="contrasena" />
 ```
 
 4- checkbox: Crea una casilla de verificación que el usuario puede marcar o desmarcar.
@@ -731,7 +754,7 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<input type="checkbox" name="suscribirse" value="1">
+<input type="checkbox" name="suscribirse" value="1" />
 ```
 
 5- radio: Crea un botón de opción que el usuario puede seleccionar.
@@ -739,8 +762,8 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<input type="radio" name="genero" value="masculino">
-<input type="radio" name="genero" value="femenino">
+<input type="radio" name="genero" value="masculino" />
+<input type="radio" name="genero" value="femenino" />
 ```
 
 6- file: Crea un control de entrada para seleccionar un archivo para cargar.
@@ -748,7 +771,7 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<input type="file" name="archivo">
+<input type="file" name="archivo" />
 ```
 
 7- submit: Crea un botón para enviar el formulario.
@@ -756,7 +779,7 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<input type="submit" value="Enviar">
+<input type="submit" value="Enviar" />
 ```
 
 8- reset: Crea un botón para restablecer el formulario a su estado inicial.
@@ -764,7 +787,7 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<input type="reset" value="Restablecer">
+<input type="reset" value="Restablecer" />
 ```
 
 9- hidden: Crea un campo de entrada oculto que no se muestra en el formulario.
@@ -772,7 +795,7 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<input type="hidden" name="id" value="123">
+<input type="hidden" name="id" value="123" />
 ```
 
 #### Atributos de entrada de datos
@@ -784,7 +807,7 @@ La etiqueta input puede tener varios atributos opcionales que controlan el aspec
 Ejemplo:
 
 ```html
-<input type="text" name="nombre" placeholder="Nombre">
+<input type="text" name="nombre" placeholder="Nombre" />
 ```
 
 2- required: Es un atributo opcional que especifica que el control de entrada es obligatorio. Si el usuario intenta enviar el formulario sin completar el control de entrada, se mostrará un mensaje de error.
@@ -792,7 +815,7 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<input type="email" name="email" required>
+<input type="email" name="email" required />
 ```
 
 3- disabled: Es un atributo opcional que especifica que el control de entrada está deshabilitado. Esto significa que el usuario no puede interactuar con el control de entrada.
@@ -800,7 +823,7 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<input type="text" name="nombre" disabled>
+<input type="text" name="nombre" disabled />
 ```
 
 4- readonly: Es un atributo opcional que especifica que el control de entrada es de solo lectura. Esto significa que el usuario puede ver el valor del control de entrada, pero no puede cambiarlo.
@@ -808,7 +831,7 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<input type="text" name="nombre" value="Humberto" readonly>
+<input type="text" name="nombre" value="Humberto" readonly />
 ```
 
 5- autofocus: Es un atributo opcional que especifica que el control de entrada debe recibir el enfoque automáticamente cuando se carga la página.
@@ -816,7 +839,7 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<input type="text" name="nombre" autofocus>
+<input type="text" name="nombre" autofocus />
 ```
 
 6- autocomplete: Es un atributo opcional que especifica si el control de entrada debe permitir que el navegador complete automáticamente el valor del control de entrada.
@@ -824,7 +847,7 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<input type="text" name="nombre" autocomplete="on">
+<input type="text" name="nombre" autocomplete="on" />
 ```
 
 7- pattern: Es un atributo opcional que especifica un patrón que debe coincidir con el valor del control de entrada. Si el valor del control de entrada no coincide con el patrón, se mostrará un mensaje de error.
@@ -832,7 +855,7 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<input type="text" name="codigo" pattern="[A-Za-z]{3}\d{3}">
+<input type="text" name="codigo" pattern="[A-Za-z]{3}\d{3}" />
 ```
 
 8- min: Es un atributo opcional que especifica el valor mínimo que se puede introducir en el control de entrada.
@@ -840,7 +863,7 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<input type="number" name="edad" min="18">
+<input type="number" name="edad" min="18" />
 ```
 
 9- max: Es un atributo opcional que especifica el valor máximo que se puede introducir en el control de entrada.
@@ -848,7 +871,7 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<input type="number" name="edad" max="100">
+<input type="number" name="edad" max="100" />
 ```
 
 10- step: Es un atributo opcional que especifica el tamaño de los pasos que se pueden introducir en el control de entrada.
@@ -856,35 +879,32 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<input type="number" name="edad" step="5">
+<input type="number" name="edad" step="5" />
 ```
 
 11- list: Es un atributo opcional que especifica el ID de un elemento datalist que proporciona una lista de opciones para el control de entrada.
 
 Ejemplo:
 
-```html
-<input type="text" name="nombre" list="nombres">
+````html
+<input type="text" name="nombre" list="nombres" />
 <datalist id="nombres">
-  <option value="Humberto">
-  <option value="Juan">
-  <option value="María">
+ <option value="Humberto"></option>
+ <option value="Juan"></option>
+ <option value="María"></option>
 </datalist>
 
-12- multiple: Es un atributo opcional que especifica que el control de entrada puede aceptar múltiples valores.
-
-Ejemplo:
-
-```html
-<input type="file" name="archivos" multiple>
-```
+12- multiple: Es un atributo opcional que especifica que el control de entrada
+puede aceptar múltiples valores. Ejemplo: ```html
+<input type="file" name="archivos" multiple />
+````
 
 13- accept: Es un atributo opcional que especifica los tipos de archivos que se pueden seleccionar en el control de entrada.
 
 Ejemplo:
 
 ```html
-<input type="file" name="archivos" accept="image/*">
+<input type="file" name="archivos" accept="image/*" />
 ```
 
 14- value: Es un atributo opcional que especifica el valor inicial del control de entrada.
@@ -892,7 +912,7 @@ Ejemplo:
 Ejemplo:
 
 ```html
-<input type="text" name="nombre" value="Humberto">
+<input type="text" name="nombre" value="Humberto" />
 ```
 
 #### Etiqueta de Textarea
@@ -909,7 +929,7 @@ La etiqueta label se utiliza para asociar un texto descriptivo con un control de
 
 ```html
 <label for="nombre">Nombre:</label>
-<input type="text" id="nombre" name="nombre">
+<input type="text" id="nombre" name="nombre" />
 ```
 
 #### Etiqueta Select
@@ -918,12 +938,12 @@ La etiqueta select se utiliza para crear un control de selección en un formular
 
 ```html
 <select name="pais">
-  <option value="ar">Argentina</option>
-  <option value="br">Brasil</option>
-  <option value="cl">Chile</option>
-  <option value="co">Colombia</option>
-  <option value="mx">México</option>
-  <option value="pe">Perú</option>
+ <option value="ar">Argentina</option>
+ <option value="br">Brasil</option>
+ <option value="cl">Chile</option>
+ <option value="co">Colombia</option>
+ <option value="mx">México</option>
+ <option value="pe">Perú</option>
 </select>
 ```
 
@@ -933,13 +953,13 @@ Las etiquetas fieldset y legend se utilizan para agrupar un conjunto de campos r
 
 ```html
 <fieldset>
-  <legend>Datos Personales</legend>
-  <label for="nombre">Nombre:</label>
-  <input type="text" id="nombre" name="nombre">
-  <label for="email">Correo Electrónico:</label>
-  <input type="email" id="email" name="email">
-  <label for="telefono">Teléfono:</label>
-  <input type="tel" id="telefono" name="telefono">
+ <legend>Datos Personales</legend>
+ <label for="nombre">Nombre:</label>
+ <input type="text" id="nombre" name="nombre" />
+ <label for="email">Correo Electrónico:</label>
+ <input type="email" id="email" name="email" />
+ <label for="telefono">Teléfono:</label>
+ <input type="tel" id="telefono" name="telefono" />
 </fieldset>
 ```
 
@@ -953,21 +973,21 @@ La etiqueta table se utiliza para crear una tabla en un documento HTML. La etiqu
 
 ```html
 <table>
-  <tr>
-    <th>Encabezado 1</th>
-    <th>Encabezado 2</th>
-    <th>Encabezado 3</th>
-  </tr>
-  <tr>
-    <td>Dato 1</td>
-    <td>Dato 2</td>
-    <td>Dato 3</td>
-  </tr>
-  <tr>
-    <td>Dato 4</td>
-    <td>Dato 5</td>
-    <td>Dato 6</td>
-  </tr>
+ <tr>
+  <th>Encabezado 1</th>
+  <th>Encabezado 2</th>
+  <th>Encabezado 3</th>
+ </tr>
+ <tr>
+  <td>Dato 1</td>
+  <td>Dato 2</td>
+  <td>Dato 3</td>
+ </tr>
+ <tr>
+  <td>Dato 4</td>
+  <td>Dato 5</td>
+  <td>Dato 6</td>
+ </tr>
 </table>
 ```
 
@@ -979,58 +999,52 @@ La etiqueta table puede tener varios atributos opcionales que controlan el aspec
 
 Ejemplo:
 
-```html
+````html
 <table border="1">
-  ...
+ ...
 </table>
 
-2- cellpadding: Es un atributo opcional que especifica el espacio entre el borde de la celda y su contenido. El valor del atributo es un número entero que representa el espacio en píxeles.
-
-Ejemplo:
-
-```html
+2- cellpadding: Es un atributo opcional que especifica el espacio entre el borde
+de la celda y su contenido. El valor del atributo es un número entero que
+representa el espacio en píxeles. Ejemplo: ```html
 <table cellpadding="10">
-  ...
+ ...
 </table>
-```
+````
 
 3- cellspacing: Es un atributo opcional que especifica el espacio entre las celdas de la tabla. El valor del atributo es un número entero que representa el espacio en píxeles.
 
 Ejemplo:
 
-```html
+````html
 <table cellspacing="5">
-  ...
+ ...
 </table>
 
-4- width: Es un atributo opcional que especifica el ancho de la tabla. El valor del atributo es un número entero que representa el ancho en píxeles.
-
-Ejemplo:
-
+4- width: Es un atributo opcional que especifica el ancho de la tabla. El valor
+del atributo es un número entero que representa el ancho en píxeles. Ejemplo:
 ```html
 <table width="300">
-  ...
+ ...
 </table>
-```
+````
 
 5- align: Es un atributo opcional que especifica la alineación horizontal de la tabla. Los valores posibles son left, center, y right.
 
 Ejemplo:
 
-```html
+````html
 <table align="center">
-  ...
+ ...
 </table>
 
-6- bgcolor: Es un atributo opcional que especifica el color de fondo de la tabla. El valor del atributo es un nombre de color o un código hexadecimal.
-
-Ejemplo:
-
-```html
+6- bgcolor: Es un atributo opcional que especifica el color de fondo de la
+tabla. El valor del atributo es un nombre de color o un código hexadecimal.
+Ejemplo: ```html
 <table bgcolor="#f0f0f0">
-  ...
+ ...
 </table>
-```
+````
 
 ## After Class 1
 
@@ -1081,9 +1095,9 @@ Debo usar siempre el atributo alt en las etiquetas de imagen?
 
 El atributo alt es un atributo opcional en las etiquetas de imagen en HTML, pero su uso es altamente recomendable. El atributo alt proporciona un texto alternativo que se muestra si la imagen no se puede cargar o si el usuario navega con un lector de pantalla. El texto alternativo es importante para la accesibilidad web, ya que permite que los usuarios con discapacidades visuales o que utilizan tecnologías de asistencia comprendan el contenido de la imagen.
 
-Debo agregar el atributo target="_blank" a todos los enlaces externos o internos?
+Debo agregar el atributo target="\_blank" a todos los enlaces externos o internos?
 
-El atributo target="_blank" se utiliza para abrir un enlace en una nueva ventana o pestaña del navegador. Si bien su uso puede ser útil en algunos casos, no es necesario agregar el atributo target="_blank" a todos los enlaces externos. Abrir enlaces en una nueva ventana o pestaña puede ser una preferencia del usuario, por lo que es recomendable permitir que el usuario decida cómo desea abrir el enlace. Además, el uso excesivo del atributo target="_blank" puede resultar molesto para los usuarios y dificultar la navegación en el sitio web.
+El atributo target="\_blank" se utiliza para abrir un enlace en una nueva ventana o pestaña del navegador. Si bien su uso puede ser útil en algunos casos, no es necesario agregar el atributo target="\_blank" a todos los enlaces externos. Abrir enlaces en una nueva ventana o pestaña puede ser una preferencia del usuario, por lo que es recomendable permitir que el usuario decida cómo desea abrir el enlace. Además, el uso excesivo del atributo target="\_blank" puede resultar molesto para los usuarios y dificultar la navegación en el sitio web.
 
 Como puedo organizar la estructura de archivos y carpetas en un proyecto web hecho con HTML y CSS?
 
@@ -1157,7 +1171,7 @@ Para crear carpetas en Visual Studio Code (VSC) y hacer anidamiento de carpetas,
 Sí, puedes modificar el tamaño de una imagen en HTML sin usar CSS utilizando los atributos width y height en la etiqueta img. Los atributos width y height permiten especificar el ancho y la altura de la imagen en píxeles, respectivamente. Aquí tienes un ejemplo de cómo modificar el tamaño de una imagen en HTML sin usar CSS:
 
 ```html
-<img src="imagen.jpg" alt="Texto alternativo" width="300" height="200">
+<img src="imagen.jpg" alt="Texto alternativo" width="300" height="200" />
 ```
 
 Debo seguir un orden especifico al agregar atributos a las etiquetas HTML?
@@ -1229,10 +1243,10 @@ Sí, puedes utilizar la etiqueta article para crear una tarjeta (card) en HTML. 
 
 ```html
 <article class="card">
-  <img src="imagen.jpg" alt="Texto alternativo">
-  <h2>Título del artículo</h2>
-  <p>Contenido del artículo</p>
-  <a href="#">Leer más</a>
+ <img src="imagen.jpg" alt="Texto alternativo" />
+ <h2>Título del artículo</h2>
+ <p>Contenido del artículo</p>
+ <a href="#">Leer más</a>
 </article>
 ```
 
@@ -1242,14 +1256,14 @@ Para crear un footer siguiendo las buenas prácticas de HTML, puedes utilizar la
 
 ```html
 <footer>
-  <nav>
-    <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Acerca de</a></li>
-      <li><a href="#">Contacto</a></li>
-    </ul>
-  </nav>
-  <p>&copy; 2022 Mi Sitio Web</p>
+ <nav>
+  <ul>
+   <li><a href="#">Inicio</a></li>
+   <li><a href="#">Acerca de</a></li>
+   <li><a href="#">Contacto</a></li>
+  </ul>
+ </nav>
+ <p>&copy; 2022 Mi Sitio Web</p>
 </footer>
 ```
 
@@ -1259,15 +1273,15 @@ Para crear un header siguiendo las buenas prácticas de HTML, puedes utilizar la
 
 ```html
 <header>
-  <h1>Nombre del Sitio Web</h1>
-  <p>Descripción del Sitio Web</p>
-  <nav>
-    <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Acerca de</a></li>
-      <li><a href="#">Contacto</a></li>
-    </ul>
-  </nav>
+ <h1>Nombre del Sitio Web</h1>
+ <p>Descripción del Sitio Web</p>
+ <nav>
+  <ul>
+   <li><a href="#">Inicio</a></li>
+   <li><a href="#">Acerca de</a></li>
+   <li><a href="#">Contacto</a></li>
+  </ul>
+ </nav>
 </header>
 ```
 
@@ -1286,7 +1300,7 @@ Sí, puedes agregar una etiqueta "a" (enlace) a una imagen en HTML. Al envolver 
 
 ```html
 <a href="pagina.html">
-  <img src="imagen.jpg" alt="Texto alternativo">
+ <img src="imagen.jpg" alt="Texto alternativo" />
 </a>
 ```
 
@@ -1311,3 +1325,615 @@ Enlace relativo:
 - Los enlaces relativos son útiles cuando se enlaza a recursos dentro del mismo sitio web o en la misma carpeta que el documento HTML.
 
 En resumen, la diferencia principal entre un enlace absoluto y un enlace relativo radica en la forma en que se especifica la URL del recurso. Los enlaces absolutos apuntan directamente a una ubicación específica en la web, mientras que los enlaces relativos se basan en la ubicación del documento HTML para determinar la ruta del recurso.
+
+## Clase 3 Incluyendo CSS en nuestro proyecto
+
+### Introducción a CSS
+
+CSS (Cascading Style Sheets) es un lenguaje de hojas de estilo utilizado para describir la presentación visual de un documento HTML. CSS se utiliza para aplicar estilos, como colores, fuentes, márgenes, tamaños, etc., a los elementos HTML y para controlar el diseño y la apariencia de una página web. Aquí tienes una descripción de algunos conceptos y características clave de CSS:
+
+- Selectores: Los selectores se utilizan para apuntar a elementos HTML específicos y aplicar estilos a esos elementos. Los selectores pueden ser etiquetas HTML, clases, IDs, atributos, etc.
+
+- Propiedades: Las propiedades se utilizan para especificar los estilos que se aplicarán a los elementos seleccionados. Las propiedades pueden controlar el color, la fuente, el tamaño, el margen, el relleno, la alineación, etc.
+
+- Valores: Los valores se utilizan para definir los estilos específicos que se aplicarán a las propiedades. Los valores pueden ser colores, tamaños, fuentes, márgenes, etc.
+
+- Reglas: Las reglas de estilo se componen de un selector, una o más propiedades y sus valores correspondientes. Las reglas de estilo se utilizan para aplicar estilos a los elementos HTML seleccionados.
+
+- Clases: Las clases se utilizan para aplicar estilos a uno o más elementos HTML. Las clases se definen en el documento CSS y se aplican a los elementos HTML utilizando el atributo class.
+
+- IDs: Los IDs se utilizan para aplicar estilos a un elemento HTML específico. Los IDs se definen en el documento CSS y se aplican a los elementos HTML utilizando el atributo id.
+
+- Herencia: La herencia en CSS permite que los estilos se apliquen a los elementos secundarios basados en los estilos de sus elementos padres.
+
+- Cascada: La cascada en CSS se refiere a la forma en que se aplican y priorizan los estilos cuando hay conflictos entre reglas de estilo.
+
+### Sintaxis de CSS
+
+La sintaxis de CSS se compone de reglas de estilo que se utilizan para aplicar estilos a los elementos HTML. Cada regla de estilo se compone de un selector, una o más propiedades y sus valores correspondientes. Aquí tienes una descripción de la sintaxis de CSS:
+
+```css
+selector {
+ propiedad: valor;
+ propiedad: valor;
+ ...;
+}
+```
+
+- Selector: El selector apunta a los elementos HTML a los que se aplicarán los estilos. Los selectores pueden ser etiquetas HTML, clases, IDs, atributos, etc.
+
+- Propiedad: La propiedad especifica el estilo que se aplicará a los elementos seleccionados. Las propiedades pueden controlar el color, la fuente, el tamaño, el margen, el relleno, la alineación, etc.
+
+- Valor: El valor define el estilo específico que se aplicará a la propiedad. Los valores pueden ser colores, tamaños, fuentes, márgenes, etc.
+
+Regla semantica de CSS
+
+- Cada declaración de estilo debe terminar con un punto y coma (;) y esta formada por una propiedad y un valor.
+- No se ve afectado por los espacios en blanco.
+- Cuando la propiedad represente un numero el valor debe ir acompañado de una unidad de medida.
+
+### Padres e hijos en CSS
+
+En CSS, los elementos HTML pueden tener una relación de padre e hijo, lo que significa que un elemento puede ser el padre de otro elemento. La relación de padre e hijo se utiliza para aplicar estilos a los elementos secundarios basados en los estilos de sus elementos padres. Aquí tienes una descripción de cómo se utiliza la relación de padre e hijo en CSS:
+
+```css
+/* Estilo aplicado a todos los párrafos dentro de un div */
+div p {
+ color: red;
+}
+```
+
+Otro ejemplo con mas de un nivel de anidamiento:
+
+```css
+/* Estilo aplicado a todos los párrafos dentro de un div dentro de un main */
+main div p {
+ color: red;
+}
+```
+
+### Agrergando CSS a un documento HTML
+
+Hay varias formas de agregar CSS a un documento HTML, incluyendo:
+
+- CSS en línea: Puedes agregar estilos CSS directamente en la etiqueta style dentro del documento HTML.
+
+- CSS interno: Puedes agregar estilos CSS dentro de la etiqueta style en la sección head del documento HTML.
+
+- CSS externo: Puedes vincular un archivo CSS externo al documento HTML utilizando la etiqueta link en la sección head del documento HTML.
+
+### CSS externo
+
+Para agregar estilos CSS externos a un documento HTML, puedes crear un archivo CSS separado y vincularlo al documento HTML utilizando la etiqueta link en la sección head. Aquí tienes un ejemplo de cómo vincular un archivo CSS externo a un documento HTML:
+
+```html
+<!DOCTYPE html>
+<html>
+ <head>
+  <link rel="stylesheet" href="estilos.css" />
+ </head>
+ <body>
+  ...
+ </body>
+</html>
+```
+
+### CSS interno
+
+Para agregar estilos CSS internos a un documento HTML, puedes utilizar la etiqueta style en la sección head del documento HTML. Aquí tienes un ejemplo de cómo agregar estilos CSS internos a un documento HTML:
+
+```html
+<!DOCTYPE html>
+<html>
+ <head>
+  <style>
+   /* Estilos CSS internos */
+   body {
+    font-family: Arial, sans-serif;
+   }
+  </style>
+ </head>
+ <body>
+  ...
+ </body>
+</html>
+```
+
+### CSS en línea
+
+Para agregar estilos CSS en línea a un elemento HTML, puedes utilizar el atributo style directamente en la etiqueta del elemento. Aquí tienes un ejemplo de cómo agregar estilos CSS en línea a un elemento HTML:
+
+```html
+<!DOCTYPE html>
+<html>
+ <head>
+  ...
+ </head>
+ <body>
+  <p style="color: red;">Este es un párrafo de texto con estilo en línea.</p>
+ </body>
+</html>
+```
+
+### Selectores de CSS
+
+Los selectores de CSS se utilizan para apuntar a elementos HTML específicos y aplicar estilos a esos elementos. Los selectores pueden ser etiquetas HTML, clases, IDs, atributos, etc. Aquí tienes una descripción de algunos tipos comunes de selectores de CSS:
+
+- Selectores de etiqueta: Los selectores de etiqueta apuntan a elementos HTML específicos, como p, h1, div, etc.
+
+Ejemplo del HTML y CSS:
+
+```html
+<!DOCTYPE html>
+<html>
+ <head> </head>
+ <body>
+  <p>Este es un párrafo de texto.</p>
+  <h1>Este es un encabezado de nivel 1.</h1>
+  <div>Este es un div.</div>
+ </body>
+</html>
+```
+
+```css
+/* Estilo aplicado a todos los párrafos */
+p {
+ color: red;
+}
+```
+
+- Selectores de clase: Los selectores de clase apuntan a elementos HTML que tienen una clase específica. Los selectores de clase se definen con un punto (.) seguido del nombre de la clase.
+
+Ejemplo del HTML y CSS:
+
+```html
+<!DOCTYPE html>
+<html>
+ <head> </head>
+ <body>
+  <p class="destacado">Este es un párrafo de texto destacado.</p>
+  <p>Este es otro párrafo de texto.</p>
+ </body>
+</html>
+```
+
+```css
+/* Estilo aplicado a todos los elementos con la clase "destacado" */
+.destacado {
+ color: red;
+}
+```
+
+- Selectores de ID: Los selectores de ID apuntan a un elemento HTML específico que tiene un ID específico. Los selectores de ID se definen con un signo de almohadilla (#) seguido del nombre del ID.
+
+Ejemplo del HTML y CSS:
+
+```html
+<!DOCTYPE html>
+<html>
+ <head> </head>
+ <body>
+  <p id="parrafo1">Este es un párrafo de texto.</p>
+  <p id="parrafo2">Este es otro párrafo de texto.</p>
+ </body>
+</html>
+```
+
+```css
+/* Estilo aplicado al elemento con el ID "parrafo1" */
+#parrafo1 {
+ color: red;
+}
+```
+
+- Selectores de atributo: Los selectores de atributo apuntan a elementos HTML que tienen un atributo específico. Los selectores de atributo se definen utilizando corchetes [] y especificando el nombre del atributo y, opcionalmente, el valor del atributo.
+
+Ejemplo del HTML y CSS:
+
+```html
+<!DOCTYPE html>
+<html>
+ <head> </head>
+ <body>
+  <a href="pagina1.html">Enlace 1</a>
+  <a href="pagina2.html">Enlace 2</a>
+ </body>
+</html>
+```
+
+```css
+/* Estilo aplicado a todos los enlaces con el atributo "href" */
+a[href] {
+ color: red;
+}
+```
+
+- Selectores de combinación: Los selectores de combinación se utilizan para apuntar a elementos HTML que cumplen con múltiples condiciones. Los selectores de combinación pueden combinar selectores de etiqueta, clases, IDs, atributos, etc.
+
+Ejemplo del HTML y CSS:
+
+```html
+<!DOCTYPE html>
+<html>
+ <head> </head>
+ <body>
+  <p class="destacado">Este es un párrafo de texto destacado.</p>
+  <p>Este es otro párrafo de texto.</p>
+ </body>
+</html>
+```
+
+```css
+/* Estilo aplicado a todos los párrafos con la clase "destacado" dentro de un div */
+div p.destacado {
+ color: red;
+}
+```
+
+### Que es un CLASS y un ID en CSS?
+
+En CSS, una clase es un identificador que se utiliza para aplicar estilos a uno o más elementos HTML. Las clases se definen en el documento CSS utilizando un punto (.) seguido del nombre de la clase, y se aplican a los elementos HTML utilizando el atributo class. Aquí tienes un ejemplo de cómo definir y aplicar una clase en CSS:
+
+```css
+/* Definición de una clase en CSS */
+.destacado {
+ color: red;
+}
+```
+
+```html
+<!-- Aplicación de una clase a un elemento HTML -->
+<p class="destacado">Este es un párrafo de texto destacado.</p>
+```
+
+Un ID es un identificador único que se utiliza para aplicar estilos a un elemento HTML específico. Los IDs se definen en el documento CSS utilizando un signo de almohadilla (#) seguido del nombre del ID, y se aplican a los elementos HTML utilizando el atributo id. Aquí tienes un ejemplo de cómo definir y aplicar un ID en CSS:
+
+```css
+/* Definición de un ID en CSS */
+#parrafo1 {
+ color: red;
+}
+```
+
+```html
+<!-- Aplicación de un ID a un elemento HTML -->
+<p id="parrafo1">Este es un párrafo de texto.</p>
+```
+
+### Que debo usar para seleccionar un elemento en CSS, un CLASS o un ID?
+
+La elección entre usar una clase o un ID para seleccionar un elemento en CSS depende de la naturaleza y el propósito del estilo que se desea aplicar. Aquí tienes algunas consideraciones para elegir entre una clase y un ID:
+
+- Clase: Debes usar una clase cuando quieras aplicar un estilo a uno o más elementos HTML que comparten características o estilos similares. Las clases son útiles para aplicar estilos a grupos de elementos relacionados y para reutilizar estilos en diferentes partes de un documento HTML.
+
+- ID: Debes usar un ID cuando quieras aplicar un estilo a un elemento HTML específico que es único en el documento. Los IDs son útiles para aplicar estilos a elementos individuales y para identificar elementos específicos en el documento HTML.
+
+Pero en general, es recomendable utilizar clases en lugar de IDs para aplicar estilos en CSS, ya que las clases son más flexibles, reutilizables y fáciles de mantener. Los IDs deben reservarse para casos en los que se necesita identificar un elemento específico en el documento HTML, como anclas de navegación, secciones de la página, etc. Se recomienda evitar el uso excesivo de IDs y en su lugar utilizar clases para aplicar estilos de manera más eficiente y escalable.
+
+### Herencia en CSS
+
+La herencia en CSS se refiere a la forma en que los estilos se aplican a los elementos secundarios basados en los estilos de sus elementos padres. Los estilos heredados se aplican automáticamente a los elementos secundarios, a menos que se anulen con estilos específicos. Aquí tienes una descripción de cómo funciona la herencia en CSS:
+
+```css
+/* Estilo aplicado a todos los párrafos */
+div {
+ color: red;
+}
+```
+
+```html
+<!DOCTYPE html>
+<html>
+ <head> </head>
+ <body>
+  <div>
+   <<p>Este es un párrafo de texto.</p>
+  </div>
+ </body>
+</html>
+```
+
+En este ejemplo, el párrafo dentro del div heredará automáticamente el color rojo del div.
+
+### Cuales propiedades de CSS se heredan?
+
+Algunas propiedades de CSS se heredan automáticamente de los elementos padres a los elementos secundarios, mientras que otras no se heredan. Aquí tienes una lista de algunas propiedades de CSS comunes que se heredan:
+
+- color
+- font-family
+- font-size
+- font-style
+- font-weight
+- line-height
+- text-align
+- text-decoration
+- text-transform
+- visibility
+
+### Como lee el navegador los estilos de CSS?
+
+Cuando un navegador lee los estilos de CSS, sigue un proceso de cascada y priorización para determinar qué estilos se aplicarán a los elementos HTML. Aquí tienes una descripción del proceso que sigue un navegador para leer los estilos de CSS:
+
+- Selección de estilos: El navegador selecciona los estilos de CSS que se aplicarán a los elementos HTML basándose en las reglas de estilo definidas en el documento CSS y en los estilos heredados.
+
+- Cascada: El navegador aplica los estilos seleccionados siguiendo las reglas de cascada de CSS, que determinan la prioridad y la especificidad de los estilos.
+
+- Especificidad: Los estilos con mayor especificidad tienen prioridad sobre los estilos con menor especificidad. La especificidad de un estilo se basa en el tipo de selector, las clases, los IDs, etc.
+
+- Importancia: Los estilos con mayor importancia tienen prioridad sobre los estilos con menor importancia. La importancia de un estilo se puede especificar utilizando la regla !important en el documento CSS.
+
+- Orden de aparición: En caso de que dos estilos tengan la misma especificidad e importancia, el estilo que aparece más tarde en el documento CSS tiene prioridad.
+
+En resumen, cuando un navegador lee los estilos de CSS, selecciona los estilos que se aplicarán a los elementos HTML, sigue las reglas de cascada y priorización de CSS, y aplica los estilos siguiendo el orden de aparición en el documento CSS.
+
+### Explicacion de la procedencia de declaraciones de CSS
+
+La procedencia de las declaraciones de CSS se refiere a la forma en que se determina qué estilos se aplicarán a los elementos HTML basándose en las reglas de estilo definidas en el documento CSS. La procedencia de las declaraciones de CSS se basa en las reglas de cascada y priorización de CSS, que determinan la prioridad y la especificidad de los estilos. Aquí tienes una descripción de la procedencia de las declaraciones de CSS:
+
+- Si son propiedades distintas, se combinan.
+
+- Si es una propiedad repetida, queda una sola.
+
+- ID pisa cualquier regla, al menos que la regla tenga !important.
+
+- Class sobrepasa a las etiquetas.
+
+- Etiquetas tiene la menor prioridad.
+
+### Estilos en linea, no recomendado
+
+Los estilos en línea no son recomendados en CSS, ya que pueden dificultar la gestión y el mantenimiento de los estilos en un documento HTML. Los estilos en línea se aplican directamente a los elementos HTML utilizando el atributo style, lo que puede dificultar la reutilización, la coherencia y la escalabilidad de los estilos. En lugar de utilizar estilos en línea, es recomendable utilizar estilos internos o externos en un documento CSS para aplicar estilos de manera más eficiente y organizada.
+
+### Importancia de los selectores en CSS o especificidad
+
+La importancia de los selectores en CSS, también conocida como especificidad, es un concepto clave que determina qué estilos se aplicarán a los elementos HTML basándose en las reglas de estilo definidas en el documento CSS. La especificidad de un selector se basa en el tipo de selector, las clases, los IDs, etc., y determina la prioridad y la importancia de los estilos. Aquí tienes una descripción de la importancia de los selectores en CSS o especificidad:
+
+- Etiquetas: Los selectores de etiqueta tienen la menor especificidad y prioridad en CSS. Los estilos aplicados a través de selectores de etiqueta se aplicarán a todos los elementos HTML del mismo tipo.
+
+- Clases: Los selectores de clase tienen mayor especificidad y prioridad que los selectores de etiqueta en CSS. Los estilos aplicados a través de clases se aplicarán a los elementos HTML que tengan la clase específica.
+
+### !important en CSS
+
+La regla !important en CSS se utiliza para especificar la importancia de un estilo y para darle prioridad sobre otros estilos. La regla !important se coloca al final de la declaración de estilo y anula cualquier estilo con menor importancia. Aquí tienes un ejemplo de cómo utilizar la regla !important en CSS:
+
+```css
+/* Estilo con !important */
+p {
+ color: red !important;
+}
+```
+
+En este ejemplo, el color rojo tiene prioridad sobre cualquier otro estilo que se aplique al párrafo.
+
+No se recomienda el uso excesivo de la regla !important en CSS, ya que puede dificultar la gestión y el mantenimiento de los estilos. Es preferible utilizar selectores específicos y evitar el uso de !important siempre que sea posible.
+
+### Primeras propiedades de CSS
+
+#### Propiedad color
+
+La propiedad color en CSS se utiliza para especificar el color del texto de un elemento HTML. La propiedad color puede tomar valores como nombres de colores, códigos hexadecimales, códigos RGB, etc. Aquí tienes un ejemplo de cómo utilizar la propiedad color en CSS:
+
+```css
+/* Estilo aplicado al color del texto */
+p {
+ color: red;
+}
+```
+
+#### Que herramientas puedo utilizar para seleccionar un color en CSS?
+
+Puedes utilizar varias herramientas para seleccionar un color en CSS, incluyendo:
+
+- Paleta de colores: Puedes utilizar una paleta de colores en línea o una herramienta de selección de colores en un editor de código para elegir un color específico.
+
+#### Estilos de Listas
+
+La propiedad list-style en CSS se utiliza para especificar el estilo de las viñetas o numeración de una lista HTML. La propiedad list-style puede tomar valores como disc, circle, square, decimal, lower-roman, upper-roman, etc. Aquí tienes un ejemplo de cómo utilizar la propiedad list-style en CSS:
+
+```css
+/* Estilo aplicado al estilo de la lista */
+ul {
+ list-style: disc;
+}
+```
+
+```css
+/* Eliminando estilo de las listas */
+ul {
+ list-style: none;
+}
+```
+
+#### Estilos de Texto
+
+La propiedad font-family en CSS se utiliza para especificar la fuente del texto de un elemento HTML. La propiedad font-family puede tomar valores como nombres de fuentes, familias genéricas de fuentes, etc. Aquí tienes un ejemplo de cómo utilizar la propiedad font-family en CSS:
+
+```css
+/* Estilo aplicado a la fuente del texto */
+p {
+ font-family: Arial, sans-serif;
+}
+```
+
+La propieda font-size en CSS se utiliza para especificar el tamaño del texto de un elemento HTML. La propiedad font-size puede tomar valores como píxeles, em, porcentajes, etc. Aquí tienes un ejemplo de cómo utilizar la propiedad font-size en CSS:
+
+```css
+/* Estilo aplicado al tamaño del texto */
+p {
+ font-size: 16px;
+}
+```
+
+La propiedad font-weight en CSS se utiliza para especificar el grosor del texto de un elemento HTML. La propiedad font-weight puede tomar valores como normal, bold, bolder, lighter, etc. Aquí tienes un ejemplo de cómo utilizar la propiedad font-weight en CSS:
+
+```css
+/* Estilo aplicado al grosor del texto */
+p {
+ font-weight: bold;
+}
+```
+
+La propiedad font-style en CSS se utiliza para especificar el estilo de la fuente del texto de un elemento HTML. La propiedad font-style puede tomar valores como normal, italic, oblique, etc. Aquí tienes un ejemplo de cómo utilizar la propiedad font-style en CSS:
+
+```css
+/* Estilo aplicado al estilo de la fuente del texto */
+p {
+ font-style: italic;
+}
+```
+
+La propiedad text-align en CSS se utiliza para especificar la alineación del texto de un elemento HTML. La propiedad text-align puede tomar valores como left, right, center, justify, etc. Aquí tienes un ejemplo de cómo utilizar la propiedad text-align en CSS:
+
+```css
+/* Estilo aplicado a la alineación del texto */
+p {
+ text-align: center;
+}
+```
+
+La propiedad text-decoration en CSS se utiliza para especificar la decoración del texto de un elemento HTML. La propiedad text-decoration puede tomar valores como none, underline, overline, line-through, etc. Aquí tienes un ejemplo de cómo utilizar la propiedad text-decoration en CSS:
+
+```css
+/* Estilo aplicado a la decoración del texto */
+p {
+ text-decoration: underline;
+}
+```
+
+#### Estilos de Fondo o background
+
+La propiedad background-color en CSS se utiliza para especificar el color de fondo de un elemento HTML. La propiedad background-color puede tomar valores como nombres de colores, códigos hexadecimales, códigos RGB, etc. Aquí tienes un ejemplo de cómo utilizar la propiedad background-color en CSS:
+
+```css
+/* Estilo aplicado al color de fondo */
+body {
+ background-color: lightgray;
+}
+```
+
+La propiedad background-image en CSS se utiliza para especificar una imagen de fondo para un elemento HTML. La propiedad background-image puede tomar valores como URLs de imágenes, gradientes, etc. Aquí tienes un ejemplo de cómo utilizar la propiedad background-image en CSS:
+
+```css
+/* Estilo aplicado a la imagen de fondo */
+body {
+ background-image: url("imagen.jpg");
+}
+```
+
+La propiedad background-repeat en CSS se utiliza para especificar cómo se repetirá una imagen de fondo en un elemento HTML. La propiedad background-repeat puede tomar valores como repeat, no-repeat, repeat-x, repeat-y, etc. Aquí tienes un ejemplo de cómo utilizar la propiedad background-repeat en CSS:
+
+```css
+/* Estilo aplicado a la repetición de la imagen de fondo */
+body {
+ background-repeat: no-repeat;
+}
+```
+
+La propiedad background-position en CSS se utiliza para especificar la posición de una imagen de fondo en un elemento HTML. La propiedad background-position puede tomar valores como top, bottom, left, right, center, etc. Aquí tienes un ejemplo de cómo utilizar la propiedad background-position en CSS:
+
+```css
+/* Estilo aplicado a la posición de la imagen de fondo */
+body {
+ background-position: center;
+}
+```
+
+La propiedad background-attachment en CSS se utiliza para especificar si una imagen de fondo se desplazará con el contenido de un elemento HTML. La propiedad background-attachment puede tomar valores como scroll, fixed, local, etc. Aquí tienes un ejemplo de cómo utilizar la propiedad background-attachment en CSS:
+
+```css
+/* Estilo aplicado a la fijación de la imagen de fondo */
+body {
+ background-attachment: fixed;
+}
+```
+
+La propiedad background-size en CSS se utiliza para especificar el tamaño de una imagen de fondo en un elemento HTML. La propiedad background-size puede tomar valores como auto, cover, contain, valores de longitud, porcentajes, etc. Aquí tienes un ejemplo de cómo utilizar la propiedad background-size en CSS:
+
+```css
+/* Estilo aplicado al tamaño de la imagen de fondo */
+body {
+ background-size: cover;
+}
+```
+
+```css
+/* Estilo aplicado al tamaño de la imagen de fondo */
+body {
+ background-size: 100px 100px;
+}
+```
+
+```css
+/* Estilo aplicado al tamaño de la imagen de fondo */
+body {
+ background-size: 50% 50%;
+}
+```
+
+### Unidades de medida en CSS
+
+#### Unidades de medida absolutas
+
+Las unidades de medida absolutas en CSS se utilizan para especificar tamaños fijos que no cambian con el tamaño de la ventana del navegador o el dispositivo. Algunas unidades de medida absolutas comunes incluyen:
+
+- px (píxeles): Una unidad de medida de píxeles que se utiliza para especificar tamaños fijos en píxeles.
+
+- in (pulgadas): Una unidad de medida de pulgadas que se utiliza para especificar tamaños fijos en pulgadas.
+
+- cm (centímetros): Una unidad de medida de centímetros que se utiliza para especificar tamaños fijos en centímetros.
+
+- mm (milímetros): Una unidad de medida de milímetros que se utiliza para especificar tamaños fijos en milímetros.
+
+- pt (puntos): Una unidad de medida de puntos que se utiliza para especificar tamaños fijos en puntos.
+
+- pc (picas): Una unidad de medida de picas que se utiliza para especificar tamaños fijos en picas.
+
+#### Unidades de medida relativas
+
+Las unidades de medida relativas en CSS se utilizan para especificar tamaños que se ajustan automáticamente en relación con el tamaño de la ventana del navegador o el dispositivo. Algunas unidades de medida relativas comunes incluyen:
+
+- em: Una unidad de medida relativa que se utiliza para especificar tamaños en relación con el tamaño de la fuente del elemento.
+
+- rem: Una unidad de medida relativa que se utiliza para especificar tamaños en relación con el tamaño de la fuente del elemento raíz (root).
+
+- % (porcentaje): Una unidad de medida relativa que se utiliza para especificar tamaños en relación con el tamaño del elemento padre.
+
+- vw (viewport width): Una unidad de medida relativa que se utiliza para especificar tamaños en relación con el ancho de la ventana del navegador.
+
+- vh (viewport height): Una unidad de medida relativa que se utiliza para especificar tamaños en relación con la altura de la ventana del navegador.
+
+### Reset CSS
+
+El reset CSS es una técnica utilizada para restablecer los estilos predeterminados de los elementos HTML a un estado consistente y predecible en todos los navegadores. El reset CSS se utiliza para eliminar los márgenes, rellenos, tamaños de fuente, estilos de lista, etc., que pueden variar entre los navegadores y los sistemas operativos. Al restablecer los estilos predeterminados, el reset CSS proporciona una base limpia y consistente para aplicar estilos personalizados en un documento HTML. Aquí tienes un ejemplo de un reset CSS básico:
+
+```css
+/* Reset CSS básico */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+```
+
+Reset mas avanzado:
+
+```css
+/* Reset CSS avanzado */
+html {
+ box-sizing: border-box;
+}
+*, *::before, *::after {
+ box-sizing: inherit;
+}
+body {
+ margin: 0;
+ font-family: Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+ font-size: inherit;
+ font-weight: inherit;
+}
+ul, ol {
+ list-style: none;
+}
+```
