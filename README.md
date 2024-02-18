@@ -1031,3 +1031,283 @@ Ejemplo:
   ...
 </table>
 ```
+
+## After Class 1
+
+Resumen de lo que vimos en el after class 1:
+
+- Nombrar los archivos
+- Arquitectura de carpetas
+- index.html
+- Etiqutas HTML
+- Etiquetas abiertas y cerradas
+- Atributos de las etiquetas
+- Anidamiento de etiquetas
+- Sintaixs de las etiquetas
+- Estructura de un documento HTML
+- Elementos de bloque y de línea
+- Etiquetas de titulo
+- Contenedores de bloque y de línea
+- HTML semántico
+- Enlaces
+- Enlaces absolutos y relativos
+- Imágenes
+- Listas
+- Tipos de listas
+
+### Algunas preguntad del after class 1
+
+¿Que seria el UTF-8? Para que se usa?
+
+El UTF-8 es un formato de codificación de caracteres que se utiliza para representar texto en la web. UTF-8 es un estándar de codificación de caracteres que permite representar la mayoría de los caracteres del mundo en una sola codificación. UTF-8 es el estándar de codificación de caracteres más utilizado en la web y es compatible con la mayoría de los navegadores y sistemas operativos.
+
+UTF-8 es crucial para la correcta representación de texto en la mayoría de las aplicaciones informáticas y en la web.Qué sucede si no se utiliza:
+
+Representación de caracteres: UTF-8 asigna un número único a cada carácter utilizado en una amplia variedad de idiomas y escrituras. Esto permite que los sistemas informáticos interpreten y muestren correctamente los caracteres, independientemente del idioma en el que estén escritos.
+
+Compatibilidad multilingüe: UTF-8 es capaz de representar caracteres de múltiples idiomas y escrituras en un solo estándar. Esto es esencial para la comunicación global en la era digital, ya que permite que las aplicaciones y sistemas informáticos funcionen correctamente para usuarios que hablan diferentes idiomas y escriben en diferentes sistemas de escritura.
+
+Prevención de errores de visualización: Si no se utiliza UTF-8 y en su lugar se emplea otro estándar de codificación de caracteres más limitado, es probable que ocurran errores de visualización al mostrar texto en idiomas que no son compatibles con ese estándar. Esto puede provocar que los caracteres se muestren incorrectamente, lo que dificulta o imposibilita la comprensión del texto.
+
+Interoperabilidad: UTF-8 es ampliamente adoptado y compatible con la mayoría de los sistemas operativos, navegadores web, bases de datos y aplicaciones. Utilizar UTF-8 garantiza una mejor interoperabilidad entre diferentes sistemas y plataformas, lo que facilita el intercambio de datos y la comunicación entre usuarios de todo el mundo.
+
+En resumen, si no se utiliza UTF-8, es probable que se produzcan errores de visualización y problemas de compatibilidad al mostrar texto en diferentes idiomas y escrituras. Esto puede dificultar la comunicación efectiva y limitar la funcionalidad de las aplicaciones y sistemas informáticos en un entorno globalizado. Por lo tanto, es altamente recomendable utilizar UTF-8 para garantizar la correcta representación y visualización del texto en todas las circunstancias.
+
+Es obligatorio el uso de UTF-8 en HTML?
+
+El uso de UTF-8 no es obligatorio en HTML, pero es altamente recomendable. UTF-8 es el estándar de codificación de caracteres más ampliamente utilizado y compatible en la web, y su uso garantiza la correcta representación y visualización del texto en una amplia variedad de idiomas y escrituras. Además, UTF-8 es compatible con la mayoría de los navegadores web, sistemas operativos y aplicaciones, lo que facilita la interoperabilidad y el intercambio de datos en un entorno globalizado.
+
+Debo usar siempre el atributo alt en las etiquetas de imagen?
+
+El atributo alt es un atributo opcional en las etiquetas de imagen en HTML, pero su uso es altamente recomendable. El atributo alt proporciona un texto alternativo que se muestra si la imagen no se puede cargar o si el usuario navega con un lector de pantalla. El texto alternativo es importante para la accesibilidad web, ya que permite que los usuarios con discapacidades visuales o que utilizan tecnologías de asistencia comprendan el contenido de la imagen.
+
+Debo agregar el atributo target="_blank" a todos los enlaces externos o internos?
+
+El atributo target="_blank" se utiliza para abrir un enlace en una nueva ventana o pestaña del navegador. Si bien su uso puede ser útil en algunos casos, no es necesario agregar el atributo target="_blank" a todos los enlaces externos. Abrir enlaces en una nueva ventana o pestaña puede ser una preferencia del usuario, por lo que es recomendable permitir que el usuario decida cómo desea abrir el enlace. Además, el uso excesivo del atributo target="_blank" puede resultar molesto para los usuarios y dificultar la navegación en el sitio web.
+
+Como puedo organizar la estructura de archivos y carpetas en un proyecto web hecho con HTML y CSS?
+
+La organización de la estructura de archivos y carpetas en un proyecto web hecho con HTML y CSS puede variar según las necesidades y preferencias del desarrollador. Sin embargo, una estructura de carpetas comúnmente utilizada para proyectos web incluye las siguientes carpetas y archivos:
+
+- Archivo "index.html": Es el archivo principal que representa la página de inicio del sitio web.
+- Carpeta "css": Contiene los archivos CSS utilizados para estilizar el sitio web.
+- Carpeta "js": Contiene los archivos JavaScript utilizados para agregar interactividad y funcionalidad al sitio web.
+- Carpeta "img": Contiene las imágenes utilizadas en el sitio web.
+- Carpeta "fonts": Contiene las fuentes utilizadas en el sitio web.
+- Carpeta "assets": Contiene otros recursos multimedia, como videos, audios, iconos, etc.
+- Carpeta "pages": Contiene archivos HTML adicionales para otras páginas del sitio web, como "about.html", "contact.html", etc.
+
+Esta estructura de carpetas y archivos proporciona una organización clara y coherente para los recursos utilizados en el proyecto web, lo que facilita la gestión y el mantenimiento del sitio web.
+
+En que caso se puede utilizar la etiqueta span?
+
+La etiqueta span se utiliza para aplicar estilos o comportamientos específicos a un fragmento de texto en un documento HTML. La etiqueta span es un elemento de línea que no tiene un significado semántico específico, pero se utiliza para envolver y aplicar estilos a partes específicas del texto. Algunos casos comunes en los que se puede utilizar la etiqueta span incluyen:
+
+En que caso se puede utilizar la etiqueta div?
+
+La etiqueta div se utiliza para crear contenedores de bloque en un documento HTML. La etiqueta div es un elemento de bloque que no tiene un significado semántico específico, pero se utiliza para agrupar y estructurar otros elementos HTML, como texto, imágenes, formularios, etc. Algunos casos comunes en los que se puede utilizar la etiqueta div incluyen:
+
+- Agrupar y estructurar elementos relacionados en una sección de la página.
+- Aplicar estilos o comportamientos específicos a un grupo de elementos.
+- Crear diseños de página utilizando CSS y flexbox o grid.
+
+Cual es la diferencia entre un elemento de bloque y un elemento de línea en HTML?
+
+En HTML, los elementos de bloque y de línea son dos tipos de elementos que se utilizan para estructurar y presentar el contenido en una página web. La diferencia principal entre los elementos de bloque y de línea radica en su comportamiento y presentación visual en el diseño de la página. Aquí tienes una descripción de las diferencias entre los elementos de bloque y de línea:
+
+Elementos de bloque:
+
+- Los elementos de bloque ocupan todo el ancho disponible en su contenedor y comienzan en una nueva línea.
+- Los elementos de bloque pueden contener otros elementos de bloque o de línea, así como otros elementos de bloque.
+
+Elementos de línea:
+
+- Los elementos de línea ocupan solo el ancho necesario para mostrar su contenido y no comienzan en una nueva línea.
+- Los elementos de línea no pueden contener otros elementos de bloque, pero pueden contener otros elementos de línea.
+
+Una herramienta que me permite saber si puedo colocar una etiqueta dentro de otra es:
+
+[text](https://caninclude.glitch.me/)
+
+Cual es el significado de las etiquetas semanticas en HTML?
+
+Las etiquetas semánticas en HTML son elementos que proporcionan un significado y estructura semántica al contenido de una página web. Las etiquetas semánticas ayudan a los motores de búsqueda, navegadores web y tecnologías de asistencia a comprender y presentar el contenido de manera más clara y significativa. Algunos ejemplos de etiquetas semánticas en HTML incluyen:
+
+- header: Representa la cabecera de una sección o de la página.
+- nav: Representa una sección de navegación.
+- main: Representa el contenido principal de la página.
+- section: Representa una sección genérica de contenido.
+- article: Representa un artículo independiente, como un blog post o una noticia.
+- aside: Representa contenido relacionado o secundario.
+- footer: Representa el pie de página de una sección o de la página.
+
+¿Como puedo crear carpetas en VSC y hacer anidamiento de carpetas?
+
+Para crear carpetas en Visual Studio Code (VSC) y hacer anidamiento de carpetas, puedes seguir estos pasos:
+
+1. Abre Visual Studio Code.
+2. Abre el explorador de archivos haciendo clic en el icono de la carpeta en la barra lateral izquierda o derecha.
+3. Haz clic con el botón derecho del ratón en el área del explorador de archivos y selecciona "New Folder" en el menú contextual o selecciona el icono 📁 "New Folder" .
+4. Escribe el nombre de la nueva carpeta y presiona Enter para crearla.
+5. Para hacer anidamiento de carpetas, haz clic con el botón derecho del ratón en la carpeta que deseas anidar y selecciona "New Folder" en el menú contextual o selecciona el icono 📁 "New Folder" .
+6. Escribe el nombre de la nueva carpeta anidada y presiona Enter para crearla.
+
+¿Puedo modificar el tamaño de una imagen sin usar CSS?
+
+Sí, puedes modificar el tamaño de una imagen en HTML sin usar CSS utilizando los atributos width y height en la etiqueta img. Los atributos width y height permiten especificar el ancho y la altura de la imagen en píxeles, respectivamente. Aquí tienes un ejemplo de cómo modificar el tamaño de una imagen en HTML sin usar CSS:
+
+```html
+<img src="imagen.jpg" alt="Texto alternativo" width="300" height="200">
+```
+
+Debo seguir un orden especifico al agregar atributos a las etiquetas HTML?
+
+No hay un orden específico obligatorio para agregar atributos a las etiquetas HTML, pero es recomendable seguir un orden coherente y consistente para mantener la legibilidad y la organización del código. Algunas prácticas comunes para agregar atributos a las etiquetas HTML incluyen:
+
+- Agrupar atributos relacionados juntos.
+- Ordenar los atributos alfabéticamente o por relevancia.
+- Mantener un formato consistente en todo el código.
+
+En general, el orden de los atributos en las etiquetas HTML no afecta el funcionamiento del código, pero seguir un orden coherente puede facilitar la lectura y el mantenimiento del código.
+
+¿Como puedo validar si tengo errores al momento de escribir HTML?
+
+Puedes validar si tienes errores al momento de escribir HTML utilizando herramientas de validación de HTML en línea o extensiones de Visual Studio Code. Algunas opciones para validar HTML incluyen:
+
+- Validadores en línea: Hay varios validadores de HTML en línea gratuitos disponibles que te permiten pegar o cargar tu código HTML y verificar si hay errores de sintaxis o problemas de estructura. Algunos ejemplos de validadores en línea incluyen el W3C Markup Validation Service y el HTML Validator de W3Schools.
+
+- Otra opción es utilizar extensiones de Visual Studio Code como la extensión "Prettier - Code formatter".
+
+- Podemos hacer una validación a mano cerrando nuestros bloques de código, con la ayuda que nos ofrece VSC.
+
+¿Puedo colocar dentro de un elemento de linea un elemento de bloque?
+
+No, no puedes colocar un elemento de bloque dentro de un elemento de línea en HTML. Los elementos de bloque ocupan todo el ancho disponible en su contenedor y comienzan en una nueva línea, mientras que los elementos de línea ocupan solo el ancho necesario para mostrar su contenido y no comienzan en una nueva línea. Por lo tanto, los elementos de bloque y de línea tienen comportamientos y restricciones diferentes en la estructura del documento HTML.
+
+¿Que contenido puedo colocar dentro de un elemento de bloque?
+
+Dentro de un elemento de bloque en HTML, puedes colocar una amplia variedad de contenido, incluyendo:
+
+- Otros elementos de bloque.
+- Elementos de línea.
+- Texto.
+- Imágenes.
+- Formularios.
+- Tablas.
+- Listas.
+- Contenido multimedia, como videos y audios.
+- Contenido estructural, como encabezados, secciones, artículos, etc.
+
+¿Que elementos van dentro del body de un documento HTML?
+
+Dentro del elemento body de un documento HTML, puedes colocar una amplia variedad de elementos y contenido, incluyendo:
+
+- Encabezados y títulos.
+- Secciones y artículos.
+- Listas.
+- Tablas.
+- Formularios.
+- Imágenes.
+- Contenido multimedia, como videos y audios.
+- Enlaces.
+- Texto y párrafos.
+- Contenido estructural, como encabezados, secciones, artículos, etc.
+
+¿Que elementos van dentro del head de un documento HTML?
+
+Dentro del elemento head de un documento HTML, puedes colocar una variedad de elementos y contenido relacionado con la configuración y metadatos del documento, incluyendo:
+
+- El elemento title, que especifica el título del documento.
+- Elementos meta, que proporcionan metadatos sobre el documento, como la codificación de caracteres, la descripción, las palabras clave, etc.
+- Elementos link, que vinculan el documento con hojas de estilo externas, fuentes, iconos, etc.
+- Elementos script, que vinculan el documento con scripts externos, como JavaScript.
+- Elementos style, que contienen estilos CSS en línea para el documento.
+
+¿En caso puedo utilizar una etiqueta article, se puede utilizar para crear una card?
+
+Sí, puedes utilizar la etiqueta article para crear una tarjeta (card) en HTML. La etiqueta article se utiliza para representar un artículo independiente, como un blog post, una noticia, una publicación en redes sociales, etc. Las tarjetas son un componente común en el diseño de interfaces de usuario y se utilizan para mostrar contenido de manera visualmente atractiva y estructurada. Aquí tienes un ejemplo de cómo utilizar la etiqueta article para crear una tarjeta en HTML:
+
+```html
+<article class="card">
+  <img src="imagen.jpg" alt="Texto alternativo">
+  <h2>Título del artículo</h2>
+  <p>Contenido del artículo</p>
+  <a href="#">Leer más</a>
+</article>
+```
+
+¿Como puedo crear un footer siguiento las buenas practicas de HTML?
+
+Para crear un footer siguiendo las buenas prácticas de HTML, puedes utilizar la etiqueta footer para representar el pie de página de una sección o de la página. Dentro de la etiqueta footer, puedes colocar contenido relacionado con la navegación, información de contacto, enlaces a redes sociales, créditos, etc. Aquí tienes un ejemplo de cómo crear un footer siguiendo las buenas prácticas de HTML:
+
+```html
+<footer>
+  <nav>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Acerca de</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+  <p>&copy; 2022 Mi Sitio Web</p>
+</footer>
+```
+
+¿Como puedo crear un header siguiendo las buenas practicas de HTML?
+
+Para crear un header siguiendo las buenas prácticas de HTML, puedes utilizar la etiqueta header para representar la cabecera de una sección o de la página. Dentro de la etiqueta header, puedes colocar contenido relacionado con la navegación, el logotipo, el título, la descripción, etc. Aquí tienes un ejemplo de cómo crear un header siguiendo las buenas prácticas de HTML:
+
+```html
+<header>
+  <h1>Nombre del Sitio Web</h1>
+  <p>Descripción del Sitio Web</p>
+  <nav>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Acerca de</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+```
+
+¿Que son los comentarios en HTML y como puedo agregarlos?
+
+Los comentarios en HTML son fragmentos de texto que se utilizan para documentar y explicar el código HTML. Los comentarios no se muestran en la página web, pero son útiles para proporcionar información adicional sobre el código, como notas, explicaciones, recordatorios, etc. Los comentarios en HTML se crean utilizando la sintaxis <!-- comentario -->. Aquí tienes un ejemplo de cómo agregar comentarios en HTML:
+
+```html
+<!-- Este es un comentario en HTML -->
+<p>Este es un párrafo de texto.</p>
+```
+
+¿Puedo agregar una etiqueta "a" a una imagen?
+
+Sí, puedes agregar una etiqueta "a" (enlace) a una imagen en HTML. Al envolver una imagen con una etiqueta "a", puedes hacer que la imagen sea clicle y enlace a otra página web, un archivo, una sección de la página, etc. Aquí tienes un ejemplo de cómo agregar una etiqueta "a" a una imagen en HTML:
+
+```html
+<a href="pagina.html">
+  <img src="imagen.jpg" alt="Texto alternativo">
+</a>
+```
+
+¿Cual es la diferencia entre un enlace absoluto y un enlace relativo?
+
+La diferencia entre un enlace absoluto y un enlace relativo radica en la forma en que se especifica la URL del recurso al que se enlaza. Aquí tienes una descripción de las diferencias entre los enlaces absolutos y relativos:
+
+Enlace absoluto:
+
+- Un enlace absoluto especifica la URL completa del recurso, incluyendo el protocolo (http:// o https://), el nombre de dominio (www.ejemplo.com), la ruta del recurso (/ruta/archivo.html), y cualquier parámetro adicional.
+
+- Los enlaces absolutos comienzan con el protocolo y el nombre de dominio, lo que significa que apuntan directamente a una ubicación específica en la web.
+
+- Los enlaces absolutos son útiles cuando se enlaza a recursos externos o a ubicaciones específicas en un sitio web.
+
+Enlace relativo:
+
+- Un enlace relativo especifica la ruta del recurso en relación con la ubicación actual del documento HTML.
+
+- Los enlaces relativos no incluyen el protocolo ni el nombre de dominio, sino que se basan en la ubicación del documento HTML para determinar la ruta del recurso.
+
+- Los enlaces relativos son útiles cuando se enlaza a recursos dentro del mismo sitio web o en la misma carpeta que el documento HTML.
+
+En resumen, la diferencia principal entre un enlace absoluto y un enlace relativo radica en la forma en que se especifica la URL del recurso. Los enlaces absolutos apuntan directamente a una ubicación específica en la web, mientras que los enlaces relativos se basan en la ubicación del documento HTML para determinar la ruta del recurso.
