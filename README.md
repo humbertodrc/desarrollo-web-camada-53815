@@ -44,6 +44,13 @@ CSS Peek: Permite visualizar el código CSS de manera rápida.
 indent-rainbow: Permite visualizar los espacios en blanco de manera más clara.
 <https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow>
 
+## Menú de Navegación
+
+- [Clase 1 Prototipado y conceptos básicos de HTML](#clase-1-prototipado-y-conceptos-básicos-de-html)
+- [Clase 2 Primeros paso con HTML](#clase-2-primeros-paso-con-html)
+- [After Class 1](#after-class-1)
+- [Clase 3 Incluyendo CSS en nuestro proyecto](#clase-3-incluyendo-css-en-nuestro-proyecto)
+
 ## Clase 1 Prototipado y conceptos básicos de HTML
 
 ### SKETCH
@@ -1310,7 +1317,7 @@ La diferencia entre un enlace absoluto y un enlace relativo radica en la forma e
 
 Enlace absoluto:
 
-- Un enlace absoluto especifica la URL completa del recurso, incluyendo el protocolo (http:// o https://), el nombre de dominio (www.ejemplo.com), la ruta del recurso (/ruta/archivo.html), y cualquier parámetro adicional.
+- Un enlace absoluto especifica la URL completa del recurso, incluyendo el protocolo (http:// o https://), el nombre de dominio (<www.ejemplo.com>), la ruta del recurso (/ruta/archivo.html), y cualquier parámetro adicional.
 
 - Los enlaces absolutos comienzan con el protocolo y el nombre de dominio, lo que significa que apuntan directamente a una ubicación específica en la web.
 
