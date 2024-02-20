@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+#parrafo{
+  color: red;
+}
+
+/* p {
+	color: red;
+  padding: 10px;
+}
+
+#primer-titulo{
+  color: blue;
+}
+
+.textos{
+  color: green;
+}
+
+.textos.primero{
+  background: yellow;
+  color: black;
+} */
+
+/* article{
+  color: slateblue;
+  text-decoration: underline;
+  font-size: 30px;
+} */
+
+
+/* Contact */
+.contact{
+  background-image: url(./images/playa.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.contact p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 100%;
+  font-weight: 400;
+  font-style: normal;
+  text-align: right;
+}
+
+.contact h1{
+  text-align: center;
+}
+
+ul li{
+  list-style: square;
+}
+
+ol li{
+  list-style: lower-latin;
+}
+
+/* Este es un cometarios */
