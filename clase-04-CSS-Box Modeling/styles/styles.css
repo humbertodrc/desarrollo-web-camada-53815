@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Anta;
+  src: url(../assets/fonts/Anta-Regular.ttf);
+}
+
+body{
+  background-color: #dadcd4;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: Anta;
+}
+
+header{
+  width: 100%;
+  background-color: #88b2cf;
+  position: sticky;
+  top: 0;
+  padding: 20px 0;
+}
+
+nav ul{
+  list-style: none;
+  position: relative;
+  right: 0;
+  bottom: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.hero{
+  background-image: url(../assets/images/hero-playa.jpg);
+  height: 700px;
+  background-position: bottom;
+  background-size: cover;
+  padding: 50px;
+}
+
+.hero div{
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 30px;
+  margin-top: 200px;
+}
+
+.sobre-nosotros, .servicios{
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.sobre-nosotros-textos{
+  display: inline-block;
+  width: 750px;
+  padding-right: 50px;
+  vertical-align: top;
+}
+
+.servicios-tarjetas{
+  width: 100%;
+}
+
+.servicios-tarjetas article{
+  width: 250px;
+  background-color: #88b2cf;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.servicios-tarjetas article img{
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.servicios-tarjetas article .body{
+  padding: 20px;
+}
