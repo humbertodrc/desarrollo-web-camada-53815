@@ -50,6 +50,7 @@ indent-rainbow: Permite visualizar los espacios en blanco de manera más clara.
 - [Clase 2 Primeros paso con HTML](#clase-2-primeros-paso-con-html)
 - [After Class 1](#after-class-1)
 - [Clase 3 Incluyendo CSS en nuestro proyecto](#clase-3-incluyendo-css-en-nuestro-proyecto)
+- [Clase 4 CSS + Box Model](#clase-4-css--box-model)
 
 ## Clase 1 Prototipado y conceptos básicos de HTML
 
@@ -1944,3 +1945,288 @@ ul, ol {
  list-style: none;
 }
 ```
+
+## Clase 4 CSS + Box Model
+
+### Box Model en CSS
+
+El Box Model es un concepto fundamental en CSS que describe cómo se representan y se organizan los elementos HTML en una página web. El Box Model se compone de cuatro partes principales: el contenido, el relleno, el borde y el margen. Aquí tienes una descripción de cada parte del Box Model:
+
+- Contenido: El contenido de un elemento HTML, como texto, imágenes, etc.
+
+- Relleno: El espacio entre el contenido y el borde de un elemento HTML.
+
+- Borde: El borde de un elemento HTML que rodea el contenido y el relleno.
+
+- Margen: El espacio entre el borde de un elemento HTML y los elementos adyacentes.
+
+### Width y Height en CSS
+
+La propiedad width en CSS se utiliza para especificar el ancho de un elemento HTML. La propiedad width puede tomar valores como píxeles, porcentajes, em, rem, etc. Aquí tienes un ejemplo de cómo utilizar la propiedad width en CSS:
+
+```css
+/* Estilo aplicado al ancho del elemento */
+div {
+ width: 200px;
+}
+```
+
+La propiedad height en CSS se utiliza para especificar la altura de un elemento HTML. La propiedad height puede tomar valores como píxeles, porcentajes, em, rem, etc. Aquí tienes un ejemplo de cómo utilizar la propiedad height en CSS:
+
+```css
+/* Estilo aplicado a la altura del elemento */
+div {
+ height: 100px;
+}
+```
+
+### Overflow en CSS
+
+La propiedad overflow en CSS se utiliza para especificar cómo se manejará el contenido que desborda los límites de un elemento HTML. La propiedad overflow puede tomar valores como visible, hidden, scroll, auto, etc. Aquí tienes un ejemplo de cómo utilizar la propiedad overflow en CSS:
+
+```css
+/* Estilo aplicado al desbordamiento del contenido */
+div {
+ overflow: visible;
+}
+```
+
+```css
+/* Estilo aplicado al desbordamiento del contenido */
+div {
+ overflow: hidden;
+}
+```
+
+```css
+/* Estilo aplicado al desbordamiento del contenido */
+div {
+ overflow: scroll;
+}
+```
+
+```css
+/* Estilo aplicado al desbordamiento del contenido */
+div {
+ overflow: auto;
+}
+```
+
+### Margin en CSS
+
+La propiedad margin en CSS se utiliza para especificar el margen de un elemento HTML. La propiedad margin puede tomar valores como píxeles, porcentajes, em, rem, auto, etc. Aquí tienes un ejemplo de cómo utilizar la propiedad margin en CSS:
+
+```css
+/* Esto le aplica un margen a todo el div */
+div {
+ margin: 10px;
+}
+```
+
+```css
+/* Esto le aplica un margen arribe y abajo de 10px y a los lados de 20px */
+div {
+ margin: 10px 20px;
+}
+```
+
+```css
+/* Esto le aplica un margen arriba de 10px, a la derecha de 20px, abajo de 30px y a la izquierda de 40px */
+div {
+ margin: 10px 20px 30px 40px;
+}
+```
+
+```css
+/* Esto le aplica solo un margen a los lados de 30px y no le aplica arriba y abajo */
+div {
+ margin: 0 30px;
+}
+```
+
+### Padding en CSS
+
+La propiedad padding en CSS se utiliza para especificar el relleno de un elemento HTML. La propiedad padding puede tomar valores como píxeles, porcentajes, em, rem, etc. Aquí tienes un ejemplo de cómo utilizar la propiedad padding en CSS:
+
+```css
+/* Esto le aplica un relleno a todo el div */
+div {
+ padding: 10px;
+}
+```
+
+```css
+/* Esto le aplica un relleno arribe y abajo de 10px y a los lados de 20px */
+div {
+ padding: 10px 20px;
+}
+```
+
+```css
+/* Esto le aplica un relleno arriba de 10px, a la derecha de 20px, abajo de 30px y a la izquierda de 40px */
+div {
+ padding: 10px 20px 30px 40px;
+}
+```
+
+```css
+/* Esto le aplica solo un relleno a los lados de 30px y no le aplica arriba y abajo */
+div {
+ padding: 0 30px;
+}
+```
+
+### Border en CSS
+
+La propiedad border en CSS se utiliza para especificar el borde de un elemento HTML. La propiedad border puede tomar valores como ancho, estilo y color. Aquí tienes un ejemplo de cómo utilizar la propiedad border en CSS:
+
+```css
+/* Esto le aplica un borde a todo el div */
+div {
+ border: 1px solid black;
+}
+```
+
+```css
+/* Esto le aplica un borde arriba y abajo de 1px y a los lados de 2px */
+div {
+ border: 1px 2px;
+}
+```
+
+```css
+/* Esto le aplica un borde arriba de 1px, a la derecha de 2px, abajo de 3px y a la izquierda de 4px */
+div {
+ border: 1px 2px 3px 4px;
+}
+```
+
+```css
+/* Esto le aplica solo un borde a los lados de 3px y no le aplica arriba y abajo */
+div {
+ border: 0 3px;
+}
+```
+
+Estilos de borde:
+
+- solid: Un borde sólido.
+- dotted: Un borde punteado.
+- dashed: Un borde discontinuo.
+- double: Un borde doble.
+
+### Display en CSS
+
+La propiedad display en CSS se utiliza para especificar cómo se mostrará un elemento HTML en la página web. La propiedad display puede tomar valores como block, inline, inline-block, none, etc. Aquí tienes un ejemplo de cómo utilizar la propiedad display en CSS:
+
+```css
+/* Esto le aplica un display de bloque al div */
+div {
+ display: block;
+}
+```
+
+```css
+/* Esto le aplica un display en línea al div */
+div {
+ display: inline;
+}
+```
+
+```css
+/* Esto le aplica un display en línea con bloque al div */
+div {
+ display: inline-block;
+}
+```
+
+```css
+/* Esto le aplica un display de ninguno al div */
+div {
+ display: none;
+}
+```
+
+Tipos de elementos:
+
+- block: Un elemento de bloque que ocupa todo el ancho disponible y comienza en una nueva línea.
+
+- inline: Un elemento en línea que ocupa solo el ancho necesario y no comienza en una nueva línea.
+
+- inline-block: nos permite tomar lo mejor de ambos mundos. Un elemento en línea que puede tener un ancho y alto.
+
+### Ocultar elementos en CSS
+
+La propiedad display en CSS se utiliza para ocultar elementos HTML en la página web. La propiedad display puede tomar el valor none para ocultar un elemento. Aquí tienes un ejemplo de cómo ocultar un elemento en CSS:
+
+```css
+/* Esto le aplica un display de ninguno al div */
+div {
+ display: none;
+}
+```
+
+### Position en CSS
+
+La propiedad position en CSS se utiliza para especificar el método de posicionamiento de un elemento HTML en la página web. La propiedad position puede tomar valores como static, relative, absolute, fixed, sticky, etc. Aquí tienes un ejemplo de cómo utilizar la propiedad position en CSS:
+
+```css
+/* Esto le aplica un position estático al div */
+div {
+ position: static;
+}
+```
+
+```css
+/* Esto le aplica un position relativo al div */
+div {
+ position: relative;
+}
+```
+
+```css
+/* Esto le aplica un position absoluto al div */
+div {
+ position: absolute;
+}
+```
+
+```css
+/* Esto le aplica un position fijo al div */
+div {
+ position: fixed;
+}
+```
+
+```css
+/* Esto le aplica un position pegajoso al div */
+div {
+ position: sticky;
+}
+```
+
+### Valores de la propiedad position en CSS
+
+- static: El elemento se coloca en el flujo normal del documento.
+- relative: El elemento se coloca en relación con su posición original.
+- absolute: El elemento se coloca en relación con su elemento padre más cercano.
+- fixed: El elemento se coloca en relación con la ventana del navegador.
+- sticky: El elemento se coloca en relación con el desplazamiento del documento.
+
+Le podemos pasar valores de top, right, bottom y left para especificar la posición del elemento.
+
+### Propiedad z-index en CSS
+
+La propiedad z-index en CSS se utiliza para especificar el orden de apilamiento de los elementos HTML en la página web. La propiedad z-index puede tomar valores enteros positivos y negativos para determinar el orden de apilamiento de los elementos. Aquí tienes un ejemplo de cómo utilizar la propiedad z-index en CSS:
+
+```css
+/* Esto le aplica un z-index de 1 al div */
+div {
+ z-index: 1;
+}
+```
+
+Caso de uso:
+
+- Si tienes dos elementos superpuestos, puedes utilizar z-index para especificar cuál elemento debe estar encima del otro.
+
