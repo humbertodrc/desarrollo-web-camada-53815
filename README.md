@@ -51,6 +51,7 @@ indent-rainbow: Permite visualizar los espacios en blanco de manera más clara.
 - [After Class 1](#after-class-1)
 - [Clase 3 Incluyendo CSS en nuestro proyecto](#clase-3-incluyendo-css-en-nuestro-proyecto)
 - [Clase 4 CSS + Box Model](#clase-4-css--box-model)
+- [Primera Entrega](#primera-pre-entrega)
 
 ## Clase 1 Prototipado y conceptos básicos de HTML
 
@@ -2230,3 +2231,29 @@ Caso de uso:
 
 - Si tienes dos elementos superpuestos, puedes utilizar z-index para especificar cuál elemento debe estar encima del otro.
 
+## Primera pre-entrega
+
+## Prototipo de la Web (Formato: PDF o Imagen)
+
+- Objetivo: Mostrar una representación visual de cómo lucirá el sitio web cuando esté completamente funcional.
+  Ejemplo: Utilizar herramientas como Balsamiq para crear un diseño estático que ilustre la disposición de los elementos en la página, como el encabezado, el pie de página, la barra de navegación, etc. Si quieren usar figma o adobe XD también es valido pero no es necesario ya que son programas mas complejos.
+
+## Estructura Inicial de la Web en HTML (Formato: Archivos HTML)
+
+- Objetivo: Convertir el diseño estático del prototipo en una estructura HTML básica.
+- Incluye:
+
+1. Etiquetas Semánticas: Utilizar etiquetas HTML5 semánticas como \<header\>, \<nav\>, \<main\>, \<section\>, \<article\>, \<footer\>, etc., para estructurar el contenido de manera significativa.
+   Ejemplo: \<header\>, \<nav\>, \<footer\>.
+2. Contenido: Insertar contenido real utilizando etiquetas HTML apropiadas como \<img\>, \<p\>, \<h1\>, \<h2\>, etc., para denotar dónde estarán los elementos como imágenes, párrafos y títulos.
+   Ejemplo: \<img src="imagen.jpg" alt="Descripción de la imagen"\>, \<p\>Texto del párrafo.\</p\>, \<h1\>Título principal\</h1\>.
+3. Páginas: Incluir las secciones del sitio web ya maquetadas con la estructura propia de cada página.
+   Ejemplo: Crear archivos HTML separados para cada página del sitio, como index.html, acerca.html, contacto.html, etc.
+4. Enlaces: Agregar enlaces entre las páginas del sitio web.
+   Ejemplo: \<a href="contacto.html"\>Contacto\</a\>.
+5. Agrear estilos CSS: Agregar estilos CSS para darle formato a la estructura HTML.se deben usar las propiedades de CSS que hemos visto en clase modificar textos, encabezados, img, colores, background y box modeling. Puede ser un estilo basico, no es necesario que sea muy elaborado.
+   Ejemplo: \<link rel="stylesheet" href="styles.css"\>.
+6. Realizar la correcta anidación de las etiquetas HTML para que la estructura sea clara y entendible.
+7. Sintaxis: Utilizar una sintaxis limpia y clara, con sangrías y retornos de carro adecuados.
+8. Indentación: Utilizar sangrías para mostrar la jerarquía y anidación de las etiquetas HTML.
+9. Estrucura: Crear una estructura de carpetas y archivos clara y organizada.
