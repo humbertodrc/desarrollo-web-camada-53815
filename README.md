@@ -52,6 +52,7 @@ indent-rainbow: Permite visualizar los espacios en blanco de manera más clara.
 - [Clase 3 Incluyendo CSS en nuestro proyecto](#clase-3-incluyendo-css-en-nuestro-proyecto)
 - [Clase 4 CSS + Box Model](#clase-4-css--box-model)
 - [Primera Entrega](#primera-pre-entrega)
+- [Clase 5 Flexbox](#clase-5-flexbox)
 
 ## Clase 1 Prototipado y conceptos básicos de HTML
 
@@ -2257,3 +2258,348 @@ Caso de uso:
 7. Sintaxis: Utilizar una sintaxis limpia y clara, con sangrías y retornos de carro adecuados.
 8. Indentación: Utilizar sangrías para mostrar la jerarquía y anidación de las etiquetas HTML.
 9. Estrucura: Crear una estructura de carpetas y archivos clara y organizada.
+
+## Clase 5 Flexbox
+
+### Flexbox en CSS
+
+Flexbox es un modelo de diseño en CSS que permite crear diseños flexibles y eficientes para elementos HTML. Flexbox se basa en un sistema de cajas flexibles que se pueden organizar y alinear de manera dinámica, lo que facilita la creación de diseños complejos y responsivos. Aquí tienes una descripción de los conceptos clave de Flexbox:
+
+- Contenedor Flex: Un contenedor flex es un elemento HTML que contiene elementos flexibles y se configura con la propiedad display: flex en CSS.
+
+- Elementos Flex: Los elementos flex son los hijos de un contenedor flex y se configuran con la propiedad flex: 1 en CSS.
+
+- Eje Principal: El eje principal es la dirección principal en la que se alinean los elementos flex dentro de un contenedor flex. El eje principal se configura con la propiedad flex-direction en CSS.
+
+### Beneficios de Flexbox
+
+- Diseño flexible: Flexbox permite crear diseños flexibles y adaptables que se ajustan automáticamente al tamaño de la ventana del navegador o el dispositivo.
+
+- Alineación dinámica: Flexbox permite alinear y distribuir elementos flexibles de manera dinámica y eficiente, lo que facilita la creación de diseños complejos y responsivos.
+
+- Ordenamiento: Flexbox permite cambiar el orden de los elementos flexibles de manera dinámica, lo que facilita la creación de diseños personalizados y adaptables.
+
+### Propiedades de Flexbox
+
+- display: Esta propiedad determina si un contenedor es un contenedor flexible o un bloque regular.
+
+Ejemplo:
+
+```css
+/* Estilo aplicado al contenedor flex */
+.container {
+ display: flex;
+}
+```
+
+- flex-direction: Controla la dirección en la que se colocan los elementos flexibles dentro de su contenedor.
+
+Ejemplo de valores:
+
+```css
+/* Estilo aplicado al contenedor flex */
+.container {
+ display: flex;
+ flex-direction: row;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor flex */
+.container {
+ display: flex;
+ flex-direction: row-reverse;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor flex */
+.container {
+ display: flex;
+ flex-direction: column;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor flex */
+.container {
+ display: flex;
+ flex-direction: column-reverse;
+}
+```
+
+- flex-wrap: Controla si los elementos flexibles se envuelven en múltiples líneas o no.
+
+Ejemplo de valores:
+
+```css
+/* Estilo aplicado al contenedor flex */
+.container {
+ display: flex;
+ flex-wrap: nowrap;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor flex */
+.container {
+ display: flex;
+ flex-wrap: wrap;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor flex */
+.container {
+ display: flex;
+ flex-wrap: wrap-reverse;
+}
+```
+
+- flex-flow: Es una propiedad abreviada que combina flex-direction y flex-wrap en una sola declaración.
+
+Ejemplo:
+
+```css
+/* Estilo aplicado al contenedor flex */
+.container {
+ display: flex;
+ flex-flow: row wrap;
+}
+```
+
+- justify-content: Controla la alineación de los elementos flexibles a lo largo del eje principal del contenedor.
+
+Ejemplo de valores:
+
+```css
+/* Estilo aplicado al contenedor flex */
+.container {
+ display: flex;
+ justify-content: flex-start;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor flex */
+.container {
+ display: flex;
+ justify-content: flex-end;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor flex */
+.container {
+ display: flex;
+ justify-content: center;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor flex */
+.container {
+ display: flex;
+ justify-content: space-between;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor flex */
+.container {
+ display: flex;
+ justify-content: space-around;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor flex */
+.container {
+ display: flex;
+ justify-content: space-evenly;
+}
+```
+
+- align-items: Controla la alineación de los elementos flexibles a lo largo del eje transversal del contenedor.
+
+Ejemplo de valores:
+
+```css
+/* Estilo aplicado al contenedor flex */
+.container {
+ display: flex;
+ align-items: stretch;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor flex */
+.container {
+ display: flex;
+ align-items: flex-start;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor flex */
+.container {
+ display: flex;
+ align-items: flex-end;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor flex */
+.container {
+ display: flex;
+ align-items: center;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor flex */
+.container {
+ display: flex;
+ align-items: baseline;
+}
+```
+
+- align-content: Solo se aplica si hay varias líneas de elementos flexibles dentro del contenedor. Controla la alineación de esas líneas en el eje transversal.
+
+Ejemplo de valores:
+
+```css
+/* Estilo aplicado al contenedor flex */
+.container {
+ display: flex;
+ align-content: stretch;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor flex */
+.container {
+ display: flex;
+ align-content: flex-start;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor flex */
+.container {
+ display: flex;
+ align-content: flex-end;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor flex */
+.container {
+ display: flex;
+ align-content: center;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor flex */
+.container {
+ display: flex;
+ align-content: space-between;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor flex */
+.container {
+ display: flex;
+ align-content: space-around;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor flex */
+.container {
+ display: flex;
+ align-content: space-evenly;
+}
+```
+
+### Ejemplo de Flexbox
+
+```css
+/* Estilo aplicado al contenedor flex */
+.container {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+}
+```
+
+```css
+/* Estilo aplicado a los elementos flex */
+.item {
+ flex: 1;
+ align-self: center;
+ order: 2;
+}
+```
+
+### Resumen de cada propiedad de Flexbox
+
+### Propiedades de Flexbox en CSS
+
+1. **`display`**: Esta propiedad determina si un contenedor es un contenedor flexible o un bloque regular.
+   - `flex`: Establece el contenedor como un contenedor flexible.
+   - `inline-flex`: Establece el contenedor como un contenedor flexible en línea.
+
+2. **`flex-direction`**: Controla la dirección en la que se colocan los elementos flexibles dentro de su contenedor.
+   - `row`: Los elementos son colocados en la misma dirección que el texto.
+   - `row-reverse`: Los elementos son colocados en la dirección opuesta a la del texto.
+   - `column`: Los elementos son colocados de arriba a abajo.
+   - `column-reverse`: Los elementos son colocados de abajo a arriba.
+
+3. **`flex-wrap`**: Controla si los elementos flexibles se envuelven en múltiples líneas o no.
+   - `nowrap`: Los elementos se ajustan en una sola línea.
+   - `wrap`: Los elementos se envuelven en múltiples líneas si es necesario.
+   - `wrap-reverse`: Los elementos se envuelven en múltiples líneas en dirección opuesta.
+
+4. **`flex-flow`**: Es una propiedad abreviada que combina `flex-direction` y `flex-wrap` en una sola declaración.
+
+5. **`justify-content`**: Controla la alineación de los elementos flexibles a lo largo del eje principal del contenedor.
+   - `flex-start`: Los elementos se alinean al principio del contenedor.
+   - `flex-end`: Los elementos se alinean al final del contenedor.
+   - `center`: Los elementos se alinean en el centro del contenedor.
+   - `space-between`: Los elementos se distribuyen equitativamente; el primer elemento está al principio, el último al final.
+   - `space-around`: Los elementos se distribuyen equitativamente con espacios iguales alrededor de ellos.
+   - `space-evenly`: Los elementos se distribuyen equitativamente con espacios iguales alrededor de ellos, incluyendo el espacio antes y después del primer y último elemento.
+
+6. **`align-items`**: Controla la alineación de los elementos flexibles a lo largo del eje transversal del contenedor.
+   - `stretch`: Los elementos se estiran para llenar el contenedor.
+   - `flex-start`: Los elementos se alinean al principio del contenedor.
+   - `flex-end`: Los elementos se alinean al final del contenedor.
+   - `center`: Los elementos se alinean en el centro del contenedor.
+   - `baseline`: Los elementos se alinean según la línea de base.
+
+7. **`align-content`**: Solo se aplica si hay varias líneas de elementos flexibles dentro del contenedor. Controla la alineación de esas líneas en el eje transversal.
+   - `stretch`: Las líneas se estiran para llenar el contenedor.
+   - `flex-start`: Las líneas se alinean al principio del contenedor.
+   - `flex-end`: Las líneas se alinean al final del contenedor.
+   - `center`: Las líneas se alinean en el centro del contenedor.
+   - `space-between`: Las líneas se distribuyen equitativamente; la primera línea está al principio, la última al final.
+   - `space-around`: Las líneas se distribuyen equitativamente con espacios iguales alrededor de ellas.
+   - `space-evenly`: Las líneas se distribuyen equitativamente con espacios iguales alrededor de ellas, incluyendo el espacio antes y después de la primera y última línea.
+
+### Recursos de Flexbox
+
+- [Flexbox playground](https://codepen.io/enxaneta/full/adLPwv): Un entorno de desarrollo en línea para experimentar con Flexbox.
+- [Flexbox Froggy](https://flexboxfroggy.com/): Un juego en línea que te enseña los conceptos básicos de Flexbox.
+- [Flexbox Defense](http://www.flexboxdefense.com/): Un juego en línea que te enseña los conceptos básicos de Flexbox.
+- [CSS-Tricks: A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/): Una guía completa de Flexbox con ejemplos y explicaciones detalladas.
+- [MDN Web Docs: Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox): Documentación oficial de Flexbox en MDN Web Docs.
+- [cssreference.io: Flexbox](https://cssreference.io/flexbox/): Una guía de referencia rápida de Flexbox con ejemplos y explicaciones.
+- [Flexbox Cheatsheet](https://yoksel.github.io/flex-cheatsheet/): Una hoja de trucos de Flexbox con ejemplos y explicaciones.
+- [Flexbox Playground](https://flexbox.tech/): Un entorno de desarrollo en línea para experimentar con Flexbox.
+- [Flexy Boxes](https://the-echoplex.net/flexyboxes/): Un generador de código en línea para Flexbox.
+- [Flexer](https://www.flexer.dev/): Un generador de código en línea para Flexbox.
+- [Flexbox Patterns](https://www.flexboxpatterns.com/): Una colección de patrones de diseño comunes creados con Flexbox.
