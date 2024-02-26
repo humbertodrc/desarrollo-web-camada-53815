@@ -2603,3 +2603,48 @@ Ejemplo de valores:
 - [Flexy Boxes](https://the-echoplex.net/flexyboxes/): Un generador de código en línea para Flexbox.
 - [Flexer](https://www.flexer.dev/): Un generador de código en línea para Flexbox.
 - [Flexbox Patterns](https://www.flexboxpatterns.com/): Una colección de patrones de diseño comunes creados con Flexbox.
+
+### Propiedades de los hijo avanzadas
+
+Existe una serie de propiedades que se pueden aplicar a los elementos flexibles para controlar su comportamiento y apariencia dentro del contenedor flex. Algunas de estas propiedades incluyen:
+
+- Flex-grow: Controla la capacidad de un elemento flexible para crecer en relación con otros elementos flexibles en el contenedor.
+
+- Flex-shrink: Controla la capacidad de un elemento flexible para encogerse en relación con otros elementos flexibles en el contenedor.
+
+- Flex-basis: Establece el tamaño base de un elemento flexible antes de que se apliquen flex-grow y flex-shrink.
+
+Valores de las propiedades:
+
+Defaul:
+
+```css
+/* Estilo aplicado a los elementos flex */
+.item {
+   flex-grow: 0; /* Valor por defecto, posibles valores 0, 1, 2, etc. */
+   flex-shrink: 1; /* Valor por defecto, posibles valores 0, 1, 2, etc. */
+   flex-basis: auto; /* Valor por defecto, posibles valores auto, 100px, 50%, etc. */
+}
+```
+
+Ejemplo:
+
+```css
+/* Estilo aplicado a los elementos flex */
+.item {
+   flex-grow: 1; /* El elemento crecerá para llenar el espacio disponible. */
+   flex-shrink: 0; /* El elemento no se encogerá si no hay espacio suficiente. */
+   flex-basis: 100px; /* El elemento tendrá un tamaño base de 100px. */
+}
+```
+
+Estas propiedades se pueden combinar en una sola declaración abreviada llamada flex, que toma los valores de flex-grow, flex-shrink y flex-basis en ese orden.
+
+Ejemplo:
+
+```css
+/* Estilo aplicado a los elementos flex */
+.item {
+   flex: 1 0 100px; /* Equivalente a flex-grow: 1; flex-shrink: 0; flex-basis: 100px; */
+}
+```
