@@ -2648,3 +2648,347 @@ Ejemplo:
    flex: 1 0 100px; /* Equivalente a flex-grow: 1; flex-shrink: 0; flex-basis: 100px; */
 }
 ```
+
+## Clase 6 Grid
+
+Grid es un modelo de diseño en CSS que permite crear diseños de cuadrícula flexibles y eficientes para elementos HTML. Grid se basa en un sistema de cuadrícula bidimensional que se puede organizar y alinear de manera dinámica, lo que facilita la creación de diseños complejos y responsivos.
+
+### Diferencias entre Flexbox y Grid
+
+- Flexbox: Flexbox es un modelo de diseño unidimensional que se utiliza para organizar y alinear elementos flexibles en una sola dirección, como filas o columnas.
+
+- Grid: Grid es un modelo de diseño bidimensional que se utiliza para organizar y alinear elementos en una cuadrícula de filas y columnas.
+
+Ambos modelos de diseño son complementarios y se pueden utilizar juntos para crear diseños flexibles y eficientes en una página web.
+
+### Propiedades de Grid
+
+- display: Esta propiedad determina si un contenedor es un contenedor de cuadrícula o un bloque regular.
+
+Ejemplo:
+
+```css
+/* Estilo aplicado al contenedor de cuadrícula */
+.container {
+ display: grid;
+}
+```
+
+- grid-template-columns: Establece el número y el tamaño de las columnas en la cuadrícula.
+
+Ejemplo:
+
+```css
+/* Estilo aplicado al contenedor de cuadrícula */
+.container {
+ display: grid;
+ grid-template-columns: 100px 200px 300px;
+}
+```
+
+- grid-template-rows: Establece el número y el tamaño de las filas en la cuadrícula.
+
+Ejemplo:
+
+```css
+/* Estilo aplicado al contenedor de cuadrícula */
+.container {
+ display: grid;
+ grid-template-rows: 100px 200px 300px;
+}
+```
+
+- grid-template-areas: Establece un nombre para cada área de la cuadrícula y asigna elementos a esas áreas.
+
+Ejemplo:
+
+```css
+/* Estilo aplicado al contenedor de cuadrícula */
+.container {
+ display: grid;
+ grid-template-areas:
+ "header header header"
+ "sidebar main main"
+ "footer footer footer";
+}
+```
+
+- gap: Establece el espacio entre las filas y las columnas de la cuadrícula.
+
+Ejemplo:
+
+```css
+/* Estilo aplicado al contenedor de cuadrícula */
+.container {
+ display: grid;
+ gap: 10px;
+}
+```
+
+- column-gap: Establece el espacio entre las columnas de la cuadrícula.
+
+Ejemplo:
+
+```css
+/* Estilo aplicado al contenedor de cuadrícula */
+.container {
+ display: grid;
+ gcolumn-gap: 10px;
+}
+```
+
+- row-gap: Establece el espacio entre las filas de la cuadrícula.
+
+Ejemplo:
+
+```css
+/* Estilo aplicado al contenedor de cuadrícula */
+.container {
+ display: grid;
+ row-gap: 10px;
+}
+```
+
+### Posicionamiento de los hijos desde el contenedor
+
+- justify-items: Controla la alineación de los elementos en el eje principal de la cuadrícula.
+
+Ejemplo de valores:
+
+```css
+/* Estilo aplicado al contenedor de cuadrícula */
+.container {
+ display: grid;
+ justify-items: start;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor de cuadrícula */
+.container {
+ display: grid;
+ justify-items: end;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor de cuadrícula */
+.container {
+ display: grid;
+ justify-items: center;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor de cuadrícula */
+.container {
+ display: grid;
+ justify-items: stretch;
+}
+```
+
+- align-items: Controla la alineación de los elementos en el eje transversal de la cuadrícula.
+
+Ejemplo de valores:
+
+```css
+/* Estilo aplicado al contenedor de cuadrícula */
+.container {
+ display: grid;
+ align-items: start;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor de cuadrícula */
+.container {
+ display: grid;
+ align-items: end;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor de cuadrícula */
+.container {
+ display: grid;
+ align-items: center;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor de cuadrícula */
+.container {
+ display: grid;
+ align-items: stretch;
+}
+```
+
+- justify-content: Controla la alineación de las columnas en el eje principal de la cuadrícula.
+
+Ejemplo de valores:
+
+```css
+/* Estilo aplicado al contenedor de cuadrícula */
+.container {
+ display: grid;
+ justify-content: start;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor de cuadrícula */
+.container {
+ display: grid;
+ justify-content: end;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor de cuadrícula */
+.container {
+ display: grid;
+ justify-content: center;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor de cuadrícula */
+.container {
+ display: grid;
+ justify-content: space-between;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor de cuadrícula */
+.container {
+ display: grid;
+ justify-content: space-around;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor de cuadrícula */
+.container {
+ display: grid;
+ justify-content: space-evenly;
+}
+```
+
+- align-content: Controla la alineación de las filas en el eje transversal de la cuadrícula.
+
+Ejemplo de valores:
+
+```css
+/* Estilo aplicado al contenedor de cuadrícula */
+.container {
+ display: grid;
+ align-content: start;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor de cuadrícula */
+.container {
+ display: grid;
+ align-content: end;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor de cuadrícula */
+.container {
+ display: grid;
+ align-content: center;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor de cuadrícula */
+.container {
+ display: grid;
+ align-content: space-between;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor de cuadrícula */
+.container {
+ display: grid;
+ align-content: space-around;
+}
+```
+
+```css
+/* Estilo aplicado al contenedor de cuadrícula */
+.container {
+ display: grid;
+ align-content: space-evenly;
+}
+```
+
+### Posicionamiento de los hijos desde el hijo
+
+- justify-self: Controla la alineación de un elemento en el eje principal de la cuadrícula.
+
+Ejemplo de valores:
+
+```css
+/* Estilo aplicado al hiji de la cuadrícula */
+.item {
+ justify-self: start;
+}
+```
+
+```css
+/* Estilo aplicado al hiji de la cuadrícula */
+.item {
+ justify-self: end;
+}
+```
+
+```css
+/* Estilo aplicado al hiji de la cuadrícula */
+.item {
+ justify-self: center;
+}
+```
+
+```css
+/* Estilo aplicado al hiji de la cuadrícula */
+.item {
+ justify-self: stretch;
+}
+```
+
+- align-self: Controla la alineación de un elemento en el eje transversal de la cuadrícula.
+
+Ejemplo de valores:
+
+```css
+/* Estilo aplicado al hiji de la cuadrícula */
+.item {
+ align-self: start;
+}
+```
+
+```css
+/* Estilo aplicado al hiji de la cuadrícula */
+.item {
+ align-self: end;
+}
+```
+
+```css
+/* Estilo aplicado al hiji de la cuadrícula */
+.item {
+ align-self: center;
+}
+```
+
+```css
+/* Estilo aplicado al hiji de la cuadrícula */
+.item {
+ align-self: stretch;
+}
+```
