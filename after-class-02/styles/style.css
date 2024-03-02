@@ -1,0 +1,298 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url(../assets/fonts/Inter-VariableFont.ttf);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "David Libre", serif;
+	font-weight: 700;
+  color: #101A24;
+}
+
+p,
+a,
+li,
+span {
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+}
+
+p{
+  color: #5C6574;
+  font-size: 16px;
+}
+
+.link-button{
+  padding: 14px 31px;
+  border-radius: 12px 0 12px 0;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  box-shadow: 0px 15px 30px rgb(0, 0, 0, 0.15);
+}
+
+.primary{
+  background-color: #EA6D27;
+}
+
+.secondary{
+  background-color: #101A24;
+}
+
+.hero-container {
+	padding-top: 60px;
+  padding-bottom: 170px;
+	background-image: url(../assets/images/bg-hero.svg);
+	background-position: top left;
+	background-size: 100% 89%;
+	background-repeat: no-repeat;
+	width: 100%;
+}
+
+.container-center {
+	width: 100%;
+	max-width: 1152px;
+	margin: 0 auto;
+}
+
+header {
+	width: 100%;
+	max-width: 1152px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 45px;
+}
+
+h1{
+  font-size: 70px;
+}
+.container-center section div > p{
+  color: #5C6574;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 69px;
+}
+
+.hero-content-container{
+  margin-top: 20px;
+}
+
+.hero-container section {
+	display: flex;
+  padding-top: 196px;
+  gap: 100px;
+}
+
+.hero-buttons-container{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 28px;
+}
+
+.hero-footer-logos{
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-top: 94px;
+}
+
+.hero-icons-container{
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  height: 45px;
+  width: 169px;
+}
+
+.hero-line{
+  height: 1px;
+  width: 143px;
+  background-color: #000;
+}
+
+.hero-image-container{
+  position: relative;
+}
+
+.hero-image-flotante{
+  position: absolute;
+  bottom: 16px;
+  left: -196px;
+}
+
+
+/* Body */
+main {
+  width: 100%;
+	background-color: #F3F3F4;
+}
+
+.special{
+  width: 100%;
+	max-width: 1152px;
+	margin: 60px auto;
+  padding-top: 92px;
+  padding-bottom: 60px;
+}
+
+.special h2{
+  font-size: 60px;
+  text-align: center;
+}
+
+.special p{
+  width: 376px;
+  margin: 0 auto;
+  margin-top: 21px;
+}
+
+.special-card-container{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 180px;
+}
+
+.special-card{
+  width: 265px;
+  height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #fff;
+  border-radius: 40px 8px 40px 8px;
+  padding: 0 20px 51px;
+  box-shadow: 0px 15px 30px rgb(0, 0, 0, 0.15);
+}
+
+.special-image-container{
+  position: absolute;
+  top: -100px;
+  right: 30px;
+}
+
+.special-precio{
+  align-items: center;
+  background-color: #101A24;
+  border-radius: 9999px;
+  color: #fff;
+  display: flex;
+  font-weight: 700;
+  height: 54px;
+  justify-content: center;
+  position: absolute;
+  right: -15px;
+  top: 45px;
+  width: 54px;
+}
+
+.special-card h3{
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.special-card p{
+  font-size: 15px;
+  width: 225px;
+  margin: 21px auto 0;
+}
+
+
+
+.gallery-conatiner{
+  width: 100%;
+	max-width: 1152px;
+	margin: 60px auto;
+  padding-top: 92px;
+  padding-bottom: 60px;
+
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 150px);
+
+  column-gap: 30px;
+  row-gap: 30px;
+
+  grid-template-areas:
+    "title title title"
+    "img-1 img-2 img-3"
+    "img-4 img-2 img-3"
+    "img-4 img-5 img-6"
+    "img-7 img-8 img-6"
+    "img-7 img-8 img-9"
+  ;
+
+}
+
+.gallery-conatiner img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.gallery-title{
+  font-size: 60px;
+  text-align: center;
+  grid-area: title;
+}
+
+
+.img-1{
+  grid-area: img-1;
+}
+
+.img-2{
+  grid-area: img-2;
+}
+
+.img-3{
+  grid-area: img-3;
+}
+
+.img-4{
+  grid-area: img-4;
+}
+
+.img-5{
+  grid-area: img-5;
+}
+
+.img-6{
+  grid-area: img-6;
+}
+
+.img-7{
+  grid-area: img-7;
+}
+
+.img-8{
+  grid-area: img-8;
+}
+
+.img-9{
+  grid-area: img-9;
+}
