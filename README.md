@@ -3198,3 +3198,114 @@ Algunos breakpoints comunes incluyen:
 - Utilizar operadores lógicos en media queries para combinar múltiples condiciones en una sola media query.
 
 - Utilizar tipos de medios en media queries para especificar el tipo de dispositivo o contexto de visualización al que se aplicarán los estilos CSS.
+
+### Sintaxis Moderna de Media Queries ("Bonus 🚀")
+
+Ahora en CSS tenemos una nueva sintaxis para poder escribir media querys de una manera más intuitiva y menos confusa, mediante rangos.
+
+La nueva sintaxis de rangos para media querys de CSS consiste en usar operadores de comparación (populares en cualquier lenguaje de programación) en lugar de min-width y max-width.
+
+< evalúa si un valor es menor que otro valor.
+> evalúa si un valor es mayor que otro valor.
+= evalúa si un valor es igual a otro valor.
+<= evalúa si un valor es menor o igual a otro valor.
+>= evalúa si un valor es mayor o igual a otro valor.
+
+Ejemplo de la nueva sintaxis de media queries:
+
+```css
+// sintaxis clásica
+@media screen and (min-width: 600px) {
+  .element {
+    /* La media query se aplica para resoluciones mayores a 600px */
+  }
+}
+
+// sintaxis de rango
+@media screen and (width >= 600px) {
+  .element {
+    /* La media query se aplica para 
+       resoluciones mayores o iguales a 600px */
+  }
+}
+```
+
+```css
+/* sintaxis clásica */
+@media screen and (max-width: 800px) {
+  .element {
+    /* La media query se aplica para resoluciones menores a 800px */
+  }
+}
+
+// sintaxis de rango
+@media screen and (width <= 800px) {
+  .element {
+    /* La media query se aplica para 
+       resoluciones menores o iguales a 600px */
+  }
+}
+```
+
+## Clase Bonus: Imagenes Responsivas
+
+Podemos crear imágenes responsivas en CSS utilizando la propiedad max-width: 100%; para que las imágenes se ajusten automáticamente al tamaño de su contenedor. Esto garantiza que las imágenes se vean bien en dispositivos móviles y se adapten a diferentes tamaños de pantalla.
+
+Ejemplo de imagen responsiva en CSS:
+
+```css
+/* Estilo aplicado a una imagen para que sea responsiva */
+img {
+ display: block;
+ max-width: 100%;
+ height: auto;
+}
+```
+
+Otra forma de hacerlo es utilizar formatos de imagen modernos como WebP o , que ofrecen una mejor compresión y calidad que los formatos de imagen tradicionales como JPEG y PNG. Los formatos de imagen modernos son compatibles con la mayoría de los navegadores modernos y ofrecen una mejor experiencia de usuario en términos de rendimiento y calidad de imagen.
+
+Ejemlo de imagen responsiva con formatos de imagen modernos:
+
+```html
+<picture>
+ <source srcset="image.webp" type="image/webp">
+ <source srcset="image.jpg" type="image/jpeg">
+ <img loading="lazy" src="image.jpg" alt="Descripción de la imagen">
+</picture>
+```
+
+Aplicando la propiedad loading="lazy" a las imágenes para que se carguen de forma diferida y mejoren el rendimiento de la página. La carga diferida de imágenes es una técnica de optimización de rendimiento que retrasa la carga de imágenes hasta que el usuario las necesita, lo que reduce el tiempo de carga de la página y mejora la experiencia del usuario.
+
+### Indicando un sizes en el source de la imagen
+
+```html
+<picture>
+  <source
+     sizes="1920w, 1280w, 640w" 
+     srcset="img/imagen.avif 1920w, 
+         img/imagen-1280.avif 1280w, 
+         img/imagen-640.avif 640w" 
+     type="image/avif">
+  <source
+     sizes="1920w, 1280w, 640w" 
+     srcset="img/imagen.webp 1920w, 
+         img/imagen-1280.webp 1280w, 
+         img/imagen-640.webp 640w" 
+     type="image/webp">
+  <source
+     sizes="1920w, 1280w, 640w" 
+     srcset="img/imagen.jpg 1920w, 
+         img/imagen-1280.jpg 1280w, 
+         img/imagen-640.jpg 640w" 
+     type="image/jpeg">
+  <img loading="lazy" decoding="async" src="img/imagen.jpg" lazyalt="imagen" width="500" height="300">
+</picture>
+```
+
+Con este codigo estamos indicando que la imagen se va a mostrar en diferentes tamaños, dependiendo del tamaño de la pantalla del usuario, esto se hace con la propiedad sizes, que indica los tamaños de la imagen que se van a mostrar, en este caso 1920w, 1280w y 640w, que indican que la imagen se va a mostrar en esos tamaños dependiendo del tamaño de la pantalla del usuario.
+
+Referencias:
+
+<https://developer.mozilla.org/es/docs/Web/HTML/Element/picture>
+
+<https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source>
