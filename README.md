@@ -3309,3 +3309,171 @@ Referencias:
 <https://developer.mozilla.org/es/docs/Web/HTML/Element/picture>
 
 <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source>
+
+## Clase 8: Pseudoclases y BEM
+
+### Pseudoclases
+
+Las pseudoclases en CSS son selectores que se utilizan para aplicar estilos a elementos en diferentes estados o situaciones. Algunas pseudoclases comunes incluyen:
+
+- :hover: Aplica estilos a un elemento cuando el usuario pasa el cursor sobre él.
+
+- :focus: Aplica estilos a un elemento cuando recibe el foco.
+
+- :active: Aplica estilos a un elemento cuando está activo o seleccionado.
+
+- :visited: Aplica estilos a un enlace visitado.
+
+- :nth-child(): Aplica estilos a un elemento basado en su posición en relación con sus hermanos.
+
+- :not(): Aplica estilos a un elemento que no cumple con un selector específico.
+
+Algunas extras que no se mencionaron en la clase:
+
+- :first-child: Aplica estilos al primer hijo de un elemento.
+
+Ejemlo:
+
+```css
+/* Estilo para el primer hijo de un elemento */
+.parent > *:first-child {
+  color: blue;
+}
+
+```
+
+- :last-child: Aplica estilos al último hijo de un elemento.
+
+Ejemlo:
+
+```css
+/* Estilo para el último hijo de un elemento */
+.parent > *:last-child {
+  color: blue;
+}
+```
+
+- :nth-of-type(): Aplica estilos a un elemento basado en su posición en relación con sus hermanos del mismo tipo.
+
+Ejemlo:
+
+```css
+/* Estilo para el tercer elemento div */
+div:nth-of-type(3) {
+  background-color: yellow;
+}
+```
+
+- :nth-last-child(): Aplica estilos a un elemento basado en su posición en relación con sus hermanos, comenzando desde el último hijo.
+
+Ejemlo:
+
+```css
+/* Estilo para el penúltimo hijo de un elemento */
+.parent > *:nth-last-child(2) {
+  font-weight: bold;
+}
+```
+
+- :nth-last-of-type(): Aplica estilos a un elemento basado en su posición en relación con sus hermanos del mismo tipo, comenzando desde el último hijo.
+
+Ejemlo:
+
+```css
+/* Estilo para el penúltimo elemento div */
+div:nth-last-of-type(2) {
+  background-color: yellow;
+}
+```
+
+### BEM (Block Element Modifier)
+
+BEM es una metodología de nomenclatura de clases en CSS que se utiliza para crear estilos CSS escalables y reutilizables. BEM se basa en tres conceptos principales: bloques, elementos y modificadores.
+
+- Bloques: Son componentes independientes y autónomos que pueden ser reutilizados en diferentes contextos.
+
+- Elementos: Son partes de un bloque que no tienen sentido por sí mismos y solo tienen sentido en el contexto del bloque.
+
+- Modificadores: Son variantes de un bloque o un elemento que alteran su apariencia o comportamiento.
+
+Ejemplo de nomenclatura de clases en BEM:
+
+```css
+/* Estilo aplicado a un bloque */
+.block {
+ /* Estilos del bloque */
+}
+
+/* Estilo aplicado a un elemento dentro de un bloque */
+.block__element {
+ /* Estilos del elemento */
+}
+
+/* Estilo aplicado a un bloque con un modificador */
+.block--modifier {
+ /* Estilos del bloque con el modificador */
+}
+```
+
+```html
+<!-- Ejemplo de uso de clases en BEM -->
+<div class="block">
+ <h1 class="block__title">Título del bloque</h1>
+ <p class="block__text">Texto del bloque</p>
+ <button class="block__button block__button--primary">Botón del bloque</button>
+</div>
+```
+
+```css
+/* Estilo aplicado a un bloque */
+.block {
+ /* Estilos del bloque */
+}
+
+/* Estilo aplicado a un elemento dentro de un bloque */
+.block__title {
+ /* Estilos del elemento */
+}
+
+/* Estilo aplicado a un elemento dentro de un bloque */
+
+.block__text {
+ /* Estilos del elemento */
+}
+
+/* Estilo aplicado a un bloque con un modificador */
+.block__button {
+ /* Estilos del bloque con el modificador */
+}
+
+/* Estilo aplicado a un bloque con un modificador */
+.block__button--primary {
+ /* Estilos del bloque con el modificador */
+}
+```
+
+### Ventajas de BEM
+
+- Mejora la legibilidad y mantenibilidad del código CSS.
+
+- Facilita la reutilización de estilos y componentes.
+
+- Evita la especificidad excesiva y los conflictos de estilos.
+
+- Proporciona una estructura clara y coherente para los estilos CSS.
+
+### Desventajas de BEM
+
+- Puede generar clases largas y repetitivas en el HTML y el CSS.
+
+- Puede ser difícil de aprender y aplicar para los principiantes.
+
+- Puede ser difícil de mantener y actualizar en proyectos grandes y complejos.
+
+### Recursos de BEM
+
+- [BEM: Block Element Modifier](https://en.bem.info/methodology/css/): Sitio web oficial de BEM con documentación y ejemplos.
+
+- [BEM 101](https://css-tricks.com/bem-101/): Una guía completa de BEM con ejemplos y explicaciones detalladas.
+
+- [BEM Naming Cheat Sheet](https://9elements.com/bem-cheat-sheet/): Una hoja de trucos de BEM con ejemplos y explicaciones.
