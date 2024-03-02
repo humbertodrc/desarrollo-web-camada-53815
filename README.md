@@ -2992,3 +2992,209 @@ Ejemplo de valores:
  align-self: stretch;
 }
 ```
+
+## Clase 7 Media Queries ("Esta como GRIDS II 🫤")
+
+### Diseño Responsivo
+
+El diseño responsivo es una técnica de diseño web que permite crear sitios web que se adaptan y responden a diferentes tamaños de pantalla, dispositivos y resoluciones. El diseño responsivo utiliza técnicas como media queries, flexbox y grid para crear diseños flexibles y adaptables que se ajustan automáticamente al tamaño de la ventana del navegador o el dispositivo.
+
+### Media Queries
+
+Las media queries son una técnica de diseño web que permite aplicar estilos CSS específicos a diferentes tamaños de pantalla, dispositivos y resoluciones. Las media queries se utilizan para crear diseños responsivos que se adaptan y responden a diferentes contextos de visualización.
+
+### Sintaxis de Media Queries
+
+La sintaxis de una media query en CSS consta de tres partes principales: un tipo de medio, una condición y un bloque de estilos. Aquí tienes un ejemplo de la sintaxis de una media query en CSS:
+
+```css
+/* Estilo aplicado a una pantalla con un ancho máximo de 600px */
+@media screen and (max-width: 600px) {
+ body {
+   background-color: lightblue;
+ }
+}
+```
+
+### Tipos de Medios
+
+Los tipos de medios en CSS se utilizan para especificar el tipo de dispositivo o contexto de visualización al que se aplicarán los estilos CSS. Algunos tipos de medios comunes incluyen:
+
+- all: Todos los dispositivos y contextos de visualización.
+
+- screen: Pantallas de computadoras, tabletas y teléfonos.
+
+- print: Impresoras y documentos impresos.
+
+- speech: Lectores de pantalla y dispositivos de voz.
+
+### Condiciones de Media Queries
+
+Las condiciones de las media queries en CSS se utilizan para especificar las reglas que se aplicarán a diferentes tamaños de pantalla, dispositivos y resoluciones. Algunas condiciones comunes incluyen:
+
+- width: El ancho de la ventana del navegador o el dispositivo.
+
+- height: La altura de la ventana del navegador o el dispositivo.
+
+- orientation: La orientación de la pantalla del dispositivo.
+
+- aspect-ratio: La relación de aspecto de la pantalla del dispositivo.
+
+- resolution: La resolución de la pantalla del dispositivo.
+
+### Ejemplos de Media Queries
+
+```css
+/* Estilo aplicado a una pantalla con un ancho máximo de 600px */
+@media screen and (max-width: 600px) {
+ body {
+   background-color: lightblue;
+ }
+}
+```
+
+```css
+/* Estilo aplicado a una pantalla con un ancho mínimo de 600px */
+@media screen and (min-width: 600px) {
+ body {
+   background-color: lightblue;
+ }
+}
+```
+
+```css
+/* Estilo aplicado a una pantalla con una orientación horizontal */
+@media screen and (orientation: landscape) {
+ body {
+   background-color: lightblue;
+ }
+}
+```
+
+```css
+/* Estilo aplicado a una pantalla con una orientación vertical */
+@media screen and (orientation: portrait) {
+ body {
+   background-color: lightblue;
+ }
+}
+```
+
+```css
+/* Estilo aplicado a una pantalla con una relación de aspecto de 16:9 */
+@media screen and (aspect-ratio: 16/9) {
+ body {
+   background-color: lightblue;
+ }
+}
+```
+
+```css
+/* Estilo aplicado a una pantalla con una resolución de 300 ppp */
+@media screen and (resolution: 300dpi) {
+ body {
+   background-color: lightblue;
+ }
+}
+```
+
+### Operadores Lógicos en Media Queries
+
+Los operadores lógicos en las media queries en CSS se utilizan para combinar múltiples condiciones en una sola media query. Algunos operadores lógicos comunes incluyen:
+
+- and: Combina múltiples condiciones en una sola media query.
+
+- not: Niega una condición en una media query.
+
+- only: Limita la aplicación de una media query a dispositivos que admiten la condición.
+
+Ejemplos de operadores lógicos:
+
+```css
+/* Estilo aplicado a una pantalla con un ancho máximo de 600px y una orientación horizontal */
+@media screen and (max-width: 600px) and (orientation: landscape) {
+ body {
+   background-color: lightblue;
+ }
+}
+```
+
+```css
+/* Estilo aplicado a una pantalla con un ancho máximo de 600px y una orientación vertical */
+@media screen and (max-width: 600px) and (orientation: portrait) {
+ body {
+   background-color: lightblue;
+ }
+}
+```
+
+```css
+/* Estilo aplicado a una pantalla con un ancho máximo de 600px y una orientación vertical */
+@media screen and (max-width: 600px) and (orientation: portrait) {
+ body {
+   background-color: lightblue;
+ }
+}
+```
+
+```css
+/* Estilo aplicado a una pantalla con un ancho máximo de 600px y una orientación vertical */
+@media screen and (max-width: 600px) and (orientation: portrait) {
+ body {
+   background-color: lightblue;
+ }
+}
+```
+
+```css
+/* Estilo aplicado a una pantalla con un ancho máximo de 600px y una orientación vertical */
+@media screen and (max-width: 600px) and (orientation: portrait) {
+ body {
+   background-color: lightblue;
+ }
+}
+```
+
+### Enfoque Mobile First
+
+El enfoque "Mobile First" es una técnica de diseño web que se centra en el diseño y desarrollo de sitios web para dispositivos móviles antes que para dispositivos de escritorio. El enfoque "Mobile First" utiliza media queries y estilos CSS para crear diseños responsivos que se adaptan y responden a diferentes tamaños de pantalla, dispositivos y resoluciones.
+
+Cuando trabajamos con media queries, es importante tener en cuenta el enfoque "Mobile First" para garantizar que los estilos se apliquen correctamente en dispositivos móviles y se adapten a dispositivos de escritorio.
+
+### Ejemplo de Media Queries con el enfoque "Mobile First"
+
+```css
+/* Estilo aplicado a todos los dispositivos */
+body {
+ background-color: red;
+}
+
+/* Estilo aplicado a dispositivos con un ancho mínimo de 600px */
+@media screen and (min-width: 600px) {
+ body {
+   background-color: lightgreen;
+ }
+}
+```
+
+### Breakpoints en Media Queries
+
+Los breakpoints en media queries se utilizan para definir los puntos de quiebre en los que se aplicarán estilos CSS específicos a diferentes tamaños de pantalla, dispositivos y resoluciones. Los breakpoints se utilizan para crear diseños responsivos que se adaptan y responden a diferentes contextos de visualización.
+
+Algunos breakpoints comunes incluyen:
+
+- Pequeño: Dispositivos móviles con un ancho máximo de 600px.
+
+- Mediano: Dispositivos de tableta con un ancho mínimo de 600px.
+
+- Grande: Dispositivos de escritorio con un ancho mínimo de 1200px.
+
+### Puntos a tener en cuenta a la hora de trabajar con Media Queries
+
+- Utilizar el enfoque "Mobile First" para garantizar que los estilos se apliquen correctamente en dispositivos móviles y se adapten a dispositivos de escritorio.
+
+- Utilizar breakpoints en media queries para definir los puntos de quiebre en los que se aplicarán estilos CSS específicos a diferentes tamaños de pantalla, dispositivos y resoluciones.
+
+- Utilizar operadores lógicos en media queries para combinar múltiples condiciones en una sola media query.
+
+- Utilizar tipos de medios en media queries para especificar el tipo de dispositivo o contexto de visualización al que se aplicarán los estilos CSS.
