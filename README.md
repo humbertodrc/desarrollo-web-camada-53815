@@ -53,6 +53,9 @@ indent-rainbow: Permite visualizar los espacios en blanco de manera más clara.
 - [Clase 4 CSS + Box Model](#clase-4-css--box-model)
 - [Primera Entrega](#primera-pre-entrega)
 - [Clase 5 Flexbox](#clase-5-flexbox)
+- [Clase 6 Grid](#clase-6-grid)
+- [Clase 7 Media Queries](#clase-7-media-queries)
+- [Clase 8 Pseudoclases y Pseudoelementos](#clase-8-pseudoclases-y-bem)
 
 ## Clase 1 Prototipado y conceptos básicos de HTML
 
@@ -2993,7 +2996,7 @@ Ejemplo de valores:
 }
 ```
 
-## Clase 7 Media Queries ("Esta como GRIDS II 🫤")
+## Clase 7 Media Queries
 
 ### Diseño Responsivo
 
