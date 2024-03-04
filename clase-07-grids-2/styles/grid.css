@@ -1,0 +1,87 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.grilla{
+  height: 100dvh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 2fr 2fr 1fr 75px;
+
+  grid-template-areas: 
+    "header"
+    "nav"
+    "productos"
+    "servicios"
+    "aside"
+    "footer"
+  ;
+
+  column-gap: 15px;
+  row-gap: 15px;
+}
+
+.border{
+  border: 2px solid red;
+}
+
+header{
+  grid-area: header;
+  background-color: #f5b14f;
+}
+
+#productos{
+  grid-area: productos;
+  background-color: #3bc223;
+}
+
+#servicios{
+  grid-area: servicios;
+  background-color: #3f27bb;
+}
+
+nav{
+  grid-area: nav;
+  background-color: #d316d6;
+}
+
+aside{
+  grid-area: aside;
+  background-color: #e3a9a5;
+}
+
+footer{
+  grid-area: footer;
+  background-color: #15b9a3;
+}
+
+@media (min-width: 768px) {
+  .grilla{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 80px 1fr 1fr 75px;
+
+    grid-template-areas: 
+      "header header header header"
+      "nav nav nav nav"
+      "productos productos productos aside"
+      "servicios servicios servicios aside"
+      "footer footer footer footer"
+    ;
+  }
+}
+
+@media (min-width: 1280px){
+  .grilla{
+    grid-template-columns: 20% auto 15%;
+    grid-template-rows: 100px 1fr 1fr 75px;
+
+    grid-template-areas: 
+      "header header header"
+      "nav productos aside"
+      "nav servicios aside"
+      "footer footer footer"
+    ;
+  }
+}

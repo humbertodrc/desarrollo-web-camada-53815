@@ -1,0 +1,98 @@
+
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid #000; */
+}
+
+
+.logo {
+  max-width: 100px;
+  height: auto;
+}
+
+li {
+  padding: 10px;
+  list-style-type: none;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100px 100px auto 1fr 100px;
+  grid-template-areas: 
+  "header header"
+  "navIzq navDer"
+  "parrafo parrafo"
+  "img img"
+  "footer footer"
+  ;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  grid-area: header;
+}
+
+div.navIzq {
+  grid-area: navIzq;
+}
+
+.navIzq ul,
+.navDer ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+div.navDer {
+  grid-area: navDer;
+}
+
+section.parrafo {
+  grid-area: parrafo;
+}
+
+section.imgParrafo {
+  grid-area: img;
+}
+
+section.imgParrafo img{
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  grid-area: footer;
+}
+
+footer img{
+  width: 150px;
+  height: auto;
+}
+
+
+/* vista desktop */
+@media (min-width: 768px) {
+  .gridContainer{
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100px auto 200px;
+    grid-template-areas: 
+    "navIzq navIzq header header navDer navDer"
+    "parrafo parrafo parrafo img img img"
+    "footer footer footer footer footer footer"
+    ;
+  }
+
+  footer{
+    flex-direction: row;
+    justify-content: center;
+  }
+}
