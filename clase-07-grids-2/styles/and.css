@@ -1,0 +1,32 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100%;
+  height: 200px;
+  background-color: #14DE83;
+}
+
+.container h1{
+  color: #fff;
+  font-size: 30px;
+  text-decoration: line-through;
+}
+
+/* Aplicamos rangos a los media queries */
+@media (max-width: 640px) and (orientation: portrait) {
+  .container{
+    background-color: #FFD700;
+    height: 600px;
+    padding-top: 50px;
+  }
+
+  .container h1{
+    font-size: 60px;
+    text-align: center;
+    color: #000;
+  }
+}
