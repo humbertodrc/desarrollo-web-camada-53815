@@ -1,0 +1,107 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+header{
+  background-color: #f2f2f2;
+  padding: 20px 30px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-weight: 700;
+  color: #4f4f4f;
+  background: #f2f2f2;
+}
+
+/* Ejemplo para aplicar :link, :hover, :active, :visited */
+a:link{
+  color: aqua;
+  background: rgb(0, 0, 0, 0.5);
+}
+
+a:hover{
+  color: #2525a4;
+  text-decoration: underline;
+}
+
+a:active{
+  color: #ff0000;
+  text-decoration: line-through;
+}
+
+a:active{
+  color: #00ff37;
+  background: rgb(99, 15, 20, 0.5);
+}
+
+nav button{
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  border-color: #007fff;
+}
+
+/* Ejemplos con :not */
+.section-1 p:not(.text-1){
+  color: #ff0000;
+}
+
+/* Ejemplo con :last-child */
+/* Hace referencia al ultimo hijo */
+.section-2 p:last-child{
+  color: #00ff37;
+}
+
+/* Ejemplo con :first-child */
+/* Hace referencia al primer hijo */
+.section-3 p:first-child{
+  color: #2525a4;
+}
+
+/* Ejemplos con :first-of-type */
+/* Hace referencia al primer elemento de su tipo */
+.section-4 ol li:first-of-type{
+  color: #2525a4;
+}
+
+/* Ejemplos con :last-of-type */
+/* Hace referencia al ultimo elemento de su tipo */
+.section-4 ol li:last-of-type{
+  color: #ff0000;
+}
+
+/* Ejemplos con :nth-child */
+/* Hace referencia al elemento que cumpla con la condición de esa posicion */
+.section-5 ul li:nth-child(2){
+  color: #1900ff;
+}
+
+/* Ejemplos con :nth-of-type */
+/* Hace referencia al elemento que cumpla con la condición de esa posicion y de su tipo */
+.section-5 ul li:nth-of-type(3){
+  color: #00ff37;
+}
+
+/* Ejemplos con :nth-last-child */
+/* Hace referencia al elemento que cumpla con la condición de esa posicion contando desde el final */
+.section-5 ul li:nth-last-child(1){
+  color: #ff00e1;
+}
