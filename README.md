@@ -3335,7 +3335,7 @@ Algunas extras que no se mencionaron en la clase:
 
 - :first-child: Aplica estilos al primer hijo de un elemento.
 
-Ejemlo:
+Ejemplo:
 
 ```css
 /* Estilo para el primer hijo de un elemento */
@@ -3347,7 +3347,7 @@ Ejemlo:
 
 - :last-child: Aplica estilos al último hijo de un elemento.
 
-Ejemlo:
+Ejemplo:
 
 ```css
 /* Estilo para el último hijo de un elemento */
@@ -3358,7 +3358,7 @@ Ejemlo:
 
 - :nth-of-type(): Aplica estilos a un elemento basado en su posición en relación con sus hermanos del mismo tipo.
 
-Ejemlo:
+Ejemplo:
 
 ```css
 /* Estilo para el tercer elemento div */
@@ -3369,7 +3369,7 @@ div:nth-of-type(3) {
 
 - :nth-last-child(): Aplica estilos a un elemento basado en su posición en relación con sus hermanos, comenzando desde el último hijo.
 
-Ejemlo:
+Ejemplo:
 
 ```css
 /* Estilo para el penúltimo hijo de un elemento */
@@ -3380,7 +3380,7 @@ Ejemlo:
 
 - :nth-last-of-type(): Aplica estilos a un elemento basado en su posición en relación con sus hermanos del mismo tipo, comenzando desde el último hijo.
 
-Ejemlo:
+Ejemplo:
 
 ```css
 /* Estilo para el penúltimo elemento div */
