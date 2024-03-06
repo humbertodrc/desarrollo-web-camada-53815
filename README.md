@@ -3319,6 +3319,8 @@ Referencias:
 
 Las pseudoclases en CSS son selectores que se utilizan para aplicar estilos a elementos en diferentes estados o situaciones. Algunas pseudoclases comunes incluyen:
 
+- :link: Aplica estilos a un enlace no visitado.
+
 - :hover: Aplica estilos a un elemento cuando el usuario pasa el cursor sobre él.
 
 - :focus: Aplica estilos a un elemento cuando recibe el foco.
@@ -3331,7 +3333,96 @@ Las pseudoclases en CSS son selectores que se utilizan para aplicar estilos a el
 
 - :not(): Aplica estilos a un elemento que no cumple con un selector específico.
 
-Algunas extras que no se mencionaron en la clase:
+- :first-child: Aplica estilos al primer hijo de un elemento.
+
+- :last-child: Aplica estilos al último hijo de un elemento.
+
+- :nth-of-type(): Aplica estilos a un elemento basado en su posición en relación con sus hermanos del mismo tipo.
+
+- :nth-last-child(): Aplica estilos a un elemento basado en su posición en relación con sus hermanos, comenzando desde el último hijo.
+
+- :nth-last-of-type(): Aplica estilos a un elemento basado en su posición en relación con sus hermanos del mismo tipo, comenzando desde el último hijo.
+
+### Detalle de :nth-child()
+
+La pseudoclase :nth-child() en CSS se utiliza para seleccionar elementos que son hijos de un elemento padre y que cumplen con un cierto patrón de orden. Esta pseudoclase toma un argumento entre paréntesis, que se puede expresar en diferentes formas para seleccionar elementos específicos dentro del conjunto de hijos.
+
+Los valores que se pueden pasar a :nth-child() son:
+
+- n: Este valor representa todos los elementos hijos.
+- n + a: Selecciona todos los elementos cuyo índice es mayor o igual a "a".
+- n - a: Selecciona todos los elementos cuyo índice es menor o igual a "a".
+- an + b: Selecciona todos los elementos cuyo índice es un múltiplo de "a" más "b".
+- even: Selecciona todos los elementos hijos con índices pares.
+- odd: Selecciona todos los elementos hijos con índices impares.
+
+Por ejemplo, aquí hay algunos ejemplos de cómo se pueden usar:
+
+:nth-child(2n): Selecciona todos los elementos hijos con índices pares.
+:nth-child(3n + 1): Selecciona cada tercer elemento, comenzando desde el primer hijo.
+:nth-child(odd): Selecciona todos los elementos hijos con índices impares.
+:nth-child(4): Selecciona el cuarto elemento hijo.
+Estos son solo algunos ejemplos, pero hay muchas formas de usar :nth-child() dependiendo de la estructura y el diseño del HTML que estés trabajando. Esta pseudoclase es útil para aplicar estilos específicos a elementos específicos dentro de una lista o de cualquier otro conjunto de elementos.
+
+Ejemlos:
+
+```css
+/* Estilo aplicado a todos los elementos pares */
+li:nth-child(2n) {
+  background-color: lightgray;
+}
+```
+
+```css
+/* Estilo aplicado a todos los elementos pares */
+li:nth-child(even) {
+  background-color: lightgray;
+}
+```
+
+```css
+/* Estilo aplicado a todos los elementos impares */
+li:nth-child(odd) {
+  background-color: lightgray;
+}
+```
+
+```css
+/* Estilo aplicado al primer elemento */
+li:nth-child(1) {
+  font-weight: bold;
+}
+```
+
+```css
+/* Estilo aplicado al segundo elemento */
+li:nth-child(2) {
+  font-style: italic;
+}
+```
+
+```css
+/* Estilo aplicado a cada tercer elemento, comenzando desde el primer hijo */
+li:nth-child(3n + 1) {
+  color: red;
+}
+```
+
+```css
+/* Estilo aplicado a cada tercer elemento, comenzando desde el segundo hijo */
+li:nth-child(3n + 2) {
+  color: blue;
+}
+```
+
+```css
+/* Estilo aplicado a cada tercer elemento, comenzando desde el tercer hijo */
+li:nth-child(3n + 3) {
+  color: green;
+}
+```
+
+### Algunas extras que no se mencionaron en la clase:
 
 - :first-child: Aplica estilos al primer hijo de un elemento.
 
