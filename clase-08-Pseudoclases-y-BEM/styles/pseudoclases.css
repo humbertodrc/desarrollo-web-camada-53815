@@ -9,6 +9,11 @@ p{
   margin-bottom: 20px;
 }
 
+main{
+  padding: 0 50px;
+}
+
+
 header{
   background-color: #f2f2f2;
   padding: 20px 30px;
@@ -62,6 +67,11 @@ nav button{
   font-size: 18px;
   font-weight: 700;
   border-color: #007fff;
+}
+
+nav button:hover{
+  background-color: #007fff;
+  color: #fff;
 }
 
 /* Ejemplos con :not */
@@ -136,6 +146,16 @@ nav button{
 .section-6 table tbody tr:nth-child(even){
   color: #000;
   background-color: #0a0eef;
+}
+
+/* Extra ::selection y ::marker */
+/* ::selection{
+  color: #fff;
+  background-color: #ff0000;
+} */
+
+li::marker{
+  content: "👉";
 }
 
 footer{
