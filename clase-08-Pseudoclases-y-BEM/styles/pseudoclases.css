@@ -5,6 +5,10 @@
   font-size: 20px;
 }
 
+p{
+  margin-bottom: 20px;
+}
+
 header{
   background-color: #f2f2f2;
   padding: 20px 30px;
@@ -22,32 +26,33 @@ nav ul{
   gap: 30px;
 }
 
-nav ul li a{
+/* Si aplicamos esto no toma el :link */
+/* nav ul li a{
   text-decoration: none;
   font-weight: 700;
-  color: #4f4f4f;
   background: #f2f2f2;
-}
+} */
 
 /* Ejemplo para aplicar :link, :hover, :active, :visited */
 a:link{
-  color: aqua;
-  background: rgb(0, 0, 0, 0.5);
+  background-color: gold;
+  color: green;
 }
 
 a:hover{
-  color: #2525a4;
+  background-color: #2525a4;
+  color:#fff;
   text-decoration: underline;
 }
 
 a:active{
-  color: #ff0000;
+  background-color: #ff0000;
   text-decoration: line-through;
 }
 
-a:active{
-  color: #00ff37;
-  background: rgb(99, 15, 20, 0.5);
+a:visited{
+  color: #000;
+  background-color: #00ff37;
 }
 
 nav button{
@@ -62,46 +67,80 @@ nav button{
 /* Ejemplos con :not */
 .section-1 p:not(.text-1){
   color: #ff0000;
+  background-color: #000;
 }
 
 /* Ejemplo con :last-child */
 /* Hace referencia al ultimo hijo */
 .section-2 p:last-child{
   color: #00ff37;
+  background-color: #4f4f4f;
 }
 
 /* Ejemplo con :first-child */
-/* Hace referencia al primer hijo */
+/* Hace referencia al primer hijo buen ejemplo para explicar :first-of-type si agregas un h2  */
 .section-3 p:first-child{
   color: #2525a4;
+  background-color: #ff00e1;
 }
 
 /* Ejemplos con :first-of-type */
 /* Hace referencia al primer elemento de su tipo */
 .section-4 ol li:first-of-type{
-  color: #2525a4;
+  color: #fff;
+  background-color: #00ff44;
 }
 
 /* Ejemplos con :last-of-type */
 /* Hace referencia al ultimo elemento de su tipo */
 .section-4 ol li:last-of-type{
   color: #ff0000;
+  background-color: #2b00ff;
 }
 
 /* Ejemplos con :nth-child */
 /* Hace referencia al elemento que cumpla con la condición de esa posicion */
 .section-5 ul li:nth-child(2){
   color: #1900ff;
+  background-color: #c6d610;
 }
 
 /* Ejemplos con :nth-of-type */
 /* Hace referencia al elemento que cumpla con la condición de esa posicion y de su tipo */
 .section-5 ul li:nth-of-type(3){
   color: #00ff37;
+  background-color: #128b49;
 }
 
 /* Ejemplos con :nth-last-child */
 /* Hace referencia al elemento que cumpla con la condición de esa posicion contando desde el final */
 .section-5 ul li:nth-last-child(1){
-  color: #ff00e1;
+  color: #fff;
+  background-color: #ff0000;
+}
+
+.section-5 ul li:nth-last-child(2){
+  color: #fff;
+  background-color: #1a95d8;
+}
+
+/* Ejemplos tabla :nth-child(odd) :nth-child(even) */
+
+/* Hace referencia a los elementos impares */
+.section-6 table tbody tr:nth-child(odd){
+  color: #fff;
+  background-color: #f20808;
+}
+
+/* Hace referencia a los elementos pares */
+.section-6 table tbody tr:nth-child(even){
+  color: #000;
+  background-color: #0a0eef;
+}
+
+footer{
+  background-color: #f2f2f2;
+  padding: 20px 30px;
+  text-align: center;
+  margin-top: 40px;
 }
