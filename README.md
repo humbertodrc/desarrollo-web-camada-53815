@@ -3426,7 +3426,7 @@ li:nth-child(3n + 3) {
 
 - :first-child: Aplica estilos al primer hijo de un elemento.
 
-Ejemlo:
+Ejemplo:
 
 ```css
 /* Estilo para el primer hijo de un elemento */
