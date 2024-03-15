@@ -3571,3 +3571,201 @@ Ejemplo de nomenclatura de clases en BEM:
 - [BEM 101](https://css-tricks.com/bem-101/): Una guía completa de BEM con ejemplos y explicaciones detalladas.
 
 - [BEM Naming Cheat Sheet](https://9elements.com/bem-cheat-sheet/): Una hoja de trucos de BEM con ejemplos y explicaciones.
+
+## Clase 9: Bootstrap
+
+### ¿Qué es Bootstrap?
+
+Bootstrap es un marco de diseño de código abierto para el desarrollo de sitios web y aplicaciones web. Bootstrap se basa en HTML, CSS y JavaScript, y proporciona una serie de componentes y utilidades predefinidos que se pueden utilizar para crear diseños y estilos web de forma rápida y eficiente.
+
+### Características de Bootstrap
+
+- Componentes predefinidos: Bootstrap proporciona una serie de componentes predefinidos, como botones, formularios, tarjetas, barras de navegación, etc., que se pueden utilizar para crear diseños y estilos web de forma rápida y eficiente.
+
+- Rejilla flexible: Bootstrap utiliza un sistema de rejilla flexible basado en filas y columnas que se puede utilizar para crear diseños responsivos y adaptables.
+
+- Estilos predefinidos: Bootstrap proporciona una serie de estilos predefinidos para tipografía, colores, espaciado, márgenes, etc., que se pueden utilizar para crear diseños web coherentes y atractivos.
+
+- Utilidades predefinidas: Bootstrap proporciona una serie de utilidades predefinidas, como clases de utilidad, variables de Sass, mixins, etc., que se pueden utilizar para personalizar y extender los estilos y componentes de Bootstrap.
+
+- Compatibilidad con navegadores: Bootstrap es compatible con la mayoría de los navegadores modernos, incluyendo Chrome, Firefox, Safari, Edge, etc., lo que garantiza una experiencia de usuario consistente en diferentes plataformas y dispositivos.
+
+### Ventajas de Bootstrap
+
+- Facilita el desarrollo web: Bootstrap proporciona una serie de componentes y utilidades predefinidos que se pueden utilizar para crear diseños y estilos web de forma rápida y eficiente.
+
+- Diseños responsivos: Bootstrap utiliza un sistema de rejilla flexible que se puede utilizar para crear diseños responsivos y adaptables que se ajustan automáticamente al tamaño de la ventana del navegador o el dispositivo.
+
+- Estilos predefinidos: Bootstrap proporciona una serie de estilos predefinidos para tipografía, colores, espaciado, márgenes, etc., que se pueden utilizar para crear diseños web coherentes y atractivos.
+
+- Compatibilidad con navegadores: Bootstrap es compatible con la mayoría de los navegadores modernos, lo que garantiza una experiencia de usuario consistente en diferentes plataformas y dispositivos.
+
+### Desventajas de Bootstrap
+
+- Sobrecarga de estilos: Bootstrap proporciona una gran cantidad de estilos predefinidos que pueden generar una sobrecarga de estilos y clases en el HTML y el CSS.
+
+- Personalización limitada: Bootstrap puede limitar la personalización y la creatividad en el diseño web, ya que los estilos y componentes predefinidos pueden ser difíciles de modificar y extender.
+
+- Curva de aprendizaje: Bootstrap puede tener una curva de aprendizaje empinada para los principiantes, ya que requiere aprender una serie de clases, componentes y utilidades predefinidos.
+
+### Recursos de Bootstrap
+
+- [Bootstrap](https://getbootstrap.com/): Sitio web oficial de Bootstrap con documentación, ejemplos y descargas.
+
+- [Bootstrap Icons](https://icons.getbootstrap.com/): Una colección de iconos de Bootstrap que se pueden utilizar en sitios web y aplicaciones web.
+
+- [Bootstrap Themes](https://themes.getbootstrap.com/): Una colección de temas de Bootstrap que se pueden utilizar para personalizar y extender los estilos de Bootstrap.
+
+- [Bootstrap Expo](https://expo.getbootstrap.com/): Una galería de sitios web y aplicaciones web creados con Bootstrap.
+
+### Grilla de Bootstrap
+
+El sistema de rejilla de Bootstrap es un sistema de rejilla flexible basado en filas y columnas que se puede utilizar para crear diseños responsivos y adaptables. El sistema de rejilla de Bootstrap se basa en un sistema de 12 columnas que se puede utilizar para organizar y alinear elementos en una página web.
+
+Ejemplo de sistema de rejilla de Bootstrap:
+
+```html
+<div class="container">
+ <div class="row">
+   <div class="col-md-4">Columna 1</div>
+   <div class="col-md-4">Columna 2</div>
+   <div class="col-md-4">Columna 3</div>
+ </div>
+</div>
+```
+
+En este ejemplo, el contenedor tiene una clase de .container, que se utiliza para envolver y centrar el contenido de la página. El contenedor contiene una fila con una clase de .row, que se utiliza para crear una fila de columnas. Cada columna tiene una clase de .col-md-4, que se utiliza para especificar el ancho de la columna en diferentes tamaños de pantalla.
+
+#### Media queries en grilla de Bootstrap
+
+El sistema de rejilla de Bootstrap utiliza media queries para crear diseños responsivos y adaptables que se ajustan automáticamente al tamaño de la ventana del navegador o el dispositivo. Las clases de columna de Bootstrap se pueden utilizar para especificar el ancho de la columna en diferentes tamaños de pantalla utilizando las siguientes clases:
+
+- .col-: Se aplica a todos los tamaños de pantalla.
+
+- .col-sm-: Se aplica a tamaños de pantalla pequeños y superiores.
+
+- .col-md-: Se aplica a tamaños de pantalla medianos y superiores.
+
+- .col-lg-: Se aplica a tamaños de pantalla grandes y superiores.
+
+- .col-xl-: Se aplica a tamaños de pantalla extra grandes y superiores.
+
+Ejemplo de clases de columna de Bootstrap:
+
+```html
+<div class="container">
+ <div class="row">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Columna 1</div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Columna 2</div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Columna 3</div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Columna 4</div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Columna 5</div>
+  </div>
+</div>
+```
+
+En este ejemplo, las clases de columna se utilizan para especificar el ancho de la columna en diferentes tamaños de pantalla. Las clases de columna se pueden combinar para crear diseños responsivos y adaptables que se ajustan automáticamente al tamaño de la ventana del navegador o el dispositivo.
+
+### Componentes de Bootstrap
+
+Bootstrap proporciona una serie de componentes predefinidos que se pueden utilizar para crear diseños y estilos web de forma rápida y eficiente. Algunos componentes comunes de Bootstrap incluyen:
+
+- Botones: Botones predefinidos con diferentes estilos y tamaños.
+
+- Formularios: Formularios predefinidos con diferentes estilos y diseños.
+
+- Tarjetas: Tarjetas predefinidas con diferentes estilos y diseños.
+
+- Barras de navegación: Barras de navegación predefinidas con diferentes estilos y diseños.
+
+- Alertas: Alertas predefinidas con diferentes estilos y diseños.
+
+- Modal: Modales predefinidos con diferentes estilos y diseños.
+
+- Carrusel: Carruseles predefinidos con diferentes estilos y diseños.
+
+- Pestañas: Pestañas predefinidas con diferentes estilos y diseños.
+
+- Acordiones: Acordiones predefinidos con diferentes estilos y diseños.
+
+### Utilidades de Bootstrap
+
+Bootstrap proporciona una serie de utilidades predefinidas que se pueden utilizar para personalizar y extender los estilos y componentes de Bootstrap. Algunas utilidades comunes de Bootstrap incluyen:
+
+- Clases de utilidad: Clases predefinidas que se pueden utilizar para aplicar estilos específicos a elementos específicos.
+
+- Variables de Sass: Variables predefinidas que se pueden utilizar para personalizar y extender los estilos de Bootstrap.
+
+- Mixins: Mixins predefinidos que se pueden utilizar para crear estilos personalizados y reutilizables.
+
+- Funciones: Funciones predefinidas que se pueden utilizar para realizar operaciones matemáticas y lógicas en los estilos de Bootstrap.
+
+- Espaciado: Clases predefinidas que se pueden utilizar para aplicar espaciado específico a elementos específicos.
+
+- Márgenes: Clases predefinidas que se pueden utilizar para aplicar márgenes específicos a elementos específicos.
+
+- Colores: Clases predefinidas que se pueden utilizar para aplicar colores específicos a elementos específicos.
+
+## Clase 10: Git
+
+### ¿Qué es Git?
+
+Git es un sistema de control de versiones distribuido que se utiliza para rastrear cambios en archivos y coordinar el trabajo en proyectos de desarrollo de software. Git se basa en un modelo de ramificación y fusión que permite a los desarrolladores trabajar en paralelo en diferentes características y versiones de un proyecto.
+
+### Características de Git
+
+- Control de versiones: Git rastrea cambios en archivos y permite a los desarrolladores revertir a versiones anteriores en caso de errores o problemas.
+
+- Ramificación y fusión: Git permite a los desarrolladores trabajar en paralelo en diferentes características y versiones de un proyecto y fusionar los cambios de forma segura.
+
+- Repositorios distribuidos: Git utiliza un modelo de repositorio distribuido que permite a los desarrolladores trabajar de forma independiente y colaborar en proyectos de desarrollo de software.
+
+- Rendimiento y escalabilidad: Git es rápido y escalable, lo que lo hace adecuado para proyectos de cualquier tamaño y complejidad.
+
+- Compatibilidad con plataformas: Git es compatible con la mayoría de los sistemas operativos y plataformas, incluyendo Windows, macOS, Linux, etc.
+
+### Comandos básicos de Git
+
+- git config —global user.name "Nombre de usuario": Configura el nombre de usuario para los commits.
+
+- git config —global user.email "Correo electrónico": Configura el correo electrónico para los commits.
+
+- git config —list: Muestra la configuración global de Git.
+
+- git —version: Muestra la versión de Git instalada en el sistema.
+
+- git init: Inicializa un nuevo repositorio de Git en el directorio actual.
+
+- git status: Muestra el estado de los archivos en el directorio de trabajo.
+
+- git add archivo: Agrega un archivo al área de preparación.
+
+- git commit -m "Mensaje de commit": Crea un nuevo commit con los archivos en el área de preparación.
+
+- git  checkout — .: Descarta los cambios en los archivos del directorio de trabajo.
+
+- git reset nombre archivo: Descarta los cambios en un archivo y lo elimina del área de preparación.
+
+- git log: Muestra el historial de commits en el repositorio.
+
+- git log --oneline: Muestra el historial de commits en una sola línea.
+
+- git log --graph: Muestra el historial de commits en forma de grafo.
+
+- git branch: Muestra las ramas en el repositorio.
+
+- git branch -l: Muestra las ramas locales en el repositorio.
+
+- git branch nombre rama: Crea una nueva rama en el repositorio.
+
+- git branch -D nombre rama: Elimina una rama del repositorio.
+
+- git checkout nombre rama: Cambia a una rama específica en el repositorio.
+
+- git merge nombre rama: Fusiona una rama en la rama actual.
+
+- git revert hash del commit: Revierte un commit específico en el repositorio.
+
+- git reset --hard hash del commit: Restablece el repositorio al estado de un commit específico.
+
+- git status -s: Muestra el estado de los archivos en el directorio de trabajo en forma de resumen.
