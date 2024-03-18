@@ -56,6 +56,9 @@ indent-rainbow: Permite visualizar los espacios en blanco de manera más clara.
 - [Clase 6 Grid](#clase-6-grid)
 - [Clase 7 Media Queries](#clase-7-media-queries)
 - [Clase 8 Pseudoclases y Pseudoelementos](#clase-8-pseudoclases-y-bem)
+- [Clase 9 Bootstrap](#clase-9-bootstrap)
+- [Clase 10 Git](#clase-10-git)
+- [Clase 11 GitHub](#clase-11-github)
 
 ## Clase 1 Prototipado y conceptos básicos de HTML
 
@@ -135,13 +138,13 @@ Es importante mantener el orden dentro del codigo y tabular el contenido para un
 ```html
 <!DOCTYPE html>
 <html>
- <head>
-  <title>Titulo de la página</title>
- </head>
- <body>
-  <h1>Encabezado de nivel 1</h1>
-  <p>Esto es un párrafo</p>
- </body>
+	<head>
+		<title>Titulo de la página</title>
+	</head>
+	<body>
+		<h1>Encabezado de nivel 1</h1>
+		<p>Esto es un párrafo</p>
+	</body>
 </html>
 ```
 
@@ -159,7 +162,7 @@ La estructura básica de un documento HTML se compone de la siguiente manera:
 
 ```html
 <html>
- ...
+	...
 </html>
 ```
 
@@ -167,7 +170,7 @@ La estructura básica de un documento HTML se compone de la siguiente manera:
 
 ```html
 <head>
- ...
+	...
 </head>
 ```
 
@@ -181,7 +184,7 @@ La estructura básica de un documento HTML se compone de la siguiente manera:
 
 ```html
 <body>
- ...
+	...
 </body>
 ```
 
@@ -205,7 +208,7 @@ Los contenedores son elementos que agrupan otros elementos.
 
 ```html
 <div>
- <p>Esto es un párrafo</p>
+	<p>Esto es un párrafo</p>
 </div>
 ```
 
@@ -219,26 +222,26 @@ Las etiquetas semánticas son aquellas que tienen un significado.
 
 ```html
 <header>
- <nav>
-  <ul>
-   <li><a href="#">Inicio</a></li>
-   <li><a href="#">Nosotros</a></li>
-   <li><a href="#">Contacto</a></li>
-  </ul>
- </nav>
+	<nav>
+		<ul>
+			<li><a href="#">Inicio</a></li>
+			<li><a href="#">Nosotros</a></li>
+			<li><a href="#">Contacto</a></li>
+		</ul>
+	</nav>
 </header>
 <main>
- <article>
-  <h1>Titulo del artículo</h1>
-  <p>Contenido del artículo</p>
- </article>
- <aside>
-  <h2>Publicidad</h2>
-  <p>Contenido del aside</p>
- </aside>
+	<article>
+		<h1>Titulo del artículo</h1>
+		<p>Contenido del artículo</p>
+	</article>
+	<aside>
+		<h2>Publicidad</h2>
+		<p>Contenido del aside</p>
+	</aside>
 </main>
 <footer>
- <p>Derechos reservados</p>
+	<p>Derechos reservados</p>
 </footer>
 ```
 
@@ -247,82 +250,82 @@ Las etiquetas semánticas son aquellas que tienen un significado.
 ```html
 <!DOCTYPE html>
 <html>
- <head>
-  <title>Titulo de la página</title>
- </head>
- <body>
-  <!-- Encabezados -->
-  <h1>Encabezado de nivel 1</h1>
-  <h2>Encabezado de nivel 2</h2>
-  <h3>Encabezado de nivel 3</h3>
-  <h4>Encabezado de nivel 4</h4>
-  <h5>Encabezado de nivel 5</h5>
-  <h6>Encabezado de nivel 6</h6>
+	<head>
+		<title>Titulo de la página</title>
+	</head>
+	<body>
+		<!-- Encabezados -->
+		<h1>Encabezado de nivel 1</h1>
+		<h2>Encabezado de nivel 2</h2>
+		<h3>Encabezado de nivel 3</h3>
+		<h4>Encabezado de nivel 4</h4>
+		<h5>Encabezado de nivel 5</h5>
+		<h6>Encabezado de nivel 6</h6>
 
-  <p>Esto es un párrafo</p>
-  <strong>Texto en negrita</strong>
-  <em>Texto en cursiva</em>
+		<p>Esto es un párrafo</p>
+		<strong>Texto en negrita</strong>
+		<em>Texto en cursiva</em>
 
-  <!-- Etiquetas contenedores por ejemplo -->
-  <div>Contenedor de Bloque</div>
-  <span>Contenedor de Linea</span>
+		<!-- Etiquetas contenedores por ejemplo -->
+		<div>Contenedor de Bloque</div>
+		<span>Contenedor de Linea</span>
 
-  <!-- Etiquetas Semanticas -->
-  <header>Encabezado</header>
-  <nav>Menu de Navegacion</nav>
-  <main>Contenido Principal</main>
-  <article>Articulo</article>
-  <section>Seccion</section>
-  <aside>Contenido Secundario</aside>
-  <footer>Pie de Pagina</footer>
+		<!-- Etiquetas Semanticas -->
+		<header>Encabezado</header>
+		<nav>Menu de Navegacion</nav>
+		<main>Contenido Principal</main>
+		<article>Articulo</article>
+		<section>Seccion</section>
+		<aside>Contenido Secundario</aside>
+		<footer>Pie de Pagina</footer>
 
-  <a href="#">Esto es un enlace</a>
+		<a href="#">Esto es un enlace</a>
 
-  <img src="imagen.jpg" alt="Texto alternativo" />
+		<img src="imagen.jpg" alt="Texto alternativo" />
 
-  <ul>
-   <li>Elemento de lista</li>
-   <li>Elemento de lista</li>
-   <li>Elemento de lista</li>
-  </ul>
-  <ol>
-   <li>Elemento de lista ordenada</li>
-   <li>Elemento de lista ordenada</li>
-   <li>Elemento de lista ordenada</li>
-  </ol>
-  <table>
-   <tr>
-    <th>Encabezado de tabla</th>
-    <th>Encabezado de tabla</th>
-   </tr>
-   <tr>
-    <td>Dato de tabla</td>
-    <td>Dato de tabla</td>
-   </tr>
-   <tr>
-    <td>Dato de tabla</td>
-    <td>Dato de tabla</td>
-   </tr>
-  </table>
+		<ul>
+			<li>Elemento de lista</li>
+			<li>Elemento de lista</li>
+			<li>Elemento de lista</li>
+		</ul>
+		<ol>
+			<li>Elemento de lista ordenada</li>
+			<li>Elemento de lista ordenada</li>
+			<li>Elemento de lista ordenada</li>
+		</ol>
+		<table>
+			<tr>
+				<th>Encabezado de tabla</th>
+				<th>Encabezado de tabla</th>
+			</tr>
+			<tr>
+				<td>Dato de tabla</td>
+				<td>Dato de tabla</td>
+			</tr>
+			<tr>
+				<td>Dato de tabla</td>
+				<td>Dato de tabla</td>
+			</tr>
+		</table>
 
-  <!-- Etiquetas Abiertas -->
-  <br />: para insertar un salto de línea.
-  <hr />
-  : para insertar una línea horizontal. <img />: para insertar una imagen.
-  <input />: para crear un campo de entrada de datos, como un cuadro de texto
-  o un botón. <meta />: para agregar información meta a la página, como
-  descripción y palabras clave. <link />: para vincular la página a una hoja
-  de estilo CSS o a otro recurso externo. <area />: para definir una región de
-  un mapa de imagen. <base />: para establecer la URL base para todas las URL
-  relativas dentro de una página.
-  <col />
-  : para definir las propiedades de estilo para una columna de una tabla.
-  <embed />: para incrustar contenido multimedia, como audio o video.
-  <param />
-  : para establecer parámetros para un objeto multimedia en la página.
-  <source />
-  : para especificar la fuente de un elemento multimedia.
- </body>
+		<!-- Etiquetas Abiertas -->
+		<br />: para insertar un salto de línea.
+		<hr />
+		: para insertar una línea horizontal. <img />: para insertar una imagen.
+		<input />: para crear un campo de entrada de datos, como un cuadro de texto
+		o un botón. <meta />: para agregar información meta a la página, como
+		descripción y palabras clave. <link />: para vincular la página a una hoja
+		de estilo CSS o a otro recurso externo. <area />: para definir una región de
+		un mapa de imagen. <base />: para establecer la URL base para todas las URL
+		relativas dentro de una página.
+		<col />
+		: para definir las propiedades de estilo para una columna de una tabla.
+		<embed />: para incrustar contenido multimedia, como audio o video.
+		<param />
+		: para establecer parámetros para un objeto multimedia en la página.
+		<source />
+		: para especificar la fuente de un elemento multimedia.
+	</body>
 </html>
 ```
 
@@ -469,13 +472,13 @@ El favicon es un icono que se muestra en la pestaña del navegador y en la lista
 ```html
 <!DOCTYPE html>
 <html>
- <head>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <title>Titulo de la página</title>
- </head>
- <body>
-  ...
- </body>
+	<head>
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<title>Titulo de la página</title>
+	</head>
+	<body>
+		...
+	</body>
 </html>
 ```
 
@@ -489,10 +492,10 @@ Ejemplo:
 
 ```html
 <iframe
- src="pagina.html"
- width="300"
- height="200"
- title="Título del marco"
+	src="pagina.html"
+	width="300"
+	height="200"
+	title="Título del marco"
 ></iframe>
 ```
 
@@ -502,10 +505,10 @@ Ejemplo:
 
 ```html
 <iframe
- src="pagina.html"
- width="300"
- height="200"
- title="Título del marco"
+	src="pagina.html"
+	width="300"
+	height="200"
+	title="Título del marco"
 ></iframe>
 ```
 
@@ -515,10 +518,10 @@ Ejemplo:
 
 ```html
 <iframe
- src="pagina.html"
- width="300"
- height="200"
- title="Título del marco"
+	src="pagina.html"
+	width="300"
+	height="200"
+	title="Título del marco"
 ></iframe>
 ```
 
@@ -528,10 +531,10 @@ Ejemplo:
 
 ```html
 <iframe
- src="pagina.html"
- width="300"
- height="200"
- title="Título del marco"
+	src="pagina.html"
+	width="300"
+	height="200"
+	title="Título del marco"
 ></iframe>
 ```
 
@@ -541,11 +544,11 @@ Ejemplo:
 
 ```html
 <iframe
- src="pagina.html"
- width="300"
- height="200"
- title="Título del marco"
- loading="lazy"
+	src="pagina.html"
+	width="300"
+	height="200"
+	title="Título del marco"
+	loading="lazy"
 ></iframe>
 ```
 
@@ -555,11 +558,11 @@ Ejemplo:
 
 ```html
 <iframe
- src="pagina.html"
- width="300"
- height="200"
- title="Título del marco"
- frameborder="0"
+	src="pagina.html"
+	width="300"
+	height="200"
+	title="Título del marco"
+	frameborder="0"
 ></iframe>
 ```
 
@@ -569,11 +572,11 @@ Ejemplo:
 
 ```html
 <iframe
- src="pagina.html"
- width="300"
- height="200"
- title="Título del marco"
- allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+	src="pagina.html"
+	width="300"
+	height="200"
+	title="Título del marco"
+	allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 ></iframe>
 ```
 
@@ -583,11 +586,11 @@ Ejemplo:
 
 ```html
 <iframe
- src="pagina.html"
- width="300"
- height="200"
- title="Título del marco"
- allowfullscreen
+	src="pagina.html"
+	width="300"
+	height="200"
+	title="Título del marco"
+	allowfullscreen
 ></iframe>
 ```
 
@@ -601,9 +604,9 @@ La etiqueta ol se utiliza para crear listas ordenadas, es decir, listas en las q
 
 ```html
 <ol>
- <li>Elemento 1</li>
- <li>Elemento 2</li>
- <li>Elemento 3</li>
+	<li>Elemento 1</li>
+	<li>Elemento 2</li>
+	<li>Elemento 3</li>
 </ol>
 ```
 
@@ -613,9 +616,9 @@ La etiqueta ul se utiliza para crear listas desordenadas, es decir, listas en la
 
 ```html
 <ul>
- <li>Elemento 1</li>
- <li>Elemento 2</li>
- <li>Elemento 3</li>
+	<li>Elemento 1</li>
+	<li>Elemento 2</li>
+	<li>Elemento 3</li>
 </ul>
 ```
 
@@ -625,12 +628,12 @@ La etiqueta dl se utiliza para crear listas de definición, es decir, listas en 
 
 ```html
 <dl>
- <dt>Término 1</dt>
- <dd>Descripción 1</dd>
- <dt>Término 2</dt>
- <dd>Descripción 2</dd>
- <dt>Término 3</dt>
- <dd>Descripción 3</dd>
+	<dt>Término 1</dt>
+	<dd>Descripción 1</dd>
+	<dt>Término 2</dt>
+	<dd>Descripción 2</dd>
+	<dt>Término 3</dt>
+	<dd>Descripción 3</dd>
 </dl>
 ```
 
@@ -680,7 +683,7 @@ Ejemplo:
 
 ```html
 <form action="/procesar.php" method="post" enctype="multipart/form-data">
- ...
+	...
 </form>
 ```
 
@@ -724,13 +727,13 @@ La etiqueta form se utiliza para crear un formulario en un documento HTML. El at
 
 ```html
 <form action="/procesar.php" method="post">
- <label for="nombre">Nombre:</label>
- <input type="text" id="nombre" name="nombre" />
- <label for="email">Correo Electrónico:</label>
- <input type="email" id="email" name="email" />
- <label for="comentario">Comentario:</label>
- <textarea id="comentario" name="comentario"></textarea>
- <button type="submit">Enviar</button>
+	<label for="nombre">Nombre:</label>
+	<input type="text" id="nombre" name="nombre" />
+	<label for="email">Correo Electrónico:</label>
+	<input type="email" id="email" name="email" />
+	<label for="comentario">Comentario:</label>
+	<textarea id="comentario" name="comentario"></textarea>
+	<button type="submit">Enviar</button>
 </form>
 ```
 
@@ -902,9 +905,9 @@ Ejemplo:
 ````html
 <input type="text" name="nombre" list="nombres" />
 <datalist id="nombres">
- <option value="Humberto"></option>
- <option value="Juan"></option>
- <option value="María"></option>
+	<option value="Humberto"></option>
+	<option value="Juan"></option>
+	<option value="María"></option>
 </datalist>
 
 12- multiple: Es un atributo opcional que especifica que el control de entrada
@@ -951,12 +954,12 @@ La etiqueta select se utiliza para crear un control de selección en un formular
 
 ```html
 <select name="pais">
- <option value="ar">Argentina</option>
- <option value="br">Brasil</option>
- <option value="cl">Chile</option>
- <option value="co">Colombia</option>
- <option value="mx">México</option>
- <option value="pe">Perú</option>
+	<option value="ar">Argentina</option>
+	<option value="br">Brasil</option>
+	<option value="cl">Chile</option>
+	<option value="co">Colombia</option>
+	<option value="mx">México</option>
+	<option value="pe">Perú</option>
 </select>
 ```
 
@@ -966,13 +969,13 @@ Las etiquetas fieldset y legend se utilizan para agrupar un conjunto de campos r
 
 ```html
 <fieldset>
- <legend>Datos Personales</legend>
- <label for="nombre">Nombre:</label>
- <input type="text" id="nombre" name="nombre" />
- <label for="email">Correo Electrónico:</label>
- <input type="email" id="email" name="email" />
- <label for="telefono">Teléfono:</label>
- <input type="tel" id="telefono" name="telefono" />
+	<legend>Datos Personales</legend>
+	<label for="nombre">Nombre:</label>
+	<input type="text" id="nombre" name="nombre" />
+	<label for="email">Correo Electrónico:</label>
+	<input type="email" id="email" name="email" />
+	<label for="telefono">Teléfono:</label>
+	<input type="tel" id="telefono" name="telefono" />
 </fieldset>
 ```
 
@@ -986,21 +989,21 @@ La etiqueta table se utiliza para crear una tabla en un documento HTML. La etiqu
 
 ```html
 <table>
- <tr>
-  <th>Encabezado 1</th>
-  <th>Encabezado 2</th>
-  <th>Encabezado 3</th>
- </tr>
- <tr>
-  <td>Dato 1</td>
-  <td>Dato 2</td>
-  <td>Dato 3</td>
- </tr>
- <tr>
-  <td>Dato 4</td>
-  <td>Dato 5</td>
-  <td>Dato 6</td>
- </tr>
+	<tr>
+		<th>Encabezado 1</th>
+		<th>Encabezado 2</th>
+		<th>Encabezado 3</th>
+	</tr>
+	<tr>
+		<td>Dato 1</td>
+		<td>Dato 2</td>
+		<td>Dato 3</td>
+	</tr>
+	<tr>
+		<td>Dato 4</td>
+		<td>Dato 5</td>
+		<td>Dato 6</td>
+	</tr>
 </table>
 ```
 
@@ -1014,14 +1017,14 @@ Ejemplo:
 
 ````html
 <table border="1">
- ...
+	...
 </table>
 
 2- cellpadding: Es un atributo opcional que especifica el espacio entre el borde
 de la celda y su contenido. El valor del atributo es un número entero que
 representa el espacio en píxeles. Ejemplo: ```html
 <table cellpadding="10">
- ...
+	...
 </table>
 ````
 
@@ -1031,14 +1034,14 @@ Ejemplo:
 
 ````html
 <table cellspacing="5">
- ...
+	...
 </table>
 
 4- width: Es un atributo opcional que especifica el ancho de la tabla. El valor
 del atributo es un número entero que representa el ancho en píxeles. Ejemplo:
 ```html
 <table width="300">
- ...
+	...
 </table>
 ````
 
@@ -1048,14 +1051,14 @@ Ejemplo:
 
 ````html
 <table align="center">
- ...
+	...
 </table>
 
 6- bgcolor: Es un atributo opcional que especifica el color de fondo de la
 tabla. El valor del atributo es un nombre de color o un código hexadecimal.
 Ejemplo: ```html
 <table bgcolor="#f0f0f0">
- ...
+	...
 </table>
 ````
 
@@ -1256,10 +1259,10 @@ Sí, puedes utilizar la etiqueta article para crear una tarjeta (card) en HTML. 
 
 ```html
 <article class="card">
- <img src="imagen.jpg" alt="Texto alternativo" />
- <h2>Título del artículo</h2>
- <p>Contenido del artículo</p>
- <a href="#">Leer más</a>
+	<img src="imagen.jpg" alt="Texto alternativo" />
+	<h2>Título del artículo</h2>
+	<p>Contenido del artículo</p>
+	<a href="#">Leer más</a>
 </article>
 ```
 
@@ -1269,14 +1272,14 @@ Para crear un footer siguiendo las buenas prácticas de HTML, puedes utilizar la
 
 ```html
 <footer>
- <nav>
-  <ul>
-   <li><a href="#">Inicio</a></li>
-   <li><a href="#">Acerca de</a></li>
-   <li><a href="#">Contacto</a></li>
-  </ul>
- </nav>
- <p>&copy; 2022 Mi Sitio Web</p>
+	<nav>
+		<ul>
+			<li><a href="#">Inicio</a></li>
+			<li><a href="#">Acerca de</a></li>
+			<li><a href="#">Contacto</a></li>
+		</ul>
+	</nav>
+	<p>&copy; 2022 Mi Sitio Web</p>
 </footer>
 ```
 
@@ -1286,15 +1289,15 @@ Para crear un header siguiendo las buenas prácticas de HTML, puedes utilizar la
 
 ```html
 <header>
- <h1>Nombre del Sitio Web</h1>
- <p>Descripción del Sitio Web</p>
- <nav>
-  <ul>
-   <li><a href="#">Inicio</a></li>
-   <li><a href="#">Acerca de</a></li>
-   <li><a href="#">Contacto</a></li>
-  </ul>
- </nav>
+	<h1>Nombre del Sitio Web</h1>
+	<p>Descripción del Sitio Web</p>
+	<nav>
+		<ul>
+			<li><a href="#">Inicio</a></li>
+			<li><a href="#">Acerca de</a></li>
+			<li><a href="#">Contacto</a></li>
+		</ul>
+	</nav>
 </header>
 ```
 
@@ -1313,7 +1316,7 @@ Sí, puedes agregar una etiqueta "a" (enlace) a una imagen en HTML. Al envolver 
 
 ```html
 <a href="pagina.html">
- <img src="imagen.jpg" alt="Texto alternativo" />
+	<img src="imagen.jpg" alt="Texto alternativo" />
 </a>
 ```
 
@@ -1367,9 +1370,9 @@ La sintaxis de CSS se compone de reglas de estilo que se utilizan para aplicar e
 
 ```css
 selector {
- propiedad: valor;
- propiedad: valor;
- ...;
+	propiedad: valor;
+	propiedad: valor;
+	...;
 }
 ```
 
@@ -1392,7 +1395,7 @@ En CSS, los elementos HTML pueden tener una relación de padre e hijo, lo que si
 ```css
 /* Estilo aplicado a todos los párrafos dentro de un div */
 div p {
- color: red;
+	color: red;
 }
 ```
 
@@ -1401,7 +1404,7 @@ Otro ejemplo con mas de un nivel de anidamiento:
 ```css
 /* Estilo aplicado a todos los párrafos dentro de un div dentro de un main */
 main div p {
- color: red;
+	color: red;
 }
 ```
 
@@ -1422,12 +1425,12 @@ Para agregar estilos CSS externos a un documento HTML, puedes crear un archivo C
 ```html
 <!DOCTYPE html>
 <html>
- <head>
-  <link rel="stylesheet" href="estilos.css" />
- </head>
- <body>
-  ...
- </body>
+	<head>
+		<link rel="stylesheet" href="estilos.css" />
+	</head>
+	<body>
+		...
+	</body>
 </html>
 ```
 
@@ -1438,17 +1441,17 @@ Para agregar estilos CSS internos a un documento HTML, puedes utilizar la etique
 ```html
 <!DOCTYPE html>
 <html>
- <head>
-  <style>
-   /* Estilos CSS internos */
-   body {
-    font-family: Arial, sans-serif;
-   }
-  </style>
- </head>
- <body>
-  ...
- </body>
+	<head>
+		<style>
+			/* Estilos CSS internos */
+			body {
+				font-family: Arial, sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		...
+	</body>
 </html>
 ```
 
@@ -1459,12 +1462,12 @@ Para agregar estilos CSS en línea a un elemento HTML, puedes utilizar el atribu
 ```html
 <!DOCTYPE html>
 <html>
- <head>
-  ...
- </head>
- <body>
-  <p style="color: red;">Este es un párrafo de texto con estilo en línea.</p>
- </body>
+	<head>
+		...
+	</head>
+	<body>
+		<p style="color: red;">Este es un párrafo de texto con estilo en línea.</p>
+	</body>
 </html>
 ```
 
@@ -1479,19 +1482,19 @@ Ejemplo del HTML y CSS:
 ```html
 <!DOCTYPE html>
 <html>
- <head> </head>
- <body>
-  <p>Este es un párrafo de texto.</p>
-  <h1>Este es un encabezado de nivel 1.</h1>
-  <div>Este es un div.</div>
- </body>
+	<head> </head>
+	<body>
+		<p>Este es un párrafo de texto.</p>
+		<h1>Este es un encabezado de nivel 1.</h1>
+		<div>Este es un div.</div>
+	</body>
 </html>
 ```
 
 ```css
 /* Estilo aplicado a todos los párrafos */
 p {
- color: red;
+	color: red;
 }
 ```
 
@@ -1502,18 +1505,18 @@ Ejemplo del HTML y CSS:
 ```html
 <!DOCTYPE html>
 <html>
- <head> </head>
- <body>
-  <p class="destacado">Este es un párrafo de texto destacado.</p>
-  <p>Este es otro párrafo de texto.</p>
- </body>
+	<head> </head>
+	<body>
+		<p class="destacado">Este es un párrafo de texto destacado.</p>
+		<p>Este es otro párrafo de texto.</p>
+	</body>
 </html>
 ```
 
 ```css
 /* Estilo aplicado a todos los elementos con la clase "destacado" */
 .destacado {
- color: red;
+	color: red;
 }
 ```
 
@@ -1524,18 +1527,18 @@ Ejemplo del HTML y CSS:
 ```html
 <!DOCTYPE html>
 <html>
- <head> </head>
- <body>
-  <p id="parrafo1">Este es un párrafo de texto.</p>
-  <p id="parrafo2">Este es otro párrafo de texto.</p>
- </body>
+	<head> </head>
+	<body>
+		<p id="parrafo1">Este es un párrafo de texto.</p>
+		<p id="parrafo2">Este es otro párrafo de texto.</p>
+	</body>
 </html>
 ```
 
 ```css
 /* Estilo aplicado al elemento con el ID "parrafo1" */
 #parrafo1 {
- color: red;
+	color: red;
 }
 ```
 
@@ -1546,18 +1549,18 @@ Ejemplo del HTML y CSS:
 ```html
 <!DOCTYPE html>
 <html>
- <head> </head>
- <body>
-  <a href="pagina1.html">Enlace 1</a>
-  <a href="pagina2.html">Enlace 2</a>
- </body>
+	<head> </head>
+	<body>
+		<a href="pagina1.html">Enlace 1</a>
+		<a href="pagina2.html">Enlace 2</a>
+	</body>
 </html>
 ```
 
 ```css
 /* Estilo aplicado a todos los enlaces con el atributo "href" */
 a[href] {
- color: red;
+	color: red;
 }
 ```
 
@@ -1568,18 +1571,18 @@ Ejemplo del HTML y CSS:
 ```html
 <!DOCTYPE html>
 <html>
- <head> </head>
- <body>
-  <p class="destacado">Este es un párrafo de texto destacado.</p>
-  <p>Este es otro párrafo de texto.</p>
- </body>
+	<head> </head>
+	<body>
+		<p class="destacado">Este es un párrafo de texto destacado.</p>
+		<p>Este es otro párrafo de texto.</p>
+	</body>
 </html>
 ```
 
 ```css
 /* Estilo aplicado a todos los párrafos con la clase "destacado" dentro de un div */
 div p.destacado {
- color: red;
+	color: red;
 }
 ```
 
@@ -1590,7 +1593,7 @@ En CSS, una clase es un identificador que se utiliza para aplicar estilos a uno 
 ```css
 /* Definición de una clase en CSS */
 .destacado {
- color: red;
+	color: red;
 }
 ```
 
@@ -1604,7 +1607,7 @@ Un ID es un identificador único que se utiliza para aplicar estilos a un elemen
 ```css
 /* Definición de un ID en CSS */
 #parrafo1 {
- color: red;
+	color: red;
 }
 ```
 
@@ -1630,19 +1633,20 @@ La herencia en CSS se refiere a la forma en que los estilos se aplican a los ele
 ```css
 /* Estilo aplicado a todos los párrafos */
 div {
- color: red;
+	color: red;
 }
 ```
 
 ```html
 <!DOCTYPE html>
 <html>
- <head> </head>
- <body>
-  <div>
-   <<p>Este es un párrafo de texto.</p>
-  </div>
- </body>
+	<head> </head>
+	<body>
+		<div>
+			<
+			<p>Este es un párrafo de texto.</p>
+		</div>
+	</body>
 </html>
 ```
 
@@ -1712,7 +1716,7 @@ La regla !important en CSS se utiliza para especificar la importancia de un esti
 ```css
 /* Estilo con !important */
 p {
- color: red !important;
+	color: red !important;
 }
 ```
 
@@ -1729,7 +1733,7 @@ La propiedad color en CSS se utiliza para especificar el color del texto de un e
 ```css
 /* Estilo aplicado al color del texto */
 p {
- color: red;
+	color: red;
 }
 ```
 
@@ -1746,14 +1750,14 @@ La propiedad list-style en CSS se utiliza para especificar el estilo de las viñ
 ```css
 /* Estilo aplicado al estilo de la lista */
 ul {
- list-style: disc;
+	list-style: disc;
 }
 ```
 
 ```css
 /* Eliminando estilo de las listas */
 ul {
- list-style: none;
+	list-style: none;
 }
 ```
 
@@ -1764,7 +1768,7 @@ La propiedad font-family en CSS se utiliza para especificar la fuente del texto 
 ```css
 /* Estilo aplicado a la fuente del texto */
 p {
- font-family: Arial, sans-serif;
+	font-family: Arial, sans-serif;
 }
 ```
 
@@ -1773,7 +1777,7 @@ La propieda font-size en CSS se utiliza para especificar el tamaño del texto de
 ```css
 /* Estilo aplicado al tamaño del texto */
 p {
- font-size: 16px;
+	font-size: 16px;
 }
 ```
 
@@ -1782,7 +1786,7 @@ La propiedad font-weight en CSS se utiliza para especificar el grosor del texto 
 ```css
 /* Estilo aplicado al grosor del texto */
 p {
- font-weight: bold;
+	font-weight: bold;
 }
 ```
 
@@ -1791,7 +1795,7 @@ La propiedad font-style en CSS se utiliza para especificar el estilo de la fuent
 ```css
 /* Estilo aplicado al estilo de la fuente del texto */
 p {
- font-style: italic;
+	font-style: italic;
 }
 ```
 
@@ -1800,7 +1804,7 @@ La propiedad text-align en CSS se utiliza para especificar la alineación del te
 ```css
 /* Estilo aplicado a la alineación del texto */
 p {
- text-align: center;
+	text-align: center;
 }
 ```
 
@@ -1809,7 +1813,7 @@ La propiedad text-decoration en CSS se utiliza para especificar la decoración d
 ```css
 /* Estilo aplicado a la decoración del texto */
 p {
- text-decoration: underline;
+	text-decoration: underline;
 }
 ```
 
@@ -1820,7 +1824,7 @@ La propiedad background-color en CSS se utiliza para especificar el color de fon
 ```css
 /* Estilo aplicado al color de fondo */
 body {
- background-color: lightgray;
+	background-color: lightgray;
 }
 ```
 
@@ -1829,7 +1833,7 @@ La propiedad background-image en CSS se utiliza para especificar una imagen de f
 ```css
 /* Estilo aplicado a la imagen de fondo */
 body {
- background-image: url("imagen.jpg");
+	background-image: url("imagen.jpg");
 }
 ```
 
@@ -1838,7 +1842,7 @@ La propiedad background-repeat en CSS se utiliza para especificar cómo se repet
 ```css
 /* Estilo aplicado a la repetición de la imagen de fondo */
 body {
- background-repeat: no-repeat;
+	background-repeat: no-repeat;
 }
 ```
 
@@ -1847,7 +1851,7 @@ La propiedad background-position en CSS se utiliza para especificar la posición
 ```css
 /* Estilo aplicado a la posición de la imagen de fondo */
 body {
- background-position: center;
+	background-position: center;
 }
 ```
 
@@ -1856,7 +1860,7 @@ La propiedad background-attachment en CSS se utiliza para especificar si una ima
 ```css
 /* Estilo aplicado a la fijación de la imagen de fondo */
 body {
- background-attachment: fixed;
+	background-attachment: fixed;
 }
 ```
 
@@ -1865,21 +1869,21 @@ La propiedad background-size en CSS se utiliza para especificar el tamaño de un
 ```css
 /* Estilo aplicado al tamaño de la imagen de fondo */
 body {
- background-size: cover;
+	background-size: cover;
 }
 ```
 
 ```css
 /* Estilo aplicado al tamaño de la imagen de fondo */
 body {
- background-size: 100px 100px;
+	background-size: 100px 100px;
 }
 ```
 
 ```css
 /* Estilo aplicado al tamaño de la imagen de fondo */
 body {
- background-size: 50% 50%;
+	background-size: 50% 50%;
 }
 ```
 
@@ -1922,9 +1926,9 @@ El reset CSS es una técnica utilizada para restablecer los estilos predetermina
 ```css
 /* Reset CSS básico */
 * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 ```
 
@@ -1933,21 +1937,29 @@ Reset mas avanzado:
 ```css
 /* Reset CSS avanzado */
 html {
- box-sizing: border-box;
+	box-sizing: border-box;
 }
-*, *::before, *::after {
- box-sizing: inherit;
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
 }
 body {
- margin: 0;
- font-family: Arial, sans-serif;
+	margin: 0;
+	font-family: Arial, sans-serif;
 }
-h1, h2, h3, h4, h5, h6 {
- font-size: inherit;
- font-weight: inherit;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
 }
-ul, ol {
- list-style: none;
+ul,
+ol {
+	list-style: none;
 }
 ```
 
@@ -1972,7 +1984,7 @@ La propiedad width en CSS se utiliza para especificar el ancho de un elemento HT
 ```css
 /* Estilo aplicado al ancho del elemento */
 div {
- width: 200px;
+	width: 200px;
 }
 ```
 
@@ -1981,7 +1993,7 @@ La propiedad height en CSS se utiliza para especificar la altura de un elemento 
 ```css
 /* Estilo aplicado a la altura del elemento */
 div {
- height: 100px;
+	height: 100px;
 }
 ```
 
@@ -1992,28 +2004,28 @@ La propiedad overflow en CSS se utiliza para especificar cómo se manejará el c
 ```css
 /* Estilo aplicado al desbordamiento del contenido */
 div {
- overflow: visible;
+	overflow: visible;
 }
 ```
 
 ```css
 /* Estilo aplicado al desbordamiento del contenido */
 div {
- overflow: hidden;
+	overflow: hidden;
 }
 ```
 
 ```css
 /* Estilo aplicado al desbordamiento del contenido */
 div {
- overflow: scroll;
+	overflow: scroll;
 }
 ```
 
 ```css
 /* Estilo aplicado al desbordamiento del contenido */
 div {
- overflow: auto;
+	overflow: auto;
 }
 ```
 
@@ -2024,28 +2036,28 @@ La propiedad margin en CSS se utiliza para especificar el margen de un elemento 
 ```css
 /* Esto le aplica un margen a todo el div */
 div {
- margin: 10px;
+	margin: 10px;
 }
 ```
 
 ```css
 /* Esto le aplica un margen arribe y abajo de 10px y a los lados de 20px */
 div {
- margin: 10px 20px;
+	margin: 10px 20px;
 }
 ```
 
 ```css
 /* Esto le aplica un margen arriba de 10px, a la derecha de 20px, abajo de 30px y a la izquierda de 40px */
 div {
- margin: 10px 20px 30px 40px;
+	margin: 10px 20px 30px 40px;
 }
 ```
 
 ```css
 /* Esto le aplica solo un margen a los lados de 30px y no le aplica arriba y abajo */
 div {
- margin: 0 30px;
+	margin: 0 30px;
 }
 ```
 
@@ -2056,28 +2068,28 @@ La propiedad padding en CSS se utiliza para especificar el relleno de un element
 ```css
 /* Esto le aplica un relleno a todo el div */
 div {
- padding: 10px;
+	padding: 10px;
 }
 ```
 
 ```css
 /* Esto le aplica un relleno arribe y abajo de 10px y a los lados de 20px */
 div {
- padding: 10px 20px;
+	padding: 10px 20px;
 }
 ```
 
 ```css
 /* Esto le aplica un relleno arriba de 10px, a la derecha de 20px, abajo de 30px y a la izquierda de 40px */
 div {
- padding: 10px 20px 30px 40px;
+	padding: 10px 20px 30px 40px;
 }
 ```
 
 ```css
 /* Esto le aplica solo un relleno a los lados de 30px y no le aplica arriba y abajo */
 div {
- padding: 0 30px;
+	padding: 0 30px;
 }
 ```
 
@@ -2088,28 +2100,28 @@ La propiedad border en CSS se utiliza para especificar el borde de un elemento H
 ```css
 /* Esto le aplica un borde a todo el div */
 div {
- border: 1px solid black;
+	border: 1px solid black;
 }
 ```
 
 ```css
 /* Esto le aplica un borde arriba y abajo de 1px y a los lados de 2px */
 div {
- border: 1px 2px;
+	border: 1px 2px;
 }
 ```
 
 ```css
 /* Esto le aplica un borde arriba de 1px, a la derecha de 2px, abajo de 3px y a la izquierda de 4px */
 div {
- border: 1px 2px 3px 4px;
+	border: 1px 2px 3px 4px;
 }
 ```
 
 ```css
 /* Esto le aplica solo un borde a los lados de 3px y no le aplica arriba y abajo */
 div {
- border: 0 3px;
+	border: 0 3px;
 }
 ```
 
@@ -2127,28 +2139,28 @@ La propiedad display en CSS se utiliza para especificar cómo se mostrará un el
 ```css
 /* Esto le aplica un display de bloque al div */
 div {
- display: block;
+	display: block;
 }
 ```
 
 ```css
 /* Esto le aplica un display en línea al div */
 div {
- display: inline;
+	display: inline;
 }
 ```
 
 ```css
 /* Esto le aplica un display en línea con bloque al div */
 div {
- display: inline-block;
+	display: inline-block;
 }
 ```
 
 ```css
 /* Esto le aplica un display de ninguno al div */
 div {
- display: none;
+	display: none;
 }
 ```
 
@@ -2167,7 +2179,7 @@ La propiedad display en CSS se utiliza para ocultar elementos HTML en la página
 ```css
 /* Esto le aplica un display de ninguno al div */
 div {
- display: none;
+	display: none;
 }
 ```
 
@@ -2178,35 +2190,35 @@ La propiedad position en CSS se utiliza para especificar el método de posiciona
 ```css
 /* Esto le aplica un position estático al div */
 div {
- position: static;
+	position: static;
 }
 ```
 
 ```css
 /* Esto le aplica un position relativo al div */
 div {
- position: relative;
+	position: relative;
 }
 ```
 
 ```css
 /* Esto le aplica un position absoluto al div */
 div {
- position: absolute;
+	position: absolute;
 }
 ```
 
 ```css
 /* Esto le aplica un position fijo al div */
 div {
- position: fixed;
+	position: fixed;
 }
 ```
 
 ```css
 /* Esto le aplica un position pegajoso al div */
 div {
- position: sticky;
+	position: sticky;
 }
 ```
 
@@ -2227,7 +2239,7 @@ La propiedad z-index en CSS se utiliza para especificar el orden de apilamiento 
 ```css
 /* Esto le aplica un z-index de 1 al div */
 div {
- z-index: 1;
+	z-index: 1;
 }
 ```
 
@@ -2291,7 +2303,7 @@ Ejemplo:
 ```css
 /* Estilo aplicado al contenedor flex */
 .container {
- display: flex;
+	display: flex;
 }
 ```
 
@@ -2302,32 +2314,32 @@ Ejemplo de valores:
 ```css
 /* Estilo aplicado al contenedor flex */
 .container {
- display: flex;
- flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor flex */
 .container {
- display: flex;
- flex-direction: row-reverse;
+	display: flex;
+	flex-direction: row-reverse;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor flex */
 .container {
- display: flex;
- flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor flex */
 .container {
- display: flex;
- flex-direction: column-reverse;
+	display: flex;
+	flex-direction: column-reverse;
 }
 ```
 
@@ -2338,24 +2350,24 @@ Ejemplo de valores:
 ```css
 /* Estilo aplicado al contenedor flex */
 .container {
- display: flex;
- flex-wrap: nowrap;
+	display: flex;
+	flex-wrap: nowrap;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor flex */
 .container {
- display: flex;
- flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor flex */
 .container {
- display: flex;
- flex-wrap: wrap-reverse;
+	display: flex;
+	flex-wrap: wrap-reverse;
 }
 ```
 
@@ -2366,8 +2378,8 @@ Ejemplo:
 ```css
 /* Estilo aplicado al contenedor flex */
 .container {
- display: flex;
- flex-flow: row wrap;
+	display: flex;
+	flex-flow: row wrap;
 }
 ```
 
@@ -2378,48 +2390,48 @@ Ejemplo de valores:
 ```css
 /* Estilo aplicado al contenedor flex */
 .container {
- display: flex;
- justify-content: flex-start;
+	display: flex;
+	justify-content: flex-start;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor flex */
 .container {
- display: flex;
- justify-content: flex-end;
+	display: flex;
+	justify-content: flex-end;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor flex */
 .container {
- display: flex;
- justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor flex */
 .container {
- display: flex;
- justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor flex */
 .container {
- display: flex;
- justify-content: space-around;
+	display: flex;
+	justify-content: space-around;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor flex */
 .container {
- display: flex;
- justify-content: space-evenly;
+	display: flex;
+	justify-content: space-evenly;
 }
 ```
 
@@ -2430,40 +2442,40 @@ Ejemplo de valores:
 ```css
 /* Estilo aplicado al contenedor flex */
 .container {
- display: flex;
- align-items: stretch;
+	display: flex;
+	align-items: stretch;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor flex */
 .container {
- display: flex;
- align-items: flex-start;
+	display: flex;
+	align-items: flex-start;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor flex */
 .container {
- display: flex;
- align-items: flex-end;
+	display: flex;
+	align-items: flex-end;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor flex */
 .container {
- display: flex;
- align-items: center;
+	display: flex;
+	align-items: center;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor flex */
 .container {
- display: flex;
- align-items: baseline;
+	display: flex;
+	align-items: baseline;
 }
 ```
 
@@ -2474,56 +2486,56 @@ Ejemplo de valores:
 ```css
 /* Estilo aplicado al contenedor flex */
 .container {
- display: flex;
- align-content: stretch;
+	display: flex;
+	align-content: stretch;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor flex */
 .container {
- display: flex;
- align-content: flex-start;
+	display: flex;
+	align-content: flex-start;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor flex */
 .container {
- display: flex;
- align-content: flex-end;
+	display: flex;
+	align-content: flex-end;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor flex */
 .container {
- display: flex;
- align-content: center;
+	display: flex;
+	align-content: center;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor flex */
 .container {
- display: flex;
- align-content: space-between;
+	display: flex;
+	align-content: space-between;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor flex */
 .container {
- display: flex;
- align-content: space-around;
+	display: flex;
+	align-content: space-around;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor flex */
 .container {
- display: flex;
- align-content: space-evenly;
+	display: flex;
+	align-content: space-evenly;
 }
 ```
 
@@ -2532,19 +2544,19 @@ Ejemplo de valores:
 ```css
 /* Estilo aplicado al contenedor flex */
 .container {
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }
 ```
 
 ```css
 /* Estilo aplicado a los elementos flex */
 .item {
- flex: 1;
- align-self: center;
- order: 2;
+	flex: 1;
+	align-self: center;
+	order: 2;
 }
 ```
 
@@ -2553,16 +2565,19 @@ Ejemplo de valores:
 ### Propiedades de Flexbox en CSS
 
 1. **`display`**: Esta propiedad determina si un contenedor es un contenedor flexible o un bloque regular.
+
    - `flex`: Establece el contenedor como un contenedor flexible.
    - `inline-flex`: Establece el contenedor como un contenedor flexible en línea.
 
 2. **`flex-direction`**: Controla la dirección en la que se colocan los elementos flexibles dentro de su contenedor.
+
    - `row`: Los elementos son colocados en la misma dirección que el texto.
    - `row-reverse`: Los elementos son colocados en la dirección opuesta a la del texto.
    - `column`: Los elementos son colocados de arriba a abajo.
    - `column-reverse`: Los elementos son colocados de abajo a arriba.
 
 3. **`flex-wrap`**: Controla si los elementos flexibles se envuelven en múltiples líneas o no.
+
    - `nowrap`: Los elementos se ajustan en una sola línea.
    - `wrap`: Los elementos se envuelven en múltiples líneas si es necesario.
    - `wrap-reverse`: Los elementos se envuelven en múltiples líneas en dirección opuesta.
@@ -2570,6 +2585,7 @@ Ejemplo de valores:
 4. **`flex-flow`**: Es una propiedad abreviada que combina `flex-direction` y `flex-wrap` en una sola declaración.
 
 5. **`justify-content`**: Controla la alineación de los elementos flexibles a lo largo del eje principal del contenedor.
+
    - `flex-start`: Los elementos se alinean al principio del contenedor.
    - `flex-end`: Los elementos se alinean al final del contenedor.
    - `center`: Los elementos se alinean en el centro del contenedor.
@@ -2578,6 +2594,7 @@ Ejemplo de valores:
    - `space-evenly`: Los elementos se distribuyen equitativamente con espacios iguales alrededor de ellos, incluyendo el espacio antes y después del primer y último elemento.
 
 6. **`align-items`**: Controla la alineación de los elementos flexibles a lo largo del eje transversal del contenedor.
+
    - `stretch`: Los elementos se estiran para llenar el contenedor.
    - `flex-start`: Los elementos se alinean al principio del contenedor.
    - `flex-end`: Los elementos se alinean al final del contenedor.
@@ -2624,9 +2641,9 @@ Defaul:
 ```css
 /* Estilo aplicado a los elementos flex */
 .item {
-   flex-grow: 0; /* Valor por defecto, posibles valores 0, 1, 2, etc. */
-   flex-shrink: 1; /* Valor por defecto, posibles valores 0, 1, 2, etc. */
-   flex-basis: auto; /* Valor por defecto, posibles valores auto, 100px, 50%, etc. */
+	flex-grow: 0; /* Valor por defecto, posibles valores 0, 1, 2, etc. */
+	flex-shrink: 1; /* Valor por defecto, posibles valores 0, 1, 2, etc. */
+	flex-basis: auto; /* Valor por defecto, posibles valores auto, 100px, 50%, etc. */
 }
 ```
 
@@ -2635,9 +2652,9 @@ Ejemplo:
 ```css
 /* Estilo aplicado a los elementos flex */
 .item {
-   flex-grow: 1; /* El elemento crecerá para llenar el espacio disponible. */
-   flex-shrink: 0; /* El elemento no se encogerá si no hay espacio suficiente. */
-   flex-basis: 100px; /* El elemento tendrá un tamaño base de 100px. */
+	flex-grow: 1; /* El elemento crecerá para llenar el espacio disponible. */
+	flex-shrink: 0; /* El elemento no se encogerá si no hay espacio suficiente. */
+	flex-basis: 100px; /* El elemento tendrá un tamaño base de 100px. */
 }
 ```
 
@@ -2648,7 +2665,7 @@ Ejemplo:
 ```css
 /* Estilo aplicado a los elementos flex */
 .item {
-   flex: 1 0 100px; /* Equivalente a flex-grow: 1; flex-shrink: 0; flex-basis: 100px; */
+	flex: 1 0 100px; /* Equivalente a flex-grow: 1; flex-shrink: 0; flex-basis: 100px; */
 }
 ```
 
@@ -2673,7 +2690,7 @@ Ejemplo:
 ```css
 /* Estilo aplicado al contenedor de cuadrícula */
 .container {
- display: grid;
+	display: grid;
 }
 ```
 
@@ -2684,8 +2701,8 @@ Ejemplo:
 ```css
 /* Estilo aplicado al contenedor de cuadrícula */
 .container {
- display: grid;
- grid-template-columns: 100px 200px 300px;
+	display: grid;
+	grid-template-columns: 100px 200px 300px;
 }
 ```
 
@@ -2696,8 +2713,8 @@ Ejemplo:
 ```css
 /* Estilo aplicado al contenedor de cuadrícula */
 .container {
- display: grid;
- grid-template-rows: 100px 200px 300px;
+	display: grid;
+	grid-template-rows: 100px 200px 300px;
 }
 ```
 
@@ -2708,11 +2725,11 @@ Ejemplo:
 ```css
 /* Estilo aplicado al contenedor de cuadrícula */
 .container {
- display: grid;
- grid-template-areas:
- "header header header"
- "sidebar main main"
- "footer footer footer";
+	display: grid;
+	grid-template-areas:
+		"header header header"
+		"sidebar main main"
+		"footer footer footer";
 }
 ```
 
@@ -2723,8 +2740,8 @@ Ejemplo:
 ```css
 /* Estilo aplicado al contenedor de cuadrícula */
 .container {
- display: grid;
- gap: 10px;
+	display: grid;
+	gap: 10px;
 }
 ```
 
@@ -2735,8 +2752,8 @@ Ejemplo:
 ```css
 /* Estilo aplicado al contenedor de cuadrícula */
 .container {
- display: grid;
- gcolumn-gap: 10px;
+	display: grid;
+	gcolumn-gap: 10px;
 }
 ```
 
@@ -2747,8 +2764,8 @@ Ejemplo:
 ```css
 /* Estilo aplicado al contenedor de cuadrícula */
 .container {
- display: grid;
- row-gap: 10px;
+	display: grid;
+	row-gap: 10px;
 }
 ```
 
@@ -2761,32 +2778,32 @@ Ejemplo de valores:
 ```css
 /* Estilo aplicado al contenedor de cuadrícula */
 .container {
- display: grid;
- justify-items: start;
+	display: grid;
+	justify-items: start;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor de cuadrícula */
 .container {
- display: grid;
- justify-items: end;
+	display: grid;
+	justify-items: end;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor de cuadrícula */
 .container {
- display: grid;
- justify-items: center;
+	display: grid;
+	justify-items: center;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor de cuadrícula */
 .container {
- display: grid;
- justify-items: stretch;
+	display: grid;
+	justify-items: stretch;
 }
 ```
 
@@ -2797,32 +2814,32 @@ Ejemplo de valores:
 ```css
 /* Estilo aplicado al contenedor de cuadrícula */
 .container {
- display: grid;
- align-items: start;
+	display: grid;
+	align-items: start;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor de cuadrícula */
 .container {
- display: grid;
- align-items: end;
+	display: grid;
+	align-items: end;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor de cuadrícula */
 .container {
- display: grid;
- align-items: center;
+	display: grid;
+	align-items: center;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor de cuadrícula */
 .container {
- display: grid;
- align-items: stretch;
+	display: grid;
+	align-items: stretch;
 }
 ```
 
@@ -2833,48 +2850,48 @@ Ejemplo de valores:
 ```css
 /* Estilo aplicado al contenedor de cuadrícula */
 .container {
- display: grid;
- justify-content: start;
+	display: grid;
+	justify-content: start;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor de cuadrícula */
 .container {
- display: grid;
- justify-content: end;
+	display: grid;
+	justify-content: end;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor de cuadrícula */
 .container {
- display: grid;
- justify-content: center;
+	display: grid;
+	justify-content: center;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor de cuadrícula */
 .container {
- display: grid;
- justify-content: space-between;
+	display: grid;
+	justify-content: space-between;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor de cuadrícula */
 .container {
- display: grid;
- justify-content: space-around;
+	display: grid;
+	justify-content: space-around;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor de cuadrícula */
 .container {
- display: grid;
- justify-content: space-evenly;
+	display: grid;
+	justify-content: space-evenly;
 }
 ```
 
@@ -2885,48 +2902,48 @@ Ejemplo de valores:
 ```css
 /* Estilo aplicado al contenedor de cuadrícula */
 .container {
- display: grid;
- align-content: start;
+	display: grid;
+	align-content: start;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor de cuadrícula */
 .container {
- display: grid;
- align-content: end;
+	display: grid;
+	align-content: end;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor de cuadrícula */
 .container {
- display: grid;
- align-content: center;
+	display: grid;
+	align-content: center;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor de cuadrícula */
 .container {
- display: grid;
- align-content: space-between;
+	display: grid;
+	align-content: space-between;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor de cuadrícula */
 .container {
- display: grid;
- align-content: space-around;
+	display: grid;
+	align-content: space-around;
 }
 ```
 
 ```css
 /* Estilo aplicado al contenedor de cuadrícula */
 .container {
- display: grid;
- align-content: space-evenly;
+	display: grid;
+	align-content: space-evenly;
 }
 ```
 
@@ -2939,28 +2956,28 @@ Ejemplo de valores:
 ```css
 /* Estilo aplicado al hiji de la cuadrícula */
 .item {
- justify-self: start;
+	justify-self: start;
 }
 ```
 
 ```css
 /* Estilo aplicado al hiji de la cuadrícula */
 .item {
- justify-self: end;
+	justify-self: end;
 }
 ```
 
 ```css
 /* Estilo aplicado al hiji de la cuadrícula */
 .item {
- justify-self: center;
+	justify-self: center;
 }
 ```
 
 ```css
 /* Estilo aplicado al hiji de la cuadrícula */
 .item {
- justify-self: stretch;
+	justify-self: stretch;
 }
 ```
 
@@ -2971,28 +2988,28 @@ Ejemplo de valores:
 ```css
 /* Estilo aplicado al hiji de la cuadrícula */
 .item {
- align-self: start;
+	align-self: start;
 }
 ```
 
 ```css
 /* Estilo aplicado al hiji de la cuadrícula */
 .item {
- align-self: end;
+	align-self: end;
 }
 ```
 
 ```css
 /* Estilo aplicado al hiji de la cuadrícula */
 .item {
- align-self: center;
+	align-self: center;
 }
 ```
 
 ```css
 /* Estilo aplicado al hiji de la cuadrícula */
 .item {
- align-self: stretch;
+	align-self: stretch;
 }
 ```
 
@@ -3013,9 +3030,9 @@ La sintaxis de una media query en CSS consta de tres partes principales: un tipo
 ```css
 /* Estilo aplicado a una pantalla con un ancho máximo de 600px */
 @media screen and (max-width: 600px) {
- body {
-   background-color: lightblue;
- }
+	body {
+		background-color: lightblue;
+	}
 }
 ```
 
@@ -3050,54 +3067,54 @@ Las condiciones de las media queries en CSS se utilizan para especificar las reg
 ```css
 /* Estilo aplicado a una pantalla con un ancho máximo de 600px */
 @media screen and (max-width: 600px) {
- body {
-   background-color: lightblue;
- }
+	body {
+		background-color: lightblue;
+	}
 }
 ```
 
 ```css
 /* Estilo aplicado a una pantalla con un ancho mínimo de 600px */
 @media screen and (min-width: 600px) {
- body {
-   background-color: lightblue;
- }
+	body {
+		background-color: lightblue;
+	}
 }
 ```
 
 ```css
 /* Estilo aplicado a una pantalla con una orientación horizontal */
 @media screen and (orientation: landscape) {
- body {
-   background-color: lightblue;
- }
+	body {
+		background-color: lightblue;
+	}
 }
 ```
 
 ```css
 /* Estilo aplicado a una pantalla con una orientación vertical */
 @media screen and (orientation: portrait) {
- body {
-   background-color: lightblue;
- }
+	body {
+		background-color: lightblue;
+	}
 }
 ```
 
 ```css
 /* Estilo aplicado a una pantalla con una relación de aspecto de 16:9 */
 @media screen and (aspect-ratio: 16/9) {
- body {
-   background-color: lightblue;
- }
+	body {
+		background-color: lightblue;
+	}
 }
 ```
 
 ```css
 /* Estilo aplicado a una pantalla con una resolución de 300 ppp */
 @media screen and (resolution: 300dpi) {
- body {
-   background-color: lightblue;
- }
+	body {
+		background-color: lightblue;
+	}
 }
 ```
 
@@ -3116,45 +3133,45 @@ Ejemplos de operadores lógicos:
 ```css
 /* Estilo aplicado a una pantalla con un ancho máximo de 600px y una orientación horizontal */
 @media screen and (max-width: 600px) and (orientation: landscape) {
- body {
-   background-color: lightblue;
- }
+	body {
+		background-color: lightblue;
+	}
 }
 ```
 
 ```css
 /* Estilo aplicado a una pantalla con un ancho máximo de 600px y una orientación vertical */
 @media screen and (max-width: 600px) and (orientation: portrait) {
- body {
-   background-color: lightblue;
- }
+	body {
+		background-color: lightblue;
+	}
 }
 ```
 
 ```css
 /* Estilo aplicado a una pantalla con un ancho máximo de 600px y una orientación vertical */
 @media screen and (max-width: 600px) and (orientation: portrait) {
- body {
-   background-color: lightblue;
- }
+	body {
+		background-color: lightblue;
+	}
 }
 ```
 
 ```css
 /* Estilo aplicado a una pantalla con un ancho máximo de 600px y una orientación vertical */
 @media screen and (max-width: 600px) and (orientation: portrait) {
- body {
-   background-color: lightblue;
- }
+	body {
+		background-color: lightblue;
+	}
 }
 ```
 
 ```css
 /* Estilo aplicado a una pantalla con un ancho máximo de 600px y una orientación vertical */
 @media screen and (max-width: 600px) and (orientation: portrait) {
- body {
-   background-color: lightblue;
- }
+	body {
+		background-color: lightblue;
+	}
 }
 ```
 
@@ -3169,14 +3186,14 @@ Cuando trabajamos con media queries, es importante tener en cuenta el enfoque "M
 ```css
 /* Estilo aplicado a todos los dispositivos */
 body {
- background-color: red;
+	background-color: red;
 }
 
 /* Estilo aplicado a dispositivos con un ancho mínimo de 600px */
 @media screen and (min-width: 600px) {
- body {
-   background-color: lightgreen;
- }
+	body {
+		background-color: lightgreen;
+	}
 }
 ```
 
@@ -3209,44 +3226,45 @@ Ahora en CSS tenemos una nueva sintaxis para poder escribir media querys de una 
 La nueva sintaxis de rangos para media querys de CSS consiste en usar operadores de comparación (populares en cualquier lenguaje de programación) en lugar de min-width y max-width.
 
 < evalúa si un valor es menor que otro valor.
+
 > evalúa si un valor es mayor que otro valor.
-= evalúa si un valor es igual a otro valor.
-<= evalúa si un valor es menor o igual a otro valor.
->= evalúa si un valor es mayor o igual a otro valor.
+> = evalúa si un valor es igual a otro valor.
+> <= evalúa si un valor es menor o igual a otro valor.
+> = evalúa si un valor es mayor o igual a otro valor.
 
 Ejemplo de la nueva sintaxis de media queries:
 
 ```css
 // sintaxis clásica
 @media screen and (min-width: 600px) {
-  .element {
-    /* La media query se aplica para resoluciones mayores a 600px */
-  }
+	.element {
+		/* La media query se aplica para resoluciones mayores a 600px */
+	}
 }
 
 // sintaxis de rango
 @media screen and (width >= 600px) {
-  .element {
-    /* La media query se aplica para 
+	.element {
+		/* La media query se aplica para 
        resoluciones mayores o iguales a 600px */
-  }
+	}
 }
 ```
 
 ```css
 /* sintaxis clásica */
 @media screen and (max-width: 800px) {
-  .element {
-    /* La media query se aplica para resoluciones menores a 800px */
-  }
+	.element {
+		/* La media query se aplica para resoluciones menores a 800px */
+	}
 }
 
 // sintaxis de rango
 @media screen and (width <= 800px) {
-  .element {
-    /* La media query se aplica para 
+	.element {
+		/* La media query se aplica para 
        resoluciones menores o iguales a 600px */
-  }
+	}
 }
 ```
 
@@ -3259,9 +3277,9 @@ Ejemplo de imagen responsiva en CSS:
 ```css
 /* Estilo aplicado a una imagen para que sea responsiva */
 img {
- display: block;
- max-width: 100%;
- height: auto;
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 ```
 
@@ -3271,9 +3289,9 @@ Ejemlo de imagen responsiva con formatos de imagen modernos:
 
 ```html
 <picture>
- <source srcset="image.webp" type="image/webp">
- <source srcset="image.jpg" type="image/jpeg">
- <img loading="lazy" src="image.jpg" alt="Descripción de la imagen">
+	<source srcset="image.webp" type="image/webp" />
+	<source srcset="image.jpg" type="image/jpeg" />
+	<img loading="lazy" src="image.jpg" alt="Descripción de la imagen" />
 </picture>
 ```
 
@@ -3283,25 +3301,41 @@ Aplicando la propiedad loading="lazy" a las imágenes para que se carguen de for
 
 ```html
 <picture>
-  <source
-     sizes="1920w, 1280w, 640w" 
-     srcset="img/imagen.avif 1920w, 
-         img/imagen-1280.avif 1280w, 
-         img/imagen-640.avif 640w" 
-     type="image/avif">
-  <source
-     sizes="1920w, 1280w, 640w" 
-     srcset="img/imagen.webp 1920w, 
-         img/imagen-1280.webp 1280w, 
-         img/imagen-640.webp 640w" 
-     type="image/webp">
-  <source
-     sizes="1920w, 1280w, 640w" 
-     srcset="img/imagen.jpg 1920w, 
-         img/imagen-1280.jpg 1280w, 
-         img/imagen-640.jpg 640w" 
-     type="image/jpeg">
-  <img loading="lazy" decoding="async" src="img/imagen.jpg" lazyalt="imagen" width="500" height="300">
+	<source
+		sizes="1920w, 1280w, 640w"
+		srcset="
+			img/imagen.avif      1920w,
+			img/imagen-1280.avif 1280w,
+			img/imagen-640.avif   640w
+		"
+		type="image/avif"
+	/>
+	<source
+		sizes="1920w, 1280w, 640w"
+		srcset="
+			img/imagen.webp      1920w,
+			img/imagen-1280.webp 1280w,
+			img/imagen-640.webp   640w
+		"
+		type="image/webp"
+	/>
+	<source
+		sizes="1920w, 1280w, 640w"
+		srcset="
+			img/imagen.jpg      1920w,
+			img/imagen-1280.jpg 1280w,
+			img/imagen-640.jpg   640w
+		"
+		type="image/jpeg"
+	/>
+	<img
+		loading="lazy"
+		decoding="async"
+		src="img/imagen.jpg"
+		lazyalt="imagen"
+		width="500"
+		height="300"
+	/>
 </picture>
 ```
 
@@ -3369,56 +3403,56 @@ Ejemlos:
 ```css
 /* Estilo aplicado a todos los elementos pares */
 li:nth-child(2n) {
-  background-color: lightgray;
+	background-color: lightgray;
 }
 ```
 
 ```css
 /* Estilo aplicado a todos los elementos pares */
 li:nth-child(even) {
-  background-color: lightgray;
+	background-color: lightgray;
 }
 ```
 
 ```css
 /* Estilo aplicado a todos los elementos impares */
 li:nth-child(odd) {
-  background-color: lightgray;
+	background-color: lightgray;
 }
 ```
 
 ```css
 /* Estilo aplicado al primer elemento */
 li:nth-child(1) {
-  font-weight: bold;
+	font-weight: bold;
 }
 ```
 
 ```css
 /* Estilo aplicado al segundo elemento */
 li:nth-child(2) {
-  font-style: italic;
+	font-style: italic;
 }
 ```
 
 ```css
 /* Estilo aplicado a cada tercer elemento, comenzando desde el primer hijo */
 li:nth-child(3n + 1) {
-  color: red;
+	color: red;
 }
 ```
 
 ```css
 /* Estilo aplicado a cada tercer elemento, comenzando desde el segundo hijo */
 li:nth-child(3n + 2) {
-  color: blue;
+	color: blue;
 }
 ```
 
 ```css
 /* Estilo aplicado a cada tercer elemento, comenzando desde el tercer hijo */
 li:nth-child(3n + 3) {
-  color: green;
+	color: green;
 }
 ```
 
@@ -3431,9 +3465,8 @@ Ejemplo:
 ```css
 /* Estilo para el primer hijo de un elemento */
 .parent > *:first-child {
-  color: blue;
+	color: blue;
 }
-
 ```
 
 - :last-child: Aplica estilos al último hijo de un elemento.
@@ -3443,7 +3476,7 @@ Ejemplo:
 ```css
 /* Estilo para el último hijo de un elemento */
 .parent > *:last-child {
-  color: blue;
+	color: blue;
 }
 ```
 
@@ -3454,7 +3487,7 @@ Ejemplo:
 ```css
 /* Estilo para el tercer elemento div */
 div:nth-of-type(3) {
-  background-color: yellow;
+	background-color: yellow;
 }
 ```
 
@@ -3465,7 +3498,7 @@ Ejemplo:
 ```css
 /* Estilo para el penúltimo hijo de un elemento */
 .parent > *:nth-last-child(2) {
-  font-weight: bold;
+	font-weight: bold;
 }
 ```
 
@@ -3476,7 +3509,7 @@ Ejemplo:
 ```css
 /* Estilo para el penúltimo elemento div */
 div:nth-last-of-type(2) {
-  background-color: yellow;
+	background-color: yellow;
 }
 ```
 
@@ -3495,54 +3528,54 @@ Ejemplo de nomenclatura de clases en BEM:
 ```css
 /* Estilo aplicado a un bloque */
 .block {
- /* Estilos del bloque */
+	/* Estilos del bloque */
 }
 
 /* Estilo aplicado a un elemento dentro de un bloque */
 .block__element {
- /* Estilos del elemento */
+	/* Estilos del elemento */
 }
 
 /* Estilo aplicado a un bloque con un modificador */
 .block--modifier {
- /* Estilos del bloque con el modificador */
+	/* Estilos del bloque con el modificador */
 }
 ```
 
 ```html
 <!-- Ejemplo de uso de clases en BEM -->
 <div class="block">
- <h1 class="block__title">Título del bloque</h1>
- <p class="block__text">Texto del bloque</p>
- <button class="block__button block__button--primary">Botón del bloque</button>
+	<h1 class="block__title">Título del bloque</h1>
+	<p class="block__text">Texto del bloque</p>
+	<button class="block__button block__button--primary">Botón del bloque</button>
 </div>
 ```
 
 ```css
 /* Estilo aplicado a un bloque */
 .block {
- /* Estilos del bloque */
+	/* Estilos del bloque */
 }
 
 /* Estilo aplicado a un elemento dentro de un bloque */
 .block__title {
- /* Estilos del elemento */
+	/* Estilos del elemento */
 }
 
 /* Estilo aplicado a un elemento dentro de un bloque */
 
 .block__text {
- /* Estilos del elemento */
+	/* Estilos del elemento */
 }
 
 /* Estilo aplicado a un bloque con un modificador */
 .block__button {
- /* Estilos del bloque con el modificador */
+	/* Estilos del bloque con el modificador */
 }
 
 /* Estilo aplicado a un bloque con un modificador */
 .block__button--primary {
- /* Estilos del bloque con el modificador */
+	/* Estilos del bloque con el modificador */
 }
 ```
 
@@ -3626,11 +3659,11 @@ Ejemplo de sistema de rejilla de Bootstrap:
 
 ```html
 <div class="container">
- <div class="row">
-   <div class="col-md-4">Columna 1</div>
-   <div class="col-md-4">Columna 2</div>
-   <div class="col-md-4">Columna 3</div>
- </div>
+	<div class="row">
+		<div class="col-md-4">Columna 1</div>
+		<div class="col-md-4">Columna 2</div>
+		<div class="col-md-4">Columna 3</div>
+	</div>
 </div>
 ```
 
@@ -3654,13 +3687,13 @@ Ejemplo de clases de columna de Bootstrap:
 
 ```html
 <div class="container">
- <div class="row">
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Columna 1</div>
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Columna 2</div>
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Columna 3</div>
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Columna 4</div>
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Columna 5</div>
-  </div>
+	<div class="row">
+		<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Columna 1</div>
+		<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Columna 2</div>
+		<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Columna 3</div>
+		<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Columna 4</div>
+		<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Columna 5</div>
+	</div>
 </div>
 ```
 
@@ -3742,7 +3775,7 @@ Git es un sistema de control de versiones distribuido que se utiliza para rastre
 
 - git commit -m "Mensaje de commit": Crea un nuevo commit con los archivos en el área de preparación.
 
-- git  checkout — .: Descarta los cambios en los archivos del directorio de trabajo.
+- git checkout — .: Descarta los cambios en los archivos del directorio de trabajo.
 
 - git reset nombre archivo: Descarta los cambios en un archivo y lo elimina del área de preparación.
 
@@ -3769,3 +3802,79 @@ Git es un sistema de control de versiones distribuido que se utiliza para rastre
 - git reset --hard hash del commit: Restablece el repositorio al estado de un commit específico.
 
 - git status -s: Muestra el estado de los archivos en el directorio de trabajo en forma de resumen.
+
+- git diff: Muestra las diferencias entre el directorio de trabajo y el área de preparación.
+
+- git diff nombre archivo: Muestra las diferencias entre el directorio de trabajo y el área de preparación en un archivo específico.
+
+- git diff --staged: Muestra las diferencias entre el área de preparación y el último commit.
+
+- git diff hash del commit: Muestra las diferencias entre el directorio de trabajo y un commit específico.
+
+- git diff nombre rama: Muestra las diferencias entre la rama actual y una rama específica.
+
+- git pull: Obtiene los cambios del repositorio remoto y los fusiona en la rama actual.
+
+- git push: Envía los cambios del repositorio local al repositorio remoto.
+
+## Clase 11: GitHub
+
+### ¿Qué es GitHub?
+
+GitHub es una plataforma de desarrollo de software basada en la web que se utiliza para alojar y colaborar en proyectos de desarrollo de software. GitHub se basa en Git y proporciona una serie de herramientas y características que facilitan la colaboración y el trabajo en equipo en proyectos de desarrollo de software.
+
+### Características de GitHub
+
+- Repositorios: GitHub proporciona repositorios para alojar y gestionar proyectos de desarrollo de software.
+
+- Ramas: GitHub proporciona ramas para trabajar en paralelo en diferentes características y versiones de un proyecto.
+
+- Solicitudes de extracción: GitHub proporciona solicitudes de extracción para revisar y fusionar cambios en un proyecto.
+
+- Problemas: GitHub proporciona problemas para rastrear y gestionar problemas y errores en un proyecto.
+
+- Proyectos: GitHub proporciona proyectos para organizar y gestionar tareas y actividades en un proyecto.
+
+- Wikis: GitHub proporciona wikis para documentar y compartir información sobre un proyecto.
+
+- Integraciones: GitHub proporciona integraciones con otras herramientas y servicios de desarrollo de software.
+
+### Comandos básicos de GitHub
+
+- git clone URL del repositorio: Clona un repositorio remoto en el directorio actual.
+
+- git remote -v: Muestra los repositorios remotos configurados en el repositorio local.
+
+- git remote add nombre URL del repositorio: Agrega un repositorio remoto al repositorio local.
+
+- git remote remove nombre: Elimina un repositorio remoto del repositorio local.
+
+- git push nombre rama: Envía los cambios del repositorio local al repositorio remoto.
+
+- git pull nombre rama: Obtiene los cambios del repositorio remoto y los fusiona en el repositorio local.
+
+- git fetch nombre rama: Obtiene los cambios del repositorio remoto y los almacena en el repositorio local.
+
+- git merge nombre rama: Fusiona una rama en la rama actual.
+
+- git branch -r: Muestra las ramas remotas en el repositorio.
+
+- git branch -a: Muestra todas las ramas en el repositorio, incluyendo las ramas remotas.
+
+- git push --set-upstream nombre rama: Envía los cambios del repositorio local al repositorio remoto y establece la rama remota como rama de seguimiento.
+
+### Comando cuando iniciamos un proyecto:
+
+echo "# git-init" >> README.md: Este comando crea un archivo llamado README.md en tu directorio de trabajo y agrega el texto # git-init en el archivo. El echo es un comando de la terminal que imprime texto en la salida estándar y >> es un operador que redirige la salida del comando hacia un archivo, en este caso, README.md.
+
+git init: Este comando inicializa un nuevo repositorio de Git en tu directorio de trabajo actual. Básicamente, crea una carpeta oculta llamada .git que contiene toda la información necesaria para que Git rastree los cambios en tu proyecto.
+
+git add README.md: Este comando agrega el archivo README.md al área de preparación de Git. En otras palabras, le dice a Git que estás interesado en incluir los cambios realizados en ese archivo en tu próximo commit.
+
+git commit -m "first commit": Este comando crea un nuevo commit en tu repositorio Git. Un commit es una instantánea de tus archivos en un momento dado. El mensaje -m te permite agregar un comentario descriptivo que explique los cambios realizados en este commit. En este caso, el comentario es "first commit".
+
+git branch -M main: Este comando renombra la rama actual a main. En algunos casos, la rama principal se llama master, pero es una buena práctica cambiarla a main para evitar connotaciones negativas asociadas con el término "master".
+
+git remote add origin https://github.com/humbertodrc/git-init.git: Este comando especifica la ubicación remota de tu repositorio Git. En este caso, estás configurando la dirección URL del repositorio en GitHub. La palabra origin es solo un nombre convencional para el control remoto, podrías usar otro nombre si lo deseas.
+
+git push -u origin main: Finalmente, este comando envía tus commits locales al repositorio remoto en GitHub. -u establece la rama main como la rama de seguimiento predeterminada, lo que significa que en futuros git push, Git sabrá a qué rama enviar los cambios sin necesidad de especificarlo explícitamente.
