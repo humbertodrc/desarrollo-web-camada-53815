@@ -1,0 +1,16 @@
+// _header.scss
+.hero__header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.hero__menu {
+		list-style: none;
+		display: flex;
+		align-items: center;
+		gap: 45px;
+		.hero__menu-item {
+			// Estilos para los items del menú
+		}
+	}
+}
