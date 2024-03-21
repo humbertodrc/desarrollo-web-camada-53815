@@ -2,6 +2,14 @@
 
 En este repositorio se encuentran los ejercicios y proyectos realizados en el curso de Desarrollo Web de Coderhouse.
 
+[![HTML](https://img.shields.io/badge/HTML-5-blue.svg)](https://html.spec.whatwg.org/multipage/)
+[![CSS](https://img.shields.io/badge/CSS-3-blue.svg)](https://www.w3.org/Style/CSS/)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple.svg)](https://getbootstrap.com/)
+[![Git](https://img.shields.io/badge/Git-2.33.0-red.svg)](https://git-scm.com/)
+[![GitHub](https://img.shields.io/badge/GitHub-2.33.0-lightgrey.svg)](https://github.com/)
+[![Sass](https://img.shields.io/badge/Sass-1.38.0-pink.svg)](https://sass-lang.com/)
+[![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-1.61.0-blue.svg)](https://code.visualstudio.com/)
+
 ## Recursos
 
 HTML: <https://developer.mozilla.org/es/docs/Web/HTML>
