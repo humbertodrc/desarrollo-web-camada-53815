@@ -1,0 +1,113 @@
+// @import "utilities/variables";
+// @import "utilities/mixins";
+
+// Variables
+$primary-color: #3f51b5;
+$secondary-color: #ff4081;
+$tertiary-color: #fff;
+$succes-color: #4caf50;
+$warning-color: #ff9800;
+$danger-color: #f44336;
+
+// Condicionales
+$page-type: "home";
+
+// Los condicionales se realizan con la directiva @if y @else
+@if $page-type == "home" {
+	body {
+		background-color: red;
+	}
+} @else {
+	body {
+		background-color: blue;
+	}
+}
+
+// Bucles: para iterar sobre un rango de valores, se usa la directiva @for con la sintaxis @for $variable from <start> through <end>
+@for $iterador from 1 through 12 {
+	.col-#{$iterador} {
+		width: 10% * $iterador;
+	}
+}
+
+// otro ejemplo caso de uso para bucles
+$colors: red, blue, green, yellow, orange, purple, pink, brown, black, white;
+@for $i from 1 through length($colors) {
+	.color-#{nth($colors, $i)} {
+		background-color: nth($colors, $i);
+	}
+}
+
+// Ejemplo de each
+// Los mapas se crean con () y se accede a ellos con map-get
+$colors: (
+	primary: #3f51b5,
+	secondary: #ff4081,
+	succes: #4caf50,
+	warning: #ff9800,
+	danger: #f44336,
+);
+
+// Se itera sobre el mapa
+@each $color, $value in $colors {
+	.bg-#{$color} {
+		background-color: $value;
+	}
+}
+
+// map-get, se le pasa el mapa y la clave
+.footer {
+	background-color: map-get($colors, primary);
+}
+
+// Extend es una directiva que permite extender las reglas de un selector a otro
+.alert {
+	padding: 1rem;
+	border-radius: 8px;
+	margin: 2rem;
+}
+
+.alert-danger {
+	@extend .alert;
+	background-color: red;
+	color: $tertiary-color;
+}
+
+// mixins en SASS
+@mixin create-card($color) {
+	padding: 1rem;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+
+	@if $color == danger {
+		background-color: $danger-color;
+	} @else if $color == warning {
+    background-color: $warning-color;
+  } @else {
+    background-color: $succes-color;
+  }
+}
+
+.card-warning {
+	@include create-card(warning);
+}
+
+.card-danger {
+  @include create-card(danger);
+}
+
+// Mixins sin parametros
+// Mixin header
+@mixin section-header{
+  font-family: $font-heading;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+// Ejemplo de como esta creada la grilla de bootstrap 12 columnas
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: 100% / 12 * $i;
+  }
+}

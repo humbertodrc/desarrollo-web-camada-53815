@@ -1,0 +1,25 @@
+// Mixin button
+@mixin button($background-color, $text-color) {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: $background-color;
+  color: $text-color;
+  text-decoration: none;
+}
+
+// Mixin header
+@mixin section-header{
+  font-family: $font-heading;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+// Mixin card
+@mixin card($background-color, $text-color) {
+  background-color: $background-color;
+  color: $text-color;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
